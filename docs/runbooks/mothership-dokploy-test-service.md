@@ -20,9 +20,20 @@ already has another service using `21115`.
 
 ## Dokploy
 
-Create a separate Compose service in the Dokploy **Game Services** project.
-Use this repository and `docker-compose.test.yml` as the compose path. Set
-the following in Dokploy's environment/secret store:
+There are two supported deployment shapes:
+
+1. The portable Compose path uses `docker-compose.test.yml`. It is the right
+   choice when Dokploy's Compose API/UI is available because it preserves the
+   host config bind and persistent volumes.
+2. The current mothership Dokploy setup uses a single Docker Application built
+   from `Dockerfile.squadreader-test`. This is equivalent for the first live
+   test because the non-secret GC profile is baked into the image; recordings
+   remain container-local until mounts are added.
+
+For the Dokploy Application, use the **Game Services** project, the `main`
+branch of this repository, build type `Dockerfile`, Dockerfile path
+`Dockerfile.squadreader-test`, and build context `/`. Set the following in
+Dokploy's environment/secret store:
 
 ```text
 RCON_PASSWORD=<secret>
@@ -33,6 +44,19 @@ RCON_PORT=21116
 READER_PORT=8766
 MOD_IDS=2428425228
 ```
+
+Add these published ports to the Application's Advanced → Ports settings.
+Use `host` publish mode, one replica, and do not put the game ports behind an
+HTTP domain:
+
+| Published | Target | Protocol |
+| ---: | ---: | --- |
+| 7787 | 7787 | UDP |
+| 27165 | 27165 | UDP |
+| 27165 | 27165 | TCP |
+| 15000 | 15000 | UDP |
+| 21116 | 21116 | TCP |
+| 8766 | 8766 | TCP |
 
 The Compose bind paths are host paths on mothership. They keep the large
 Steam/Squad install and recordings outside the Git checkout. The Dokploy
@@ -50,9 +74,10 @@ rotation profile under `/opt/gc-config`. Do not copy `Rcon.cfg` or
 uses the reader's synthetic match IDs when no OWI license is present.
 
 The server entrypoint downloads the Squad dedicated server and the GC
-Workshop package on first start, then copies the staged settings before
-launching the server. It starts Squad with the scoped GC ptrace observer and
-starts SquadReader against the confirmed `SquadGameServer` PID.
+Workshop package on first start, then copies mounted settings when present
+(otherwise it uses the baked profile) before launching the server. It starts
+Squad with the scoped GC ptrace observer and starts SquadReader against the
+confirmed `SquadGameServer` PID.
 
 ## Acceptance checks
 
