@@ -1,0 +1,1441 @@
+{
+  "assets": [
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/AAT/AAT_Top",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/a9fe1121eeb72edb.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/AAT/AAT_front",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/4a38777612fa44ad.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/AAT/AAT_side",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/dff819dd47956f88.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/ARC170/ARC170Front",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/a8cb10500ddcaef2.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/ARC170/ARC170Side",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/52bb4c7210d87eb2.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/ARC170/ARC170Top",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/8a53e5daa77097bf.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/AT-TE/AT-TE_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/41bcbbe015ba6839.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/AT-TE/AT-TE_front",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/1c786f2413b595c6.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/AT-TE/AT-TE_side",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/5d4045ca6d9af587.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/AT-XT/ATXTFront",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/9d93b90d2954aad4.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/AT-XT/ATXTSide",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/7e16d48e4bf41ba3.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/AT-XT/ATXTTop",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/18701d48a3960288.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/CISTrans/CISTrans_Front",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/c84a195d3ebcd95a.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/CISTrans/CISTrans_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/de85a6c408c1083c.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/CISTrans/CISTrans_Side",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/3d6be4fda3b61b35.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/CloneTransport/CloneTransport_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/7ea339caca4bae49.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/CloneTransport/CloneTransport_No_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/c054d5077ec4fbc5.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/CloneTransport/CloneTransport_front",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/c7a17e5744331e1c.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/CloneTransport/CloneTransport_side",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/388ca75f8795bfa7.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Crab/Crab_Top",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/ca58982db89efe14.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/DeathBringer/DeathBringer_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/b8cda326bf5d6cc7.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Forklift/ForkliftFront",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/211c79785bfa9a94.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Forklift/ForkliftSide",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/b748fc41f8baca7c.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Forklift/ForkliftTop",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/ec1738d85b9afe06.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Forklift/ForkliftTopAT",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/e386bce2d1ea44de.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Forklift/ForkliftTopMG",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/e607b02a99a91577.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Forklift/T_ForkliftTopAT",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/09af941bbbaa4d52.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Forklift/T_ForkliftTopMG",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/f7b0263e58aeff11.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/HMP/HMPC_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/e39a5c0f26d8ad15.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/HMP/HMP_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/2ce24889e93ba2f2.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/HMP/HMP_SkirmishMapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/90875549fd8ddc15.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/HMP/HMP_front",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/79446be698b09411.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/HMP/HMP_side",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/ee153ef62cbb1479.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Hailfire/T_hailfire_top",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/b6c538080ca460e3.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Hailfire/hailfire_top",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/8cc64f5aa10fb5d4.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/LAAT/LAAT_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/7e5807e497e642ff.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/LAAT/LAAT_SkirmishMapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/04dfd2fee8c3a797.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/LAAT/LAAT_front",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/93bf32a0c0440ad0.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/LAAT/LAAT_side",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/c2b22eb1ea9d7ece.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/LAATLE/LAATleFront",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/0f273c8c84c556ce.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/LAATLE/LAATleSide",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/5ed66ea286db8b78.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/LAATLE/LAATleTop",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/8c6d1de9344c771d.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Misc/B1head",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 800,
+      "output": "/icons/gc/962feb524f76a2f0.webp",
+      "status": "decoded",
+      "width": 800
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Misc/B2head",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 800,
+      "output": "/icons/gc/5e8d43d72ecc386e.webp",
+      "status": "decoded",
+      "width": 800
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Misc/CISHAB",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/0a440b09d6e7aa01.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Misc/CMDOhead",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 800,
+      "output": "/icons/gc/7d80d78751c4cc35.webp",
+      "status": "decoded",
+      "width": 800
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Misc/GARHAB",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/4e2167d34a26a9d8.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Misc/GCREp2020-512white",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/714f26e01c0bf104.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Misc/P1head",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 800,
+      "output": "/icons/gc/1ecf40f9cb8c1410.webp",
+      "status": "decoded",
+      "width": 800
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Misc/P2head",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 800,
+      "output": "/icons/gc/14b9f1304b842f3e.webp",
+      "status": "decoded",
+      "width": 800
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Misc/RS",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/8233e3ac58137140.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Misc/ammocrate",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/3920258987646e0b.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Misc/repairstation",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/a6c98d23d1b55eac.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Proto/Proto_Side",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/adb8045cfdb7a8bc.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Proto/Proto_top",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/917853c213fd5fd1.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/SAT/SAT_top",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 256,
+      "output": "/icons/gc/7f61935fb64d798c.webp",
+      "status": "decoded",
+      "width": 256
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/SAT/T_SAT_top",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 256,
+      "output": "/icons/gc/8238f848e5d370b4.webp",
+      "status": "decoded",
+      "width": 256
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/STAP/STAP_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/8f5dca1c9996d12d.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/STAP/STAP_front",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/0c930f5a76e02388.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/STAP/STAP_side",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/039d70bc6c590bdf.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/SailBarge/SailBargeFront",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/9c50e9ad2067bb64.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/SailBarge/SailBargeSide",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/ab87168721764bb1.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/SailBarge/SailBargeTop",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/a93f0ae0a816f539.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Sandcrawler/SandcrawlerFront",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/929aa3e236596fd4.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Sandcrawler/SandcrawlerSide",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/f4ff3d69bb8dc434.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Sandcrawler/SandcrawlerTop",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/469a6adbd6cf59a1.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/ScavSpeeder/T_front",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 1024,
+      "output": "/icons/gc/da6016e67f79cc26.webp",
+      "status": "decoded",
+      "width": 1024
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/ScavSpeeder/T_side",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 1024,
+      "output": "/icons/gc/a31af3d87939269a.webp",
+      "status": "decoded",
+      "width": 1024
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/ScavSpeeder/T_top",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 1024,
+      "output": "/icons/gc/d2e4a0e6e8abd18b.webp",
+      "status": "decoded",
+      "width": 1024
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/ScavSpeeder/front",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 1024,
+      "output": "/icons/gc/cd15c9682bac76c6.webp",
+      "status": "decoded",
+      "width": 1024
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/ScavSpeeder/side",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 1024,
+      "output": "/icons/gc/47e426f8dfe1afbf.webp",
+      "status": "decoded",
+      "width": 1024
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/ScavSpeeder/top",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 1024,
+      "output": "/icons/gc/dff85664f9e9b4f2.webp",
+      "status": "decoded",
+      "width": 1024
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Speeder/Speeder_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/44e0c9664d856c9d.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Speeder/Speeder_front",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/7cf46ec6f8bdfecb.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Speeder/Speeder_side",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/c01ceb5063f235e8.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/TX130/IFTX130_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/bed10d713605ad2e.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/TX130/TX130_APC_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/283fc82120bd8aea.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/TX130/TX130_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/79d00fd507dae217.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/TX130/TX130_front",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/db4a0e458da3fd71.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/TX130/TX130_side",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/1c55664b478647cb.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/T_vehicle_att",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/8455be3a48d01302.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/UTAT/UTAT_Front",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/cc81ef1b2e3bef06.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/UTAT/UTAT_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/8bfd57d5f8b1ed88.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/UTAT/UTAT_Side",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/881f5da4241f1812.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/VWing/T_VWing_FrontView",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/ecfbb2d18599e065.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/VWing/T_VWing_MapIcon",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/96c649dddb0f21d4.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/VWing/T_VWing_SideView",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/1ee0717c5dedf4c9.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/VWing/VWing_FrontView",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/370e180c9eb6f763.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/VWing/VWing_MapIcon",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/3b919de602583aa3.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/VWing/VWing_SideView",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/28819eb44513a281.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/Wasp/Wasp_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/29a147b53472fa0c.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/X34/T_X34_icon_front",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 1024,
+      "output": "/icons/gc/71142ab8872ed2b2.webp",
+      "status": "decoded",
+      "width": 1024
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/X34/T_X34_icon_side",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 1024,
+      "output": "/icons/gc/9b02e254b0df7b09.webp",
+      "status": "decoded",
+      "width": 1024
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/X34/T_X34_icon_top",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 1024,
+      "output": "/icons/gc/d7d0741b3f55025d.webp",
+      "status": "decoded",
+      "width": 1024
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/YWing/T_icon_YWing_side",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 256,
+      "output": "/icons/gc/329e430ce68fb0e7.webp",
+      "status": "decoded",
+      "width": 256
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/YWing/T_icon_YWing_top",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/30f74b3f28d1bc33.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/YWing/icon_YWing_side",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 256,
+      "output": "/icons/gc/a3b1d1a4e68633f9.webp",
+      "status": "decoded",
+      "width": 256
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/YWing/icon_YWing_top",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/d36be02660d8cb84.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/misc/FOB",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/5952e0bb31f653ef.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/misc/HAB",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/17c1b0225bfd231b.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/misc/heavymap",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/16c3e55718bf6a79.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Art/Icons/misc/lapmap",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/98960901dd00055a.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/BoughtOrGiven/SWBF/CIS_FRIG_INT/ship_icons",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 2048,
+      "output": "/icons/gc/ac78f20abb2447e8.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/Commander/Icon/HMP",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/cae9b660b536fcd8.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/Commander/Icon/Munficent",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/14f7718ea3950489.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/Commander/Icon/Supply_Drop_Icon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/e4a3dc17a9236596.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/GameModes/Contention/BombIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/e564060e8e578355.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/GameModes/Contention/ShieldIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 64,
+      "output": "/icons/gc/ea4ed46198ddaae8.webp",
+      "status": "decoded",
+      "width": 64
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/GameModes/Contention/ShieldIcon2",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 32,
+      "output": "/icons/gc/e1d6b45971ca5952.webp",
+      "status": "decoded",
+      "width": 32
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/GameModes/Contention/SwordIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 32,
+      "output": "/icons/gc/71d3a0c86ea579b2.webp",
+      "status": "decoded",
+      "width": 32
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/Teams/TeamImages/Droids/FedDroidsIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 2048,
+      "output": "/icons/gc/82ebb0a450635528.webp",
+      "status": "decoded",
+      "width": 2048
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/HUD/DeployableIcons/T_AV6_Icon",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 256,
+      "output": "/icons/gc/d1130ea4220db76a.webp",
+      "status": "decoded",
+      "width": 256
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/HUD/DeployableIcons/T_AV6_Top",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 256,
+      "output": "/icons/gc/99f1509a54659660.webp",
+      "status": "decoded",
+      "width": 256
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/HUD/PlayerGadgets/GC_FlashLight_Icon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/981ceb7fd5305aad.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/HUD/PlayerGadgets/GC_NVG_Icon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/aa460f07fa1dbbcf.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Base/CISHAB",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/b703b6e21bc868a7.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Base/FOB",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/c981da77d1710723.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Base/GARHAB",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/e5012540fefb2d82.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Base/HAB",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/f29326f5ecc0d19e.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Base/RS",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/189801d9a70661bb.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Base/T_FlagIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/26c799122674c5ab.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Base/T_ShieldIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/20aed35eec21a82d.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Base/T_stronghold",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/baeae9e61bf4a4e6.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Base/ammocrate",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/ceac504ac0e19ea2.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Base/repairstation",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/a21a6b453d9326ef.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Infantry/B1head",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 800,
+      "output": "/icons/gc/c85d61a348d572e9.webp",
+      "status": "decoded",
+      "width": 800
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Infantry/B2head",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 800,
+      "output": "/icons/gc/b99d4f2a76fa82c7.webp",
+      "status": "decoded",
+      "width": 800
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Infantry/CMDOhead",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 800,
+      "output": "/icons/gc/2425a6d1a1e233cb.webp",
+      "status": "decoded",
+      "width": 800
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Infantry/P1head",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 800,
+      "output": "/icons/gc/a0ba48ae41dc7865.webp",
+      "status": "decoded",
+      "width": 800
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Infantry/P2head",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 800,
+      "output": "/icons/gc/200f0003599dd0dc.webp",
+      "status": "decoded",
+      "width": 800
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Infantry/heavymap",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/139f58bdd05a9daf.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Infantry/lapmap",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/f9dfff9a6403c856.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Misc/CIS_LOGO2020white",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/9901b4d11fdf72e3.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Misc/T_DownArrowIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/fb4fc310bb9e752c.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Misc/T_LockedIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/58f088f6ed14cb27.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Misc/T_Rotahan_Heavy_Engineering",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 1266,
+      "output": "/icons/gc/609af830d3c8c824.webp",
+      "status": "decoded",
+      "width": 1266
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Misc/T_UpArrowIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/c4681504a63b73f0.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Misc/T_kuat_systems_engineering",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 126,
+      "output": "/icons/gc/68ea4c60d5375e4a.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Warfare/T_credit_symbol",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/9a67df4bf89ac4e9.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Warfare/T_ui_wfpnt_special",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 64,
+      "output": "/icons/gc/61f90653e4b0d64b.webp",
+      "status": "decoded",
+      "width": 64
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Warfare/ui_wfpnt_medical",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 64,
+      "output": "/icons/gc/9841d8343868b493.webp",
+      "status": "decoded",
+      "width": 64
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Warfare/ui_wfpnt_misc",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/7ab345ea0c427f89.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Warfare/ui_wfpnt_usable",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/7ed262a55023844d.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/Warfare/ui_wfpnt_weapon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 64,
+      "output": "/icons/gc/f6ce0681d360ed15.webp",
+      "status": "decoded",
+      "width": 64
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/misc/GCREp2020-512white",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/89f026a0a8e079bb.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Icons/misc/T_UnlockedIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/2eb0414da9337fbb.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/RadialMenu/RadialMenuTextures/Icons/Markers/Enemy/Bases/map_empalced_antiairgun",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/dc7960e4c5bb60a9.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Widgets/Vehicles/VehicleSpeedo/Icons/T_miniskiff_front",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/02796a6215ad851a.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Widgets/Vehicles/VehicleSpeedo/Icons/T_miniskiff_map",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/4cad6ed6a32c0b64.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/Widgets/Vehicles/VehicleSpeedo/Icons/T_miniskiff_side",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/5a23b4c21c33033d.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Vehicles/LAAT-C/UI/T_LAAT_C_MapIcon",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/005e2210e55e29d2.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Vehicles/LAAT-C/UI/T_LAAT_Carrier_Icon_Front",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/e3e55d80b5bfc60d.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Vehicles/LAAT-C/UI/T_LAAT_Carrier_Icon_Side",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/707b9f7830feb740.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Vehicles/N99/UI/IFN99_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/8f7dbef1a6923f5a.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Vehicles/N99/UI/N99_Logi_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/62854f033c057a06.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Vehicles/N99/UI/N99_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 512,
+      "output": "/icons/gc/2f05f2faa8dfacbf.webp",
+      "status": "decoded",
+      "width": 512
+    },
+    {
+      "assetPath": "/ANE_BASE/Vehicles/N99/UI/T_N99_Transport_MapIcon",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 460,
+      "output": "/icons/gc/6d14d3d82e4f68aa.webp",
+      "status": "decoded",
+      "width": 460
+    }
+  ],
+  "decoded": 157,
+  "failures": [
+    {
+      "assetPath": "/ANE_BASE/BoughtOrGiven/SWBF/CIS_FRIG_INT/ship_iconsSS",
+      "error": "UTexture2D has no decodable client pixel payload",
+      "output": null,
+      "status": "unavailable"
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/GameModes/Contention/BP_POIConstruct",
+      "error": "UTexture2D has no decodable client pixel payload",
+      "output": null,
+      "status": "unavailable"
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/GameModes/Contention/W_MapIcon",
+      "error": "UTexture2D has no decodable client pixel payload",
+      "output": null,
+      "status": "unavailable"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": "local GC client packages",
+  "unresolved": 3
+}

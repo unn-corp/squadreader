@@ -1,0 +1,170 @@
+{
+  "104P1": {
+    "display_name": "104th 'Wolf Pack' - Phase 1",
+    "short_name": "104th"
+  },
+  "104P2": {
+    "display_name": "104th 'Wolf Pack' - Phase 2",
+    "short_name": "104th"
+  },
+  "125P2": {
+    "display_name": "125th 'Doom Legion' - Phase 2",
+    "short_name": "125th"
+  },
+  "13P2": {
+    "display_name": "13th Halloween Regiment - Phase 2",
+    "short_name": "13th"
+  },
+  "212P1": {
+    "display_name": "212th Battalion - Phase 1",
+    "short_name": "212th"
+  },
+  "212P2": {
+    "display_name": "212th Battalion - Phase 2",
+    "short_name": "212th"
+  },
+  "212P2U": {
+    "display_name": "212th Battalion - Phase 2 Umb",
+    "short_name": "212th"
+  },
+  "21P2": {
+    "display_name": "21st Nova Corps - Phase 2",
+    "short_name": "21st"
+  },
+  "241P2": {
+    "display_name": "241st Battalion - Phase 2",
+    "short_name": "241st"
+  },
+  "327P2": {
+    "display_name": "327th Star Corps - Phase 2",
+    "short_name": "327th"
+  },
+  "41P1": {
+    "display_name": "41st Elite Corps - Phase 1",
+    "short_name": "41st"
+  },
+  "41P2": {
+    "display_name": "41st Elite Corps - Phase 2",
+    "short_name": "41st"
+  },
+  "42P1": {
+    "display_name": "42nd HEAT Regiment - Phase 1",
+    "short_name": "42nd"
+  },
+  "501P1": {
+    "display_name": "501st Legion - Phase 1",
+    "short_name": "501st"
+  },
+  "501P2": {
+    "display_name": "501st Legion - Phase 2",
+    "short_name": "501st"
+  },
+  "91P2": {
+    "display_name": "91st Recon Corps - Phase 2",
+    "short_name": "91st"
+  },
+  "CGSTP1": {
+    "display_name": "Coruscant Guard Shock Troops - Phase 1",
+    "short_name": "CGST"
+  },
+  "CGSTP2": {
+    "display_name": "Coruscant Guard Shock Troops - Phase 2",
+    "short_name": "CGST"
+  },
+  "CIS": {
+    "display_name": "CIS",
+    "short_name": "CIS"
+  },
+  "CIVS": {
+    "display_name": "CIVILIANS",
+    "short_name": "CIVS"
+  },
+  "CREBP1": {
+    "display_name": "Clone Rebellion",
+    "short_name": "CREB"
+  },
+  "DAC": {
+    "display_name": "Droid Army - Camo",
+    "short_name": "CIS"
+  },
+  "DAG": {
+    "display_name": "Droid Army - Geonosis",
+    "short_name": "CIS"
+  },
+  "DAH": {
+    "display_name": "Droid Army - Halloween",
+    "short_name": "CIS"
+  },
+  "DAS": {
+    "display_name": "Droid Army",
+    "short_name": "CIS"
+  },
+  "DASO": {
+    "display_name": "Droid Army - Spec Ops",
+    "short_name": "CIS"
+  },
+  "GARP1": {
+    "display_name": "Grand Army Of The Republic - Phase 1",
+    "short_name": "GAR"
+  },
+  "GARP2": {
+    "display_name": "Grand Army Of The Republic - Phase 2",
+    "short_name": "GAR"
+  },
+  "GARUNCP2": {
+    "display_name": "Grand Army Of The Republic - Security Forces",
+    "short_name": "GAR"
+  },
+  "GDAR": {
+    "display_name": "Grand Droid Army Of The Republic",
+    "short_name": "GDAR"
+  },
+  "GEO": {
+    "display_name": "Geonosian Hive",
+    "short_name": "GEO"
+  },
+  "GEP2": {
+    "display_name": "Galactic Empire",
+    "short_name": "GEP2"
+  },
+  "GEP3": {
+    "display_name": "Galactic Empire",
+    "short_name": "GEP3"
+  },
+  "GUN": {
+    "display_name": "Gungans",
+    "short_name": "Gungan"
+  },
+  "MANDO": {
+    "display_name": "Mandalorians",
+    "short_name": "Mandos"
+  },
+  "PURGE": {
+    "display_name": "Galactic Empire",
+    "short_name": "PURGE"
+  },
+  "SAR": {
+    "display_name": "Sa'rim Tusken Raiders",
+    "short_name": "Sarim"
+  },
+  "SCA": {
+    "display_name": "Separatist Clone Army",
+    "short_name": "SCA"
+  },
+  "TUS": {
+    "display_name": "Tusken Raiders",
+    "short_name": "Tusken"
+  },
+  "TWILEKS": {
+    "display_name": "Twileks",
+    "short_name": "TWILEKS"
+  },
+  "UDF": {
+    "display_name": "Umbaran Defense Forces",
+    "short_name": "UDF"
+  },
+  "YOUNGLINGS": {
+    "display_name": "YOUNGLINGS",
+    "short_name": "YOUNGLINGS"
+  }
+}

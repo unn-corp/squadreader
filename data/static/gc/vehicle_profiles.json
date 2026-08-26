@@ -1,0 +1,5552 @@
+{
+ "104P1_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P1_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P1_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P1_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P1_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_CombinedArms_Poncho": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_FighterTDM": [
+  "GAR_ARC170",
+  "GAR_LAATLE",
+  "GAR_VWing"
+ ],
+ "104P1_Mechanized": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_Mechanized_Poncho": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_Seeding": [
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "TUSKEN_MiniSkiff"
+ ],
+ "104P1_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_Skirmish_Poncho": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_SpecialForces_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_SpecialForces_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P1_SpecialForces_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P1_SpecialForces_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P1_SpecialForces_Poncho_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P1_SpecialForces_Poncho_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P1_SpecialForces_Poncho_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P1_SpecialForces_Poncho_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P2_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P2_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P2_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P2_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P2_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_CombinedArms_Poncho": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_Mechanized": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_Mechanized_Poncho": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_Seeding": [
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "TUSKEN_MiniSkiff"
+ ],
+ "104P2_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_Skirmish_Poncho": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_SpecialForces_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_SpecialForces_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P2_SpecialForces_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P2_SpecialForces_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P2_SpecialForces_Poncho_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "104P2_SpecialForces_Poncho_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P2_SpecialForces_Poncho_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "104P2_SpecialForces_Poncho_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "125P2_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "125P2_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "125P2_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "125P2_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "125P2_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_Mechanized_Ryloth": [
+  "GAR_BARC",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_Seeding": [
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "TUSKEN_MiniSkiff"
+ ],
+ "125P2_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_SpecialForces_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "125P2_SpecialForces_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "125P2_SpecialForces_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "125P2_SpecialForces_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "13P2_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "212P1_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "212P1_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "212P1_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "212P1_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_Carriers": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_Carriers_SpecOps": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_CombinedArms_SpecOps": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_Skirmish_SpecOps": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_SpecialForces_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P1_SpecialForces_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "212P1_SpecialForces_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "212P1_SpecialForces_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "212P2_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "212P2_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "212P2_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "212P2_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "212P2_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_Carriers": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_CombinedArms_UMBDEF": [
+  "GAR_BARC",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_CombinedArms_UMBRAAS": [
+  "GAR_BARC",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_Mechanized": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_SpecialForces_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "212P2_SpecialForces_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "212P2_SpecialForces_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "212P2_SpecialForces_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "21P2_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "21P2_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "21P2_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "21P2_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "21P2_Armored_LD": [
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command",
+  "GAR_UTAT_Siege"
+ ],
+ "21P2_Armored_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command",
+  "GAR_UTAT_Siege"
+ ],
+ "21P2_Armored_MD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command",
+  "GAR_UTAT_Siege"
+ ],
+ "21P2_Armored_MO": [
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command",
+  "GAR_UTAT_Siege"
+ ],
+ "21P2_Carriers": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT"
+ ],
+ "21P2_CombinedArms": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT"
+ ],
+ "21P2_CombinedArms_LD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command"
+ ],
+ "21P2_CombinedArms_LO": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command"
+ ],
+ "21P2_CombinedArms_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command"
+ ],
+ "21P2_CombinedArms_MO": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command"
+ ],
+ "21P2_DevVehicles": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command",
+  "GAR_UTAT_Siege"
+ ],
+ "21P2_Mechanized": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "21P2_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "21P2_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "21P2_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "21P2_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "21P2_Mechanized_V2": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "21P2_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "21P2_SpecialForces_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "21P2_SpecialForces_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "21P2_SpecialForces_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "21P2_SpecialForces_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "241P2_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "241P2_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "241P2_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "241P2_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "241P2_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_Mechanized": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_SpecialForces_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "241P2_SpecialForces_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "241P2_SpecialForces_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "241P2_SpecialForces_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "327P2_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "327P2_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "327P2_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "327P2_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "327P2_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_SpecialForces_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "327P2_SpecialForces_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "327P2_SpecialForces_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "327P2_SpecialForces_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "41P1_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "41P1_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "41P1_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "41P1_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "41P1_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_CombinedArms_Poncho": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_Skirmish_Poncho": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_SpecialForces_Poncho_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P1_SpecialForces_Poncho_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "41P1_SpecialForces_Poncho_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "41P1_SpecialForces_Poncho_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "41P2_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "41P2_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "41P2_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "41P2_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "41P2_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_CombinedArms_Poncho": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_Mechanized_Poncho": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_Skirmish_Poncho": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_SpecialForces_Poncho_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "41P2_SpecialForces_Poncho_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "41P2_SpecialForces_Poncho_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "41P2_SpecialForces_Poncho_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "42P1_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "42P1_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "42P1_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "42P1_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "42P1_Armored_LD": [
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command",
+  "GAR_UTAT_Siege"
+ ],
+ "42P1_Armored_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command",
+  "GAR_UTAT_Siege"
+ ],
+ "42P1_Armored_MD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command",
+  "GAR_UTAT_Siege"
+ ],
+ "42P1_Armored_MO": [
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command",
+  "GAR_UTAT_Siege"
+ ],
+ "42P1_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT"
+ ],
+ "42P1_CombinedArms_LD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command"
+ ],
+ "42P1_CombinedArms_LO": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command"
+ ],
+ "42P1_CombinedArms_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command"
+ ],
+ "42P1_CombinedArms_MO": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command"
+ ],
+ "42P1_Mechanized": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "42P1_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "42P1_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "42P1_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "42P1_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "42P1_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "42P1_SpecialForces_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "42P1_SpecialForces_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "42P1_SpecialForces_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "42P1_SpecialForces_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P1_AirAssault": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_AirAssaultV2": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P1_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P1_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P1_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P1_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_Carriers": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_FighterTestV1": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P1_FighterTestV2": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_SpecialForces_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P1_SpecialForces_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P1_SpecialForces_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P1_SpecialForces_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P2_AirAssault": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P2_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P2_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P2_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P2_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_CombinedArms_UMBATK": [
+  "GAR_BARC",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_CombinedArms_UMBDEF": [
+  "GAR_BARC",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_CombinedArms_UMBRAAS": [
+  "GAR_BARC",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_Seed": [
+  "GAR_BARC",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_SpecialForces_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "501P2_SpecialForces_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P2_SpecialForces_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "501P2_SpecialForces_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "91P2_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "91P2_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "91P2_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "91P2_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "91P2_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_SpecialForces_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "91P2_SpecialForces_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "91P2_SpecialForces_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "91P2_SpecialForces_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CGSTP1_AirAssault": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP1_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CGSTP1_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CGSTP1_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CGSTP1_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CGSTP1_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP1_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP1_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP1_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP1_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP1_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP1_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP1_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP1_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP1_Skirmish": [
+  "GAR_LAAT_Skirmish"
+ ],
+ "CGSTP2_AirAssault": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP2_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CGSTP2_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CGSTP2_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CGSTP2_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CGSTP2_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP2_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP2_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP2_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP2_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP2_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP2_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP2_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP2_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CGSTP2_Skirmish": [
+  "GAR_LAAT_Skirmish"
+ ],
+ "CIS_DEV": [
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_OG9",
+  "CIS_STAP"
+ ],
+ "CIS_Lego": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "CREBP1_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT_Blue",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CREBP1_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT_Blue",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CREBP1_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT_Blue",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CREBP1_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT_Blue",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CREBP1_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT_Blue",
+  "GAR_LAAT_Blue_Skirmish",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_Blue",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_Blue",
+  "GAR_LAAT_Blue_Skirmish",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_Blue",
+  "GAR_LAAT_Blue_Skirmish",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_Blue",
+  "GAR_LAAT_Blue_Skirmish",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_Blue",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_Mechanized": [
+  "GAR_BARC",
+  "GAR_LAAT_Blue",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_LAAT_Blue",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT_Blue",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT_Blue",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_SpecialForces_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Blue",
+  "GAR_LAAT_Blue_Skirmish",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "CREBP1_SpecialForces_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Blue",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CREBP1_SpecialForces_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Blue_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "CREBP1_SpecialForces_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Blue_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "DAC_AirAssault_LD": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAC_AirAssault_LO": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAC_AirAssault_MD": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAC_AirAssault_MO": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAC_Armored_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_Armored_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_Armored_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP_Skirmish",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_Armored_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_CombinedArms": [
+  "CIS_AAT",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_CombinedArms_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_CombinedArms_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_CombinedArms_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_CombinedArms_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_CombinedArms_V2": [
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_Mechanized": [
+  "CIS_AAT",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_Mechanized_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_Mechanized_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_Mechanized_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_Mechanized_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_Mechanized_Ryloth": [
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_Skirmish": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAC_SpecialForces_LD": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAC_SpecialForces_LO": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAC_SpecialForces_MD": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAC_SpecialForces_MO": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAG_AirAssault_LD": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAG_AirAssault_LO": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAG_AirAssault_MD": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAG_AirAssault_MO": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAG_Armored_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_Armored_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_Armored_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP_Skirmish",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_Armored_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_Carriers": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_CombinedArms": [
+  "CIS_AAT",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_CombinedArms_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_CombinedArms_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_CombinedArms_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_CombinedArms_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_Mechanized_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_Mechanized_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_Mechanized_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_Mechanized_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_Skirmish": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAG_SpecialForces_LD": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAG_SpecialForces_LO": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAG_SpecialForces_MD": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAG_SpecialForces_MO": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAH_CombinedArms": [
+  "CIS_AAT",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_AirAssault": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_AirAssault_LD": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DASO_AirAssault_LO": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DASO_AirAssault_MD": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DASO_AirAssault_MO": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DASO_Armored_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_Armored_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_Armored_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP_Skirmish",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_Armored_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_Carriers": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_CombinedArms": [
+  "CIS_AAT",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_CombinedArms_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_CombinedArms_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_CombinedArms_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_CombinedArms_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_Mechanized": [
+  "CIS_AAT",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_Mechanized_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_Mechanized_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_Mechanized_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_Mechanized_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_Seeding": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "TUSKEN_MiniSkiff_Blue"
+ ],
+ "DASO_Skirmish": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DASO_SpecialForces_LD": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DASO_SpecialForces_LO": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DASO_SpecialForces_MD": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DASO_SpecialForces_MO": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAS_AirAssault": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_AirAssault_LD": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAS_AirAssault_LO": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAS_AirAssault_MD": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAS_AirAssault_MO": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAS_AirAssault_TF_LD": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAS_AirAssault_TF_LO": [
+  "CIS_AAT_TF",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAS_AirAssault_TF_MD": [
+  "CIS_AAT_TF",
+  "CIS_HMP0",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAS_AirAssault_TF_MO": [
+  "CIS_AAT_TF",
+  "CIS_HMP0",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAS_Armored_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Armored_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Armored_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP_Skirmish",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Armored_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Armored_TF_LD": [
+  "CIS_AAT_TF",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT_TF",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Armored_TF_LO": [
+  "CIS_AAT_TF",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT_TF",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Armored_TF_MD": [
+  "CIS_AAT_TF",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT_TF",
+  "CIS_HMP_Skirmish",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Armored_TF_MO": [
+  "CIS_AAT_TF",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT_TF",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Bespin_JetPack": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP_Skirmish",
+  "CIS_TRIFIGHTER",
+  "MISC_SUPPLYDROP"
+ ],
+ "DAS_Carriers": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CombinedArms": [
+  "CIS_AAT",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CombinedArms_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CombinedArms_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CombinedArms_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CombinedArms_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CombinedArms_TF": [
+  "CIS_AAT_TF",
+  "CIS_DEV_SAT_TF",
+  "CIS_HMP0",
+  "CIS_MTT_TF",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CombinedArms_TF_LD": [
+  "CIS_AAT_TF",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT_TF",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CombinedArms_TF_LO": [
+  "CIS_AAT_TF",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT_TF",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CombinedArms_TF_MD": [
+  "CIS_AAT_TF",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT_TF",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CombinedArms_TF_MO": [
+  "CIS_AAT_TF",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT_TF",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CombinedArms_UMBATK": [
+  "CIS_AAT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CombinedArms_UMBDEF": [
+  "CIS_AAT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CombinedArms_UMBRAAS": [
+  "CIS_AAT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CombinedArms_V2": [
+  "CIS_AAT",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_CommanderTest": [
+  "CIS_AAT",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_FighterTDM": [
+  "CIS_TRIFIGHTER"
+ ],
+ "DAS_FighterTestV1": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAS_FighterTestV2": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "DAS_Mechanized": [
+  "CIS_AAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Mechanized_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Mechanized_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Mechanized_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Mechanized_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Mechanized_TF_LD": [
+  "CIS_AAT_TF",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Mechanized_TF_LO": [
+  "CIS_AAT_TF",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Mechanized_TF_MD": [
+  "CIS_AAT_TF",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Mechanized_TF_MO": [
+  "CIS_AAT_TF",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_Seeding": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "TUSKEN_MiniSkiff_Blue"
+ ],
+ "DAS_Skirmish": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "DAS_SpecialForces_LD": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAS_SpecialForces_LO": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAS_SpecialForces_MD": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAS_SpecialForces_MO": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAS_SpecialForces_TF_LD": [
+  "CIS_AAT_TF",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAS_SpecialForces_TF_LO": [
+  "CIS_AAT_TF",
+  "CIS_HMP0",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAS_SpecialForces_TF_MD": [
+  "CIS_AAT_TF",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "DAS_SpecialForces_TF_MO": [
+  "CIS_AAT_TF",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "GARP1_AirAssault": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_AirAssault_Bespin": [
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_VWing",
+  "MISC_SUPPLYDROP"
+ ],
+ "GARP1_AirAssault_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "GARP1_AirAssault_LO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "GARP1_AirAssault_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "GARP1_AirAssault_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "GARP1_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_Carriers": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_CommanderTest": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_UTAT_Command",
+  "GAR_UTAT_Siege"
+ ],
+ "GARP1_DEV": [
+  "GAR_ARC170",
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_L_Armored_LD": [
+  "GAR_ATTE",
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_L_Armored_LO": [
+  "GAR_ATTE",
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_L_Armored_MD": [
+  "GAR_ATTE",
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_L_Armored_MO": [
+  "GAR_ATTE",
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_LAAT_C",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_L_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_L_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAATLE",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_L_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_L_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_L_Mechanized_LD": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_L_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_L_Mechanized_MD": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_L_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_Lego": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_Lightning_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_Lightning_Mechanized": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_Mechanized": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_Mechanized_LD": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_Mechanized_LO": [
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_Mechanized_MD": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_Mechanized_MO": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_IFTX130",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_Seeding": [
+  "GAR_LAAT",
+  "GAR_TX60LOGI",
+  "TUSKEN_MiniSkiff"
+ ],
+ "GARP1_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_SpecialForces_LD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARP1_SpecialForces_LO": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "GARP1_SpecialForces_MD": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "GARP1_SpecialForces_MO": [
+  "GAR_ARC170",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "GARP2_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARPhase2_332nd_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GARUNCP2_Mechanized": [
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_IFTX130",
+  "GAR_LAATLE",
+  "GAR_TX60LOGI"
+ ],
+ "GC_Ryloth_AAS_V1_CISDroidsCamo": [
+  "CIS_AAT",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GC_Ryloth_AAS_V1_GARP1Lightning": [
+  "GAR_ATTE",
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX60LOGI"
+ ],
+ "GC_Ryloth_AAS_V1_GARP2Doom": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GC_Ryloth_AAS_V2_CISDroidsCamo": [
+  "CIS_AAT",
+  "CIS_MTT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GC_Ryloth_AAS_V2_GARP2Doom": [
+  "GAR_BARC",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GC_Ryloth_AAS_V3_CISDroidsCamo": [
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GC_Ryloth_AAS_V3_GARP2Doom": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GC_Ryloth_INV_V1_CISDroids": [
+  "CIS_AAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GC_Ryloth_INV_V1_GARP1Lightning": [
+  "GAR_ATTE",
+  "GAR_ATXT",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX60LOGI"
+ ],
+ "GC_Ryloth_INV_V1_GARP2_212thDesert": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GC_Ryloth_INV_V2_CISDroids": [
+  "CIS_AAT",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GC_Ryloth_INV_V2_GARP2_212thDesert": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX60LOGI"
+ ],
+ "GC_Ryloth_INV_V3_CISDroids": [
+  "CIS_AAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GC_Ryloth_INV_V3_GARP2_212thDesert": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GDAR_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_DEV_HMP",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GEO_AirAssault_LD": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "GEO_AirAssault_LO": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "GEO_AirAssault_MD": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "GEO_AirAssault_MO": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "GEO_Armored_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_Armored_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_Armored_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP_Skirmish",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_Armored_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_Carriers": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_CombinedArms": [
+  "CIS_AAT",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_MTT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_CombinedArms_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_CombinedArms_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_CombinedArms_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_CombinedArms_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_Mechanized_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_Mechanized_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_Mechanized_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_Mechanized_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_Skirmish": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "GEO_SpecialForces_LD": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "GEO_SpecialForces_LO": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "GEO_SpecialForces_MD": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "GEO_SpecialForces_MO": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "GEP3_AirAssault": [
+  "GE_BARC",
+  "GE_LAAT",
+  "GE_LAATLE",
+  "GE_LAAT_C",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_AirAssault_LD": [
+  "GE_ARC170",
+  "GE_BARC",
+  "GE_IFTX130",
+  "GE_LAAT",
+  "GE_LAAT_C",
+  "GE_TX60LOGI",
+  "GE_VWing"
+ ],
+ "GEP3_AirAssault_LO": [
+  "GE_ARC170",
+  "GE_BARC",
+  "GE_IFTX130",
+  "GE_LAAT",
+  "GE_LAAT_C",
+  "GE_TX-130",
+  "GE_TX60LOGI",
+  "GE_VWing"
+ ],
+ "GEP3_AirAssault_MD": [
+  "GE_ARC170",
+  "GE_BARC",
+  "GE_LAAT",
+  "GE_TX-130",
+  "GE_TX60LOGI",
+  "GE_VWing"
+ ],
+ "GEP3_AirAssault_MO": [
+  "GE_ARC170",
+  "GE_BARC",
+  "GE_LAAT",
+  "GE_TX-130",
+  "GE_TX60LOGI",
+  "GE_VWing"
+ ],
+ "GEP3_Armored_LD": [
+  "GE_ATTE",
+  "GE_BARC",
+  "GE_LAAT_C",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_Armored_LO": [
+  "GE_ATTE",
+  "GE_BARC",
+  "GE_IFTX130",
+  "GE_LAAT",
+  "GE_LAAT_C",
+  "GE_LAAT_Skirmish",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_Armored_MD": [
+  "GE_ATTE",
+  "GE_BARC",
+  "GE_IFTX130",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_Armored_MO": [
+  "GE_ATTE",
+  "GE_BARC",
+  "GE_LAAT_C",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_Carriers": [
+  "GE_ATTE",
+  "GE_BARC",
+  "GE_LAAT",
+  "GE_LAAT_C",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_CombinedArms": [
+  "GE_ATTE",
+  "GE_BARC",
+  "GE_LAAT",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_CombinedArms_LD": [
+  "GAR_LAAT_Skirmish",
+  "GE_ATTE",
+  "GE_BARC",
+  "GE_LAAT",
+  "GE_LAATLE",
+  "GE_LAAT_C",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_CombinedArms_LO": [
+  "GE_ATTE",
+  "GE_BARC",
+  "GE_LAAT",
+  "GE_LAATLE",
+  "GE_LAAT_C",
+  "GE_LAAT_Skirmish",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_CombinedArms_MD": [
+  "GE_ATTE",
+  "GE_BARC",
+  "GE_LAAT",
+  "GE_LAAT_C",
+  "GE_LAAT_Skirmish",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_CombinedArms_MO": [
+  "GE_ATTE",
+  "GE_BARC",
+  "GE_LAAT",
+  "GE_LAAT_C",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_Mechanized": [
+  "GE_BARC",
+  "GE_LAAT",
+  "GE_LAATLE",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_Mechanized_LD": [
+  "GE_BARC",
+  "GE_IFTX130",
+  "GE_LAAT",
+  "GE_LAAT_C",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_Mechanized_LO": [
+  "GE_BARC",
+  "GE_IFTX130",
+  "GE_LAAT",
+  "GE_LAAT_C",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_Mechanized_MD": [
+  "GE_BARC",
+  "GE_LAAT",
+  "GE_LAAT_C",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_Mechanized_MO": [
+  "GAR_ATXT",
+  "GE_BARC",
+  "GE_IFTX130",
+  "GE_LAAT",
+  "GE_LAAT_C",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_SpecialForces_LD": [
+  "GAR_BARC_Logi",
+  "GE_ARC170",
+  "GE_BARC",
+  "GE_LAAT",
+  "GE_LAAT_C",
+  "GE_LAAT_Skirmish",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GEP3_SpecialForces_LO": [
+  "GAR_BARC_Logi",
+  "GE_BARC",
+  "GE_LAAT",
+  "GE_LAAT_C",
+  "GE_TX-130",
+  "GE_TX60LOGI",
+  "GE_VWing"
+ ],
+ "GEP3_SpecialForces_MD": [
+  "GAR_BARC_Logi",
+  "GE_ARC170",
+  "GE_BARC",
+  "GE_LAAT_Skirmish",
+  "GE_TX-130",
+  "GE_TX60LOGI",
+  "GE_VWing"
+ ],
+ "GEP3_SpecialForces_MO": [
+  "GAR_BARC_Logi",
+  "GE_ARC170",
+  "GE_BARC",
+  "GE_LAAT_Skirmish",
+  "GE_TX-130",
+  "GE_TX60LOGI",
+  "GE_VWing"
+ ],
+ "GEPhase2_CombinedArms_INF": [
+  "GE_LAAT_Skirmish",
+  "GE_TX-130",
+  "GE_TX60LOGI"
+ ],
+ "GUN_CombinedArms": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GUN_CombinedArms_LD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GUN_CombinedArms_LO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GUN_CombinedArms_MD": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GUN_CombinedArms_MO": [
+  "GAR_ATTE",
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_LAAT_C",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GUN_Mechanized": [
+  "GAR_BARC",
+  "GAR_LAAT",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "GUN_Skirmish": [
+  "GAR_BARC",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI"
+ ],
+ "IND_Mauldelorians": [
+  "MISC_FORKLIFT",
+  "TUSKEN_MediumSkiffLogi"
+ ],
+ "LD_SpecialForces_GAR_FS_Template": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "LO_SpecialForces_GAR_FS_Template": [
+  "GAR_BARC",
+  "GAR_BARC_Logi",
+  "GAR_LAAT",
+  "GAR_LAAT_Skirmish",
+  "GAR_TX-130",
+  "GAR_TX60LOGI",
+  "GAR_VWing"
+ ],
+ "SAR_CombinedArms": [
+  "MISC_FORKLIFT",
+  "MISC_FORKLIFT_Tusken_SPG9_MG",
+  "MISC_SailBarge",
+  "MISC_ScavengerSpeeder",
+  "MISC_X34",
+  "TUSKEN_AAT",
+  "TUSKEN_AA_AAT",
+  "TUSKEN_MediumSkiffLogi"
+ ],
+ "SCA_CombinedArms": [
+  "CIS_AAT",
+  "CIS_DEV_LAAT",
+  "CIS_DEV_SAT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "TUS_CombinedArms": [
+  "MISC_FORKLIFT",
+  "MISC_FORKLIFT_Tusken_SPG9_MG",
+  "MISC_SailBarge",
+  "MISC_ScavengerSpeeder",
+  "MISC_X34",
+  "TUSKEN_AAT",
+  "TUSKEN_AA_AAT",
+  "TUSKEN_MediumSkiffLogi"
+ ],
+ "UDF_AirAssault_LD": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "UDF_AirAssault_LO": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "UDF_AirAssault_MD": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "UDF_AirAssault_MO": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER"
+ ],
+ "UDF_Armored_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "UDF_Armored_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "UDF_Armored_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "UDF_Armored_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "UDF_CombinedArms": [
+  "CIS_AAT",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "UDF_CombinedArms_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "UDF_CombinedArms_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "UDF_CombinedArms_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "UDF_CombinedArms_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_DEV_SAT",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "UDF_Mechanized_LD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "UDF_Mechanized_LO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "UDF_Mechanized_MD": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "UDF_Mechanized_MO": [
+  "CIS_AAT",
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_IF-N99",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP"
+ ],
+ "UDF_SpecialForces_LD": [
+  "CIS_DEV_HMP_C",
+  "CIS_HMP0",
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "UDF_SpecialForces_LO": [
+  "CIS_HMP0",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "UDF_SpecialForces_MD": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ],
+ "UDF_SpecialForces_MO": [
+  "CIS_HMP_Skirmish",
+  "CIS_N99",
+  "CIS_N99_LOGI",
+  "CIS_STAP",
+  "CIS_TRIFIGHTER",
+  "MISC_ScavengerSpeeder_Logi"
+ ]
+}
