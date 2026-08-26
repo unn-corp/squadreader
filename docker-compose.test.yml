@@ -1,0 +1,42 @@
+services:
+  squadreader-test:
+    build:
+      context: .
+      dockerfile: Dockerfile.squadreader-test
+    image: unn-corp/squadreader-gc-test:dev
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 60s
+    cap_add:
+      - SYS_PTRACE
+    ports:
+      - "${SQUAD_GAME_PORT:-7787}:${SQUAD_GAME_PORT:-7787}/udp"
+      - "${SQUAD_QUERY_PORT:-27165}:${SQUAD_QUERY_PORT:-27165}/udp"
+      - "${SQUAD_QUERY_PORT:-27165}:${SQUAD_QUERY_PORT:-27165}/tcp"
+      - "${SQUAD_BEACON_PORT:-15000}:${SQUAD_BEACON_PORT:-15000}/udp"
+      - "${RCON_PORT:-21116}:${RCON_PORT:-21116}/tcp"
+      - "${READER_PORT:-8766}:${READER_PORT:-8766}/tcp"
+    volumes:
+      - squadreader_test_server:/home/steam/squad-dedicated
+      - squadreader_test_reader:/var/lib/sqreader
+      - "${GC_CONFIG_DIR:-/home/devotek/squadreader-test/config}:/opt/gc-config:ro"
+    environment:
+      PORT: "${SQUAD_GAME_PORT:-7787}"
+      QUERYPORT: "${SQUAD_QUERY_PORT:-27165}"
+      BEACONPORT: "${SQUAD_BEACON_PORT:-15000}"
+      RCONPORT: "${RCON_PORT:-21116}"
+      RCONIP: "0.0.0.0"
+      RCONPASSWORD: "${RCON_PASSWORD:?set RCON_PASSWORD in Dokploy}"
+      SERVER_NAME: "${SERVER_NAME:-GC Maps SquadReader Test}"
+      MULTIHOME: "${MULTIHOME:-0.0.0.0}"
+      MOD_IDS: "${MOD_IDS:-2428425228}"
+      GC_CONFIG_DIR: /opt/gc-config
+      READER_DATA_DIR: /var/lib/sqreader
+      READER_PORT: "${READER_PORT:-8766}"
+      READER_HZ: "${READER_HZ:-0.5}"
+      READER_RECORD_HZ: "${READER_RECORD_HZ:-2.0}"
+      READER_SERVER_ID: "${READER_SERVER_ID:-gc-mothership-test}"
+
+volumes:
+  squadreader_test_server:
+  squadreader_test_reader:

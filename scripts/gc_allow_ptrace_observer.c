@@ -1,7 +1,14 @@
 #define _GNU_SOURCE
 
-#include <linux/prctl.h>
 #include <sys/prctl.h>
+
+/* The container image intentionally does not need the Linux kernel header
+ * package just to compile this tiny observer. glibc exposes the prctl call;
+ * provide the one Linux-specific sentinel when its wrapper does not expose
+ * the constant. */
+#ifndef PR_SET_PTRACER_ANY
+#define PR_SET_PTRACER_ANY ((unsigned long)-1)
+#endif
 
 /*
  * This constructor runs in the launched server process only. It allows a

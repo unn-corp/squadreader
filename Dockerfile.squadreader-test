@@ -1,0 +1,43 @@
+# Portable single-container test image for a Squad server plus SquadReader.
+# The base image installs/updates Squad and workshop content at container boot;
+# the reader and the GC asset bundle are baked into this image from this fork.
+# Update the base digest deliberately when the Squad server build changes.
+FROM cm2network/squad@sha256:8cba47f53df586c2767525a9f062c2996b36f9a34a1d771a35f67a1713c46893
+
+USER root
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        ca-certificates \
+        gcc \
+        libc6-dev \
+        procps \
+        python3 \
+        python3-pip \
+        python3-venv \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY . /opt/sqreader
+
+RUN python3 -m venv /opt/sqreader-venv \
+    && /opt/sqreader-venv/bin/pip install --no-cache-dir --upgrade pip \
+    && /opt/sqreader-venv/bin/pip install --no-cache-dir /opt/sqreader \
+    && mkdir -p /var/lib/sqreader/recordings /var/lib/sqreader/stats \
+    && chown -R steam:steam /var/lib/sqreader \
+    && mkdir -p /opt/sqreader-runtime/recordings /opt/sqreader-runtime/stats \
+    && gcc -shared -fPIC -O2 -Wall -Wextra \
+        -o /opt/sqreader-runtime/gc_allow_ptrace_observer.so \
+        /opt/sqreader/scripts/gc_allow_ptrace_observer.c \
+    && chmod 0755 /opt/sqreader-runtime/gc_allow_ptrace_observer.so
+
+COPY deploy/squadreader-test-entrypoint.sh /usr/local/bin/squadreader-test-entrypoint
+COPY deploy/prepare_gc_config.sh /usr/local/bin/prepare_gc_config
+
+RUN chmod 0755 /usr/local/bin/squadreader-test-entrypoint \
+        /usr/local/bin/prepare_gc_config \
+    && chown -R steam:steam /opt/sqreader /opt/sqreader-venv /opt/sqreader-runtime
+
+USER steam
+WORKDIR /home/steam
+
+ENTRYPOINT ["/usr/local/bin/squadreader-test-entrypoint"]
