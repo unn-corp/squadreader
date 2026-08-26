@@ -17,6 +17,7 @@ Example::
     PYTHONPATH=/path/to/GC-config/tooling OOZ=/tmp/ooz/oozdec \
       python scripts/extract_asset_provider.py \
         --mod-paks /path/to/GC/Content/Paks/Windows \
+        --game-paks /path/to/Squad/SquadGame/Content/Paks \
         --roles-json data/static/gc/roles.json \
         --out data/static/asset_providers.json
 
@@ -59,6 +60,66 @@ VEHICLE_ICON_ASSETS: dict[str, str] = {
     "BP_HMP_Carrier_C": "/ANE_BASE/Art/Icons/HMP/HMPC_MapIcon",
     "BP_GC_LAATLE_C": "/ANE_BASE/Art/Icons/LAATLE/LAATleTop",
     "BP_GC_LAATLE_GE_C": "/ANE_BASE/Art/Icons/LAATLE/LAATleTop",
+    # The emplaced actor exposes the stock HUD icon from its authored
+    # MapIcon property. It is still a GC runtime class and must not fall
+    # through to the generic vanilla transport icon.
+    "BP_Emplaced_ZU23-2_Laser_Antiaircannon_Base_C": (
+        "/Game/UI/HUD/DeployableIcons/deployable_AntiAirGun"
+    ),
+}
+
+# Exact runtime deployable classes observed in the GC replay. The first three
+# targets come from authored ``SQMapIcon``/child-actor properties. Ammocrate
+# and shield use the GC icon assets selected by their authored UI data classes;
+# that distinction is retained in BINDING_EVIDENCE for audit purposes.
+DEPLOYABLE_ICON_ASSETS: dict[str, str] = {
+    "AA_Turret_GAR_C": "/Game/UI/HUD/DeployableIcons/deployable_AntiAirGun",
+    "BP_ANE_Ammocrate_Republic_C": "/ANE_BASE/Art/Icons/Misc/ammocrate",
+    "BP_ShieldBubble_Hangar_C": "/ANE_BASE/Gameplay/GameModes/Contention/ShieldIcon",
+    "BP_helicopter_repair_pad_C": "/Game/UI/HUD/DeployableIcons/deployable_helipad",
+    "BP_vehicle_repair_republic_C": "/Game/UI/HUD/DeployableIcons/deployable_repairstation",
+}
+
+WEAPON_ICON_ASSETS: dict[str, str] = {
+    # BP_DC-18_C's authored HUDTexture/HUDSelectedTexture reference.
+    "BP_DC-18_C": "/ANE_BASE/UI/HUD/Inventory/Weapons/Rifles/DC-17_Pistol_Hud",
+}
+
+BINDING_EVIDENCE: dict[str, dict[str, dict[str, str]]] = {
+    "vehicleIcons": {
+        "BP_Emplaced_ZU23-2_Laser_Antiaircannon_Base_C": {
+            "confidence": "exact",
+            "source": "BP_Emplaced_ZU23-2_Laser_Antiaircannon_Base_C.MapIcon",
+        },
+    },
+    "deployableIcons": {
+        "AA_Turret_GAR_C": {
+            "confidence": "exact",
+            "source": "AA_Turret_GAR_C.ChildActorClass -> ZU23.MapIcon",
+        },
+        "BP_ANE_Ammocrate_Republic_C": {
+            "confidence": "reviewed-ui-data",
+            "source": "BP_ANE_Ammocrate_Republic_C.MapItem.DataClass",
+        },
+        "BP_ShieldBubble_Hangar_C": {
+            "confidence": "reviewed-semantic",
+            "source": "BP_ShieldBubble_Hangar_C -> ShieldIcon",
+        },
+        "BP_helicopter_repair_pad_C": {
+            "confidence": "reviewed-runtime-alias",
+            "source": "BP_helicopter_repair_zoneInvisible.SQMapIcon",
+        },
+        "BP_vehicle_repair_republic_C": {
+            "confidence": "exact",
+            "source": "BP_vehicle_repair_republic_C.SQMapIcon",
+        },
+    },
+    "weaponIcons": {
+        "BP_DC-18_C": {
+            "confidence": "exact",
+            "source": "BP_DC-18_C.HUDTexture",
+        },
+    },
 }
 
 
@@ -188,11 +249,36 @@ def _role_bindings(
     return role_icons, role_sources, unresolved
 
 
-def _vehicle_bindings() -> tuple[dict[str, str], dict[str, str]]:
-    return (
-        {cls: _public_url(asset) for cls, asset in sorted(VEHICLE_ICON_ASSETS.items())},
-        dict(sorted(VEHICLE_ICON_ASSETS.items())),
-    )
+def _asset_exists(index: dict[str, tuple[Any, int]], asset_path: str) -> bool:
+    folded = asset_path.casefold()
+    return any(path.casefold() == folded for path in index)
+
+
+def _runtime_bindings(
+    index: dict[str, tuple[Any, int]],
+) -> tuple[dict[str, dict[str, str]], dict[str, dict[str, str]], list[str]]:
+    """Return available exact runtime bindings and explain absent targets."""
+    maps = {
+        "vehicleIcons": VEHICLE_ICON_ASSETS,
+        "deployableIcons": DEPLOYABLE_ICON_ASSETS,
+        "weaponIcons": WEAPON_ICON_ASSETS,
+    }
+    bindings: dict[str, dict[str, str]] = {}
+    sources: dict[str, dict[str, str]] = {}
+    unresolved: list[str] = []
+    for category, candidates in maps.items():
+        bindings[category] = {}
+        sources[category] = {}
+        for class_name, asset_path in sorted(candidates.items()):
+            if not _asset_exists(index, asset_path):
+                unresolved.append(
+                    f"{category} target missing from supplied packages: "
+                    f"{class_name} -> {asset_path}"
+                )
+                continue
+            bindings[category][class_name] = _public_url(asset_path)
+            sources[category][class_name] = asset_path
+    return bindings, sources, unresolved
 
 
 def build(
@@ -200,17 +286,23 @@ def build(
     roles_path: Path,
     provider_id: str,
     tooling_dir: Path | None = None,
+    game_paks: Path | None = None,
 ) -> dict[str, Any]:
     tooling_dir = tooling_dir or (Path(__file__).resolve().parents[2] / "GC-config" / "tooling")
     if str(tooling_dir) not in sys.path:
         sys.path.insert(0, str(tooling_dir))
     from ue_zen import build_index
 
-    index, _tocs = build_index([mod_paks])
+    package_roots = [mod_paks]
+    if game_paks is not None:
+        package_roots.append(game_paks)
+    index, _tocs = build_index(package_roots)
     roles = _load(roles_path)
     _install_soft_path_support()
     role_icons, role_sources, unresolved = _role_bindings(index, roles)
-    vehicle_icons, vehicle_sources = _vehicle_bindings()
+    runtime_bindings, runtime_sources, runtime_unresolved = _runtime_bindings(index)
+    vehicle_icons = runtime_bindings["vehicleIcons"]
+    vehicle_sources = runtime_sources["vehicleIcons"]
 
     role_prefixes = sorted({role_id.split("_", 1)[0] + "_" for role_id in role_icons})
     faction_prefixes = sorted({role_id.split("_", 1)[0] for role_id in role_icons})
@@ -223,18 +315,24 @@ def build(
             "gameStateInstanceClasses": ["BP_GameStateGC_C"],
             "factionPrefixes": faction_prefixes,
             "rolePrefixes": role_prefixes,
-            "vehicleClassPrefixes": ["BP_LAAT_", "BP_HMP_", "BP_GC_LAATLE_"],
+            "vehicleClassPrefixes": [
+                "BP_LAAT_", "BP_HMP_", "BP_GC_LAATLE_", "BP_Emplaced_"
+            ],
         },
         "roleIcons": role_icons,
         "vehicleIcons": vehicle_icons,
-        "deployableIcons": {},
+        "deployableIcons": runtime_bindings["deployableIcons"],
         "markerIcons": {},
         "factionIcons": {},
+        "weaponIcons": runtime_bindings["weaponIcons"],
         "sourceAssets": {
             "roleIcons": role_sources,
             "vehicleIcons": vehicle_sources,
+            "deployableIcons": runtime_sources["deployableIcons"],
+            "weaponIcons": runtime_sources["weaponIcons"],
         },
-        "unresolvedAssets": sorted(set(unresolved)),
+        "bindingEvidence": BINDING_EVIDENCE,
+        "unresolvedAssets": sorted(set(unresolved + runtime_unresolved)),
     }
     return {
         "schemaVersion": 1,
@@ -253,6 +351,10 @@ def build(
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--mod-paks", type=Path, required=True)
+    parser.add_argument(
+        "--game-paks", type=Path,
+        help="Optional base-game client packages for /Game icon targets.",
+    )
     parser.add_argument("--roles-json", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
     parser.add_argument("--provider-id", default="gc")
@@ -268,6 +370,7 @@ def main() -> int:
         args.roles_json.resolve(),
         args.provider_id,
         args.tooling_dir.resolve() if args.tooling_dir else None,
+        args.game_paks.resolve() if args.game_paks else None,
     )
     _write(args.out.resolve(), catalog)
     provider = catalog["providers"][args.provider_id]

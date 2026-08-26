@@ -27,6 +27,7 @@ export interface AssetProvider {
   roleIcons?: AssetMap;
   vehicleIcons?: AssetMap;
   deployableIcons?: AssetMap;
+  weaponIcons?: AssetMap;
   markerIcons?: AssetMap;
   factionIcons?: AssetMap;
 }
@@ -111,6 +112,8 @@ function providerScore(provider: AssetProvider, snap: Snapshot): number {
   for (const p of snap.players ?? []) {
     if (p.roleId && provider.roleIcons?.[p.roleId]) score += 25;
     if (prefixMatch(p.roleId, detect.rolePrefixes)) score += 10;
+    const weapon = p.soldier?.weapon?.className;
+    if (weapon && provider.weaponIcons?.[weapon]) score += 25;
   }
   for (const v of snap.vehicles ?? []) {
     if (v.classShort && provider.vehicleIcons?.[v.classShort]) score += 25;
@@ -142,7 +145,7 @@ export function selectAssetProvider(
   return best ?? source.providers[source.defaultProviderId] ?? VANILLA_PROVIDER;
 }
 
-type AssetBucket = "roleIcons" | "vehicleIcons" | "deployableIcons" | "markerIcons" | "factionIcons";
+type AssetBucket = "roleIcons" | "vehicleIcons" | "deployableIcons" | "weaponIcons" | "markerIcons" | "factionIcons";
 
 // Entity panels do not always have the full Snapshot. Exact bindings are
 // therefore also searched directly, which makes kill-feed and scoreboard

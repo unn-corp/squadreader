@@ -3760,6 +3760,10 @@
       ]
     },
     "GC_Corvette_AAS_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_Corvette_AAS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -3785,9 +3789,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/e9dd171bfb27a8e6.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -16620.0,
+        -16620.0,
+        -665.0,
+        -665.0
+      ]
     },
     "GC_Corvette_Seed_V1": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-gc-json",
+        "sourceLayerId": "GC_Corvette_AAS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -3813,7 +3826,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/e9dd171bfb27a8e6.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -16620.0,
+        -16620.0,
+        -665.0,
+        -665.0
+      ]
     },
     "GC_Felucia_RAAS_V1": {
       "coverage": {
@@ -15750,6 +15768,10 @@
       ]
     },
     "GC_Geonosis_AAS_V2": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Geonosis_AAS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -15775,9 +15797,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/dafe3d0e049099a6.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -201568.140625,
+        -201555.140625,
+        201569.8125,
+        201569.734375
+      ]
     },
     "GC_Geonosis_INS_V1": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Geonosis_AAS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -15803,7 +15834,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/dafe3d0e049099a6.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -201568.140625,
+        -201555.140625,
+        201569.8125,
+        201569.734375
+      ]
     },
     "GC_Geonosis_INV_V1": {
       "coverage": {
@@ -15965,6 +16001,10 @@
       ]
     },
     "GC_Geonosis_INV_V2": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Geonosis_INV_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -15990,9 +16030,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/dafe3d0e049099a6.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -201568.140625,
+        -201555.140625,
+        201569.8125,
+        201569.734375
+      ]
     },
     "GC_Geonosis_INV_V3": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Geonosis_INV_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -16018,7 +16067,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/dafe3d0e049099a6.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -201568.140625,
+        -201555.140625,
+        201569.8125,
+        201569.734375
+      ]
     },
     "GC_Geonosis_RAAS_V1": {
       "coverage": {
@@ -20593,6 +20647,10 @@
       ]
     },
     "GC_Kashyyyk_AAS_V1": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Kashyyyk_INS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -20618,7 +20676,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/6face45ae3927182.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -210643.1875,
+        -281439.90625,
+        189356.890625,
+        118559.921875
+      ]
     },
     "GC_Kashyyyk_INS_V1": {
       "coverage": {
@@ -22246,6 +22309,10 @@
       ]
     },
     "GC_Kashyyyk_SKM_V1": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Kashyyyk_INS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -22271,9 +22338,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/6face45ae3927182.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -210643.1875,
+        -281439.90625,
+        189356.890625,
+        118559.921875
+      ]
     },
     "GC_Kashyyyk_SKM_V2": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_Kashyyyk_SKM_V2"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -22299,7 +22375,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/6face45ae3927182.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -210643.1875,
+        -210643.1875,
+        189356.890625,
+        189356.890625
+      ]
     },
     "GC_Kavado_INV_V1": {
       "coverage": {
@@ -22323,9 +22404,9 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/c2baed891a18d438.webp",
       "layerId": "GC_Kavado_INV_V1",
-      "mapId": "e96123086d14c45b",
+      "mapId": "c2baed891a18d438",
       "mapName": "Kavado",
       "points": [
         {
@@ -22455,8 +22536,8 @@
           "sourceAsset": "/ANE_BASE/maps/Kavado/GLD/GC_Kavado_INV_V1"
         }
       ],
-      "sourceAsset": "/ANE_BASE/maps/Kavado/GLD/GC_Kavado_INV_V1",
-      "thumbnailUrl": null,
+      "sourceAsset": "/ANE_BASE/Maps/Kavado/GLD/GC_Kavado_INV_V1",
+      "thumbnailUrl": "/maps/gc/c2baed891a18d438.thumb.webp",
       "worldBoundsCm": [
         -107236.0,
         -209828.0,
@@ -22465,6 +22546,10 @@
       ]
     },
     "GC_Kavado_INV_V2": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Kavado_INV_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "unavailable",
@@ -22487,14 +22572,19 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/c2baed891a18d438.webp",
       "layerId": "GC_Kavado_INV_V2",
       "mapId": "c2baed891a18d438",
       "mapName": "Kavado",
       "points": [],
       "sourceAsset": null,
-      "thumbnailUrl": null,
-      "worldBoundsCm": null
+      "thumbnailUrl": "/maps/gc/c2baed891a18d438.thumb.webp",
+      "worldBoundsCm": [
+        -107236.0,
+        -209828.0,
+        205209.0,
+        102617.0
+      ]
     },
     "GC_Kavado_RAAS_V1": {
       "coverage": {
@@ -22518,9 +22608,9 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/c2baed891a18d438.webp",
       "layerId": "GC_Kavado_RAAS_V1",
-      "mapId": "e96123086d14c45b",
+      "mapId": "c2baed891a18d438",
       "mapName": "Kavado",
       "points": [
         {
@@ -23352,8 +23442,8 @@
           "sourceAsset": "/ANE_BASE/maps/Kavado/GLD/GC_Kavado_INV_V1"
         }
       ],
-      "sourceAsset": "/ANE_BASE/maps/Kavado/GLD/GC_Kavado_RAAS_V1",
-      "thumbnailUrl": null,
+      "sourceAsset": "/ANE_BASE/Maps/Kavado/GLD/GC_Kavado_RAAS_V1",
+      "thumbnailUrl": "/maps/gc/c2baed891a18d438.thumb.webp",
       "worldBoundsCm": [
         -107236.0,
         -209828.0,
@@ -23383,9 +23473,9 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/c2baed891a18d438.webp",
       "layerId": "GC_Kavado_RAAS_V1-R",
-      "mapId": "e96123086d14c45b",
+      "mapId": "c2baed891a18d438",
       "mapName": "Kavado",
       "points": [
         {
@@ -24217,8 +24307,8 @@
           "sourceAsset": "/ANE_BASE/maps/Kavado/GLD/GC_Kavado_INV_V1"
         }
       ],
-      "sourceAsset": "/ANE_BASE/maps/Kavado/GLD/GC_Kavado_RAAS_V1-R",
-      "thumbnailUrl": null,
+      "sourceAsset": "/ANE_BASE/Maps/Kavado/GLD/GC_Kavado_RAAS_V1-R",
+      "thumbnailUrl": "/maps/gc/c2baed891a18d438.thumb.webp",
       "worldBoundsCm": [
         -107236.0,
         -209828.0,
@@ -24248,9 +24338,9 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/c2baed891a18d438.webp",
       "layerId": "GC_Kavado_RINV_V1",
-      "mapId": "e96123086d14c45b",
+      "mapId": "c2baed891a18d438",
       "mapName": "Kavado",
       "points": [
         {
@@ -25082,8 +25172,8 @@
           "sourceAsset": "/ANE_BASE/maps/Kavado/GLD/GC_Kavado_RAAS_V1"
         }
       ],
-      "sourceAsset": "/ANE_BASE/maps/Kavado/GLD/GC_Kavado_RINV_V1",
-      "thumbnailUrl": null,
+      "sourceAsset": "/ANE_BASE/Maps/Kavado/GLD/GC_Kavado_RINV_V1",
+      "thumbnailUrl": "/maps/gc/c2baed891a18d438.thumb.webp",
       "worldBoundsCm": [
         -107236.0,
         -209828.0,
@@ -25092,6 +25182,10 @@
       ]
     },
     "GC_Kavado_RINV_V1-W": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_Kavado_RINV_V1-W"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "unavailable",
@@ -25118,14 +25212,19 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/c2baed891a18d438.webp",
       "layerId": "GC_Kavado_RINV_V1-W",
       "mapId": "c2baed891a18d438",
       "mapName": "Kavado",
       "points": [],
       "sourceAsset": null,
-      "thumbnailUrl": null,
-      "worldBoundsCm": null
+      "thumbnailUrl": "/maps/gc/c2baed891a18d438.thumb.webp",
+      "worldBoundsCm": [
+        -107236.0,
+        -107236.0,
+        205209.0,
+        205209.0
+      ]
     },
     "GC_Kavado_RINV_V2": {
       "coverage": {
@@ -25149,9 +25248,9 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/c2baed891a18d438.webp",
       "layerId": "GC_Kavado_RINV_V2",
-      "mapId": "e96123086d14c45b",
+      "mapId": "c2baed891a18d438",
       "mapName": "Kavado",
       "points": [
         {
@@ -25983,8 +26082,8 @@
           "sourceAsset": "/ANE_BASE/maps/Kavado/GLD/GC_Kavado_RAAS_V1"
         }
       ],
-      "sourceAsset": "/ANE_BASE/maps/Kavado/GLD/GC_Kavado_RINV_V2",
-      "thumbnailUrl": null,
+      "sourceAsset": "/ANE_BASE/Maps/Kavado/GLD/GC_Kavado_RINV_V2",
+      "thumbnailUrl": "/maps/gc/c2baed891a18d438.thumb.webp",
       "worldBoundsCm": [
         -107236.0,
         -209828.0,
@@ -26014,9 +26113,9 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/c2baed891a18d438.webp",
       "layerId": "GC_Kavado_RINV_V2-R",
-      "mapId": "e96123086d14c45b",
+      "mapId": "c2baed891a18d438",
       "mapName": "Kavado",
       "points": [
         {
@@ -26848,8 +26947,8 @@
           "sourceAsset": "/ANE_BASE/maps/Kavado/GLD/GC_Kavado_RAAS_V1"
         }
       ],
-      "sourceAsset": "/ANE_BASE/maps/Kavado/GLD/GC_Kavado_RINV_V2-R",
-      "thumbnailUrl": null,
+      "sourceAsset": "/ANE_BASE/Maps/Kavado/GLD/GC_Kavado_RINV_V2-R",
+      "thumbnailUrl": "/maps/gc/c2baed891a18d438.thumb.webp",
       "worldBoundsCm": [
         -107236.0,
         -209828.0,
@@ -26879,9 +26978,9 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/c2baed891a18d438.webp",
       "layerId": "GC_Kavado_SKM_V1",
-      "mapId": "e96123086d14c45b",
+      "mapId": "c2baed891a18d438",
       "mapName": "Kavado",
       "points": [
         {
@@ -26993,8 +27092,8 @@
           "sourceAsset": "/ANE_BASE/maps/Kavado/GLD/GC_Kavado_SKM_V1"
         }
       ],
-      "sourceAsset": "/ANE_BASE/maps/Kavado/GLD/GC_Kavado_SKM_V1",
-      "thumbnailUrl": null,
+      "sourceAsset": "/ANE_BASE/Maps/Kavado/GLD/GC_Kavado_SKM_V1",
+      "thumbnailUrl": "/maps/gc/c2baed891a18d438.thumb.webp",
       "worldBoundsCm": [
         -107236.0,
         -209828.0,
@@ -27450,6 +27549,10 @@
       "worldBoundsCm": null
     },
     "GC_MorakCanyon_AAS_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_MorakCanyon_AAS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -27475,9 +27578,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/18783f586cd20ab1.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -408205.0,
+        -408205.0,
+        391772.0,
+        391772.0
+      ]
     },
     "GC_MorakCanyon_INS_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_MorakCanyon_INS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -27503,9 +27615,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/18783f586cd20ab1.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -408205.0,
+        -408205.0,
+        391772.0,
+        391772.0
+      ]
     },
     "GC_MorakCanyon_RINV_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_MorakCanyon_RINV_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -27535,9 +27656,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/18783f586cd20ab1.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -408205.0,
+        -408205.0,
+        391772.0,
+        391772.0
+      ]
     },
     "GC_MorakCanyon_RINV_V2": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_MorakCanyon_RINV_V2"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -27567,9 +27697,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/18783f586cd20ab1.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -408205.0,
+        -408205.0,
+        391772.0,
+        391772.0
+      ]
     },
     "GC_MorakCanyon_RINV_V2-R": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_MorakCanyon_RINV_V2-R"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -27599,9 +27738,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/18783f586cd20ab1.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -408205.0,
+        -408205.0,
+        391772.0,
+        391772.0
+      ]
     },
     "GC_MorakCanyon_SKM_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_MorakCanyon_SKM_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -27627,9 +27775,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/18783f586cd20ab1.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -408205.0,
+        -408205.0,
+        391772.0,
+        391772.0
+      ]
     },
     "GC_MorakValley_AAS_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_MorakValley_AAS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -27655,9 +27812,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/e702ab89945077e8.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -230186.0,
+        -230186.0,
+        249814.0,
+        249814.0
+      ]
     },
     "GC_MorakValley_INS_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_MorakValley_INS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -27683,9 +27849,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/e702ab89945077e8.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -230186.0,
+        -230186.0,
+        249814.0,
+        249814.0
+      ]
     },
     "GC_MorakValley_RINV_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_MorakValley_RINV_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -27715,7 +27890,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/e702ab89945077e8.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -230185.84375,
+        -230185.84375,
+        230185.84375,
+        230185.84375
+      ]
     },
     "GC_Mygeeto_AAS_V1": {
       "coverage": {
@@ -28426,6 +28606,10 @@
       ]
     },
     "GC_Mygeeto_SKM_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_Mygeeto_SKM_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -28451,7 +28635,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/fc65e5481117f51d.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -200000.0,
+        -200000.0,
+        200000.0,
+        200000.0
+      ]
     },
     "GC_Mygeeto_Seed_V1": {
       "coverage": {
@@ -32341,6 +32530,10 @@
       ]
     },
     "GC_Rhenvar_AAS_V1": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Rhenvar_RAAS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -32366,9 +32559,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/3dbbcfa6ee16bc19.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -407985.0,
+        -407985.0,
+        405360.0,
+        410625.0
+      ]
     },
     "GC_Rhenvar_AAS_V2": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Rhenvar_RAAS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -32394,7 +32596,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/3dbbcfa6ee16bc19.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -407985.0,
+        -407985.0,
+        405360.0,
+        410625.0
+      ]
     },
     "GC_Rhenvar_RAAS_V1": {
       "coverage": {
@@ -54663,6 +54870,10 @@
       ]
     },
     "GC_RylothCanyons_SKM_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_RylothCanyons_SKM_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -54688,9 +54899,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/9d2bdfa39588ac8b.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -22000.0,
+        -22000.0,
+        22000.0,
+        22000.0
+      ]
     },
     "GC_RylothCanyons_SKM_V2": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_RylothCanyons_SKM_V2"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -54716,9 +54936,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/9d2bdfa39588ac8b.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -22000.0,
+        -22000.0,
+        22000.0,
+        22000.0
+      ]
     },
     "GC_RylothCanyons_SKM_V3": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_RylothCanyons_SKM_V3"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -54744,7 +54973,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/9d2bdfa39588ac8b.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -22000.0,
+        -22000.0,
+        22000.0,
+        22000.0
+      ]
     },
     "GC_RylothCanyons_SKM_V3-L": {
       "coverage": {
@@ -54775,6 +55009,10 @@
       "worldBoundsCm": null
     },
     "GC_RylothCanyons_Seed_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_RylothCanyons_Seed_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -54800,9 +55038,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/9d2bdfa39588ac8b.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -22000.0,
+        -22000.0,
+        22000.0,
+        22000.0
+      ]
     },
     "GC_RylothCanyons_Seed_V2": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_RylothCanyons_Seed_V2"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -54828,9 +55075,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/9d2bdfa39588ac8b.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -22000.0,
+        -22000.0,
+        22000.0,
+        22000.0
+      ]
     },
     "GC_RylothCanyons_Seed_V3": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_RylothCanyons_Seed_V3"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -54856,9 +55112,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/9d2bdfa39588ac8b.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -22000.0,
+        -22000.0,
+        22000.0,
+        22000.0
+      ]
     },
     "GC_Ryloth_AAS_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_Ryloth_AAS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -54884,7 +55149,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/862cf30ed92b7d84.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -62000.0,
+        -62000.0,
+        62000.0,
+        62000.0
+      ]
     },
     "GC_Ryloth_AAS_V2": {
       "coverage": {
@@ -54915,6 +55185,10 @@
       "worldBoundsCm": null
     },
     "GC_Ryloth_AAS_V3": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_Ryloth_AAS_V3"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -54940,9 +55214,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/862cf30ed92b7d84.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -62000.0,
+        -62000.0,
+        62000.0,
+        62000.0
+      ]
     },
     "GC_Ryloth_INS_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_Ryloth_INS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -54968,9 +55251,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/862cf30ed92b7d84.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -62000.0,
+        -62000.0,
+        62000.0,
+        62000.0
+      ]
     },
     "GC_Ryloth_INV_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_Ryloth_INV_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -54996,9 +55288,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/862cf30ed92b7d84.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -62000.0,
+        -62000.0,
+        62000.0,
+        62000.0
+      ]
     },
     "GC_Ryloth_INV_V2": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_Ryloth_INV_V2"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -55024,9 +55325,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/862cf30ed92b7d84.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -62000.0,
+        -62000.0,
+        62000.0,
+        62000.0
+      ]
     },
     "GC_Ryloth_INV_V3": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_Ryloth_INV_V3"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -55052,9 +55362,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/862cf30ed92b7d84.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -62000.0,
+        -62000.0,
+        62000.0,
+        62000.0
+      ]
     },
     "GC_SesidEquator_Contention_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_SesidEquator_Contention_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -55080,9 +55399,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/c67b849a189f9b56.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -240000.0,
+        -240000.0,
+        240000.0,
+        240000.0
+      ]
     },
     "GC_SesidEquator_RAAS_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_SesidEquator_RAAS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -55112,9 +55440,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/c67b849a189f9b56.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -240000.0,
+        -240000.0,
+        240000.0,
+        240000.0
+      ]
     },
     "GC_SesidEquator_RAAS_V2": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_SesidEquator_RAAS_V2"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -55144,9 +55481,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/c67b849a189f9b56.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -240000.0,
+        -240000.0,
+        240000.0,
+        240000.0
+      ]
     },
     "GC_SesidEquator_RINV_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_SesidEquator_RINV_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -55176,9 +55522,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/c67b849a189f9b56.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -240000.0,
+        -240000.0,
+        240000.0,
+        240000.0
+      ]
     },
     "GC_SesidEquator_RINV_V2": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_SesidEquator_RINV_V2"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -55208,9 +55563,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/c67b849a189f9b56.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -240000.0,
+        -240000.0,
+        240000.0,
+        240000.0
+      ]
     },
     "GC_SesidEquator_RINV_V3": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_SesidEquator_RINV_V3"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -55240,9 +55604,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/c67b849a189f9b56.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -240000.0,
+        -240000.0,
+        240000.0,
+        240000.0
+      ]
     },
     "GC_SesidEquator_RINV_V4": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_SesidEquator_RINV_V4"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -55272,9 +55645,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/c67b849a189f9b56.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -240000.0,
+        -240000.0,
+        240000.0,
+        240000.0
+      ]
     },
     "GC_SesidEquator_SKM_V2": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_SesidEquator_SKM_V2"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -55300,9 +55682,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/c67b849a189f9b56.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -20000.0,
+        -20000.0,
+        50000.0,
+        50000.0
+      ]
     },
     "GC_SesidEquator_TRAAS_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_SesidEquator_TRAAS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -55332,9 +55723,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/c67b849a189f9b56.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -240000.0,
+        -240000.0,
+        240000.0,
+        240000.0
+      ]
     },
     "GC_SesidEquator_TRINV_V1": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-gc-json",
+        "sourceLayerId": "GC_SesidEquator_RINV_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -55364,7 +55764,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/c67b849a189f9b56.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -240000.0,
+        -240000.0,
+        240000.0,
+        240000.0
+      ]
     },
     "GC_Sesid_AAS_V1": {
       "coverage": {
@@ -56305,6 +56710,10 @@
       ]
     },
     "GC_Sesid_INV_V2": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Sesid_INV_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -56330,9 +56739,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/edf366299beccd3a.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -178500.0,
+        -178500.0,
+        178500.0,
+        178500.0
+      ]
     },
     "GC_Sesid_Ins_V1": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Sesid_AAS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -56358,7 +56776,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/edf366299beccd3a.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -174981.0,
+        -174996.0,
+        174999.0,
+        174975.0
+      ]
     },
     "GC_Sesid_RAAS_V1": {
       "coverage": {
@@ -57765,6 +58188,10 @@
       ]
     },
     "GC_Sullust_AAS_V1": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Sullust_RINV_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "unavailable",
@@ -57787,16 +58214,25 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/6b7ceef53145c432.webp",
       "layerId": "GC_Sullust_AAS_V1",
       "mapId": "6b7ceef53145c432",
       "mapName": "Sullust",
       "points": [],
       "sourceAsset": null,
-      "thumbnailUrl": null,
-      "worldBoundsCm": null
+      "thumbnailUrl": "/maps/gc/6b7ceef53145c432.thumb.webp",
+      "worldBoundsCm": [
+        -107876.34375,
+        -107735.3125,
+        107957.6796875,
+        108102.3671875
+      ]
     },
     "GC_Sullust_INV_V1": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Sullust_RINV_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "unavailable",
@@ -57819,16 +58255,25 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/6b7ceef53145c432.webp",
       "layerId": "GC_Sullust_INV_V1",
       "mapId": "6b7ceef53145c432",
       "mapName": "Sullust",
       "points": [],
       "sourceAsset": null,
-      "thumbnailUrl": null,
-      "worldBoundsCm": null
+      "thumbnailUrl": "/maps/gc/6b7ceef53145c432.thumb.webp",
+      "worldBoundsCm": [
+        -107876.34375,
+        -107735.3125,
+        107957.6796875,
+        108102.3671875
+      ]
     },
     "GC_Sullust_INV_V2": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Sullust_RINV_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "unavailable",
@@ -57851,14 +58296,19 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/6b7ceef53145c432.webp",
       "layerId": "GC_Sullust_INV_V2",
       "mapId": "6b7ceef53145c432",
       "mapName": "Sullust",
       "points": [],
       "sourceAsset": null,
-      "thumbnailUrl": null,
-      "worldBoundsCm": null
+      "thumbnailUrl": "/maps/gc/6b7ceef53145c432.thumb.webp",
+      "worldBoundsCm": [
+        -107876.34375,
+        -107735.3125,
+        107957.6796875,
+        108102.3671875
+      ]
     },
     "GC_Sullust_RAAS_V1": {
       "coverage": {
@@ -57882,7 +58332,7 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/6b7ceef53145c432.webp",
       "layerId": "GC_Sullust_RAAS_V1",
       "mapId": "6b7ceef53145c432",
       "mapName": "Sullust",
@@ -58357,7 +58807,7 @@
         }
       ],
       "sourceAsset": "/ANE_BASE/Maps/Sullust/GLD/GC_Sullust_RAAS_V1",
-      "thumbnailUrl": null,
+      "thumbnailUrl": "/maps/gc/6b7ceef53145c432.thumb.webp",
       "worldBoundsCm": [
         -107876.34375,
         -107735.3125,
@@ -58387,7 +58837,7 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/6b7ceef53145c432.webp",
       "layerId": "GC_Sullust_RINV_V1",
       "mapId": "6b7ceef53145c432",
       "mapName": "Sullust",
@@ -58862,7 +59312,7 @@
         }
       ],
       "sourceAsset": "/ANE_BASE/Maps/Sullust/GLD/GC_Sullust_RINV_V1",
-      "thumbnailUrl": null,
+      "thumbnailUrl": "/maps/gc/6b7ceef53145c432.thumb.webp",
       "worldBoundsCm": [
         -107876.34375,
         -107735.3125,
@@ -58892,7 +59342,7 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/6b7ceef53145c432.webp",
       "layerId": "GC_Sullust_RINV_V2",
       "mapId": "6b7ceef53145c432",
       "mapName": "Sullust",
@@ -59367,7 +59817,7 @@
         }
       ],
       "sourceAsset": "/ANE_BASE/Maps/Sullust/GLD/GC_Sullust_RINV_V2",
-      "thumbnailUrl": null,
+      "thumbnailUrl": "/maps/gc/6b7ceef53145c432.thumb.webp",
       "worldBoundsCm": [
         -107876.34375,
         -107735.3125,
@@ -59376,6 +59826,10 @@
       ]
     },
     "GC_Sullust_RINV_V2-R": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_Sullust_RINV_V2-R"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "unavailable",
@@ -59402,14 +59856,19 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/6b7ceef53145c432.webp",
       "layerId": "GC_Sullust_RINV_V2-R",
       "mapId": "6b7ceef53145c432",
       "mapName": "Sullust",
       "points": [],
       "sourceAsset": null,
-      "thumbnailUrl": null,
-      "worldBoundsCm": null
+      "thumbnailUrl": "/maps/gc/6b7ceef53145c432.thumb.webp",
+      "worldBoundsCm": [
+        -107876.34375,
+        -107876.34375,
+        107957.6796875,
+        107957.6796875
+      ]
     },
     "GC_Sullust_SKM_V1": {
       "coverage": {
@@ -59433,7 +59892,7 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/6b7ceef53145c432.webp",
       "layerId": "GC_Sullust_SKM_V1",
       "mapId": "6b7ceef53145c432",
       "mapName": "Sullust",
@@ -59530,7 +59989,7 @@
         }
       ],
       "sourceAsset": "/ANE_BASE/Maps/Sullust/GLD/GC_Sullust_SKM_V1",
-      "thumbnailUrl": null,
+      "thumbnailUrl": "/maps/gc/6b7ceef53145c432.thumb.webp",
       "worldBoundsCm": [
         -107877.34375,
         -107736.3125,
@@ -59560,7 +60019,7 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/6b7ceef53145c432.webp",
       "layerId": "GC_Sullust_SKM_V2",
       "mapId": "6b7ceef53145c432",
       "mapName": "Sullust",
@@ -59675,7 +60134,7 @@
         }
       ],
       "sourceAsset": "/ANE_BASE/Maps/Sullust/GLD/GC_Sullust_SKM_V2",
-      "thumbnailUrl": null,
+      "thumbnailUrl": "/maps/gc/6b7ceef53145c432.thumb.webp",
       "worldBoundsCm": [
         -107877.34375,
         -107736.3125,
@@ -59684,6 +60143,10 @@
       ]
     },
     "GC_Tatooine_AAS_V1": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Tatooine_RAAS_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -59709,9 +60172,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/cb2a91dddee63018.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -196620.0,
+        -186535.0,
+        157980.0,
+        168065.0
+      ]
     },
     "GC_Tatooine_INS_V1": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Tatooine_SKM_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -59737,9 +60209,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/cb2a91dddee63018.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -200000.140625,
+        -199999.875,
+        199999.515625,
+        199999.515625
+      ]
     },
     "GC_Tatooine_INV_V1": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Tatooine_RINV_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -59765,9 +60246,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/cb2a91dddee63018.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -195000.0,
+        -185000.0,
+        155000.0,
+        165000.0
+      ]
     },
     "GC_Tatooine_INV_V1-R": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-gc-json",
+        "sourceLayerId": "GC_Tatooine_RINV_V1-R"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -59793,9 +60283,18 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/cb2a91dddee63018.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -195000.0,
+        -195000.0,
+        155000.0,
+        155000.0
+      ]
     },
     "GC_Tatooine_INV_V2": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Tatooine_RINV_V2"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -59821,7 +60320,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/cb2a91dddee63018.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -195000.0,
+        -185000.0,
+        155000.0,
+        165000.0
+      ]
     },
     "GC_Tatooine_RAAS_V1": {
       "coverage": {
@@ -59841,10 +60345,10 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": "/maps/gc/7ccb8e921a140e4f.webp",
+      "imageUrl": "/maps/gc/cb2a91dddee63018.webp",
       "layerId": "GC_Tatooine_RAAS_V1",
-      "mapId": "7ccb8e921a140e4f",
-      "mapName": "tatooine",
+      "mapId": "cb2a91dddee63018",
+      "mapName": "Tatooine",
       "points": [
         {
           "activationPhase": null,
@@ -60459,8 +60963,8 @@
           "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_RAAS_V1"
         }
       ],
-      "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_RAAS_V1",
-      "thumbnailUrl": "/maps/gc/7ccb8e921a140e4f.thumb.webp",
+      "sourceAsset": "/ANE_BASE/Maps/Tatooine/GLD/GC_Tatooine_RAAS_V1",
+      "thumbnailUrl": "/maps/gc/cb2a91dddee63018.thumb.webp",
       "worldBoundsCm": [
         -196620.0,
         -186535.0,
@@ -60486,10 +60990,10 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": "/maps/gc/7ccb8e921a140e4f.webp",
+      "imageUrl": "/maps/gc/cb2a91dddee63018.webp",
       "layerId": "GC_Tatooine_RAAS_V1-R",
-      "mapId": "7ccb8e921a140e4f",
-      "mapName": "tatooine",
+      "mapId": "cb2a91dddee63018",
+      "mapName": "Tatooine",
       "points": [
         {
           "activationPhase": null,
@@ -61104,8 +61608,8 @@
           "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_RAAS_V1-R"
         }
       ],
-      "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_RAAS_V1-R",
-      "thumbnailUrl": "/maps/gc/7ccb8e921a140e4f.thumb.webp",
+      "sourceAsset": "/ANE_BASE/Maps/Tatooine/GLD/GC_Tatooine_RAAS_V1-R",
+      "thumbnailUrl": "/maps/gc/cb2a91dddee63018.thumb.webp",
       "worldBoundsCm": [
         -196620.0,
         -186535.0,
@@ -61131,10 +61635,10 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": "/maps/gc/7ccb8e921a140e4f.webp",
+      "imageUrl": "/maps/gc/cb2a91dddee63018.webp",
       "layerId": "GC_Tatooine_RINV_V1",
-      "mapId": "7ccb8e921a140e4f",
-      "mapName": "tatooine",
+      "mapId": "cb2a91dddee63018",
+      "mapName": "Tatooine",
       "points": [
         {
           "activationPhase": null,
@@ -61461,8 +61965,8 @@
           "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_RINV_V1"
         }
       ],
-      "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_RINV_V1",
-      "thumbnailUrl": "/maps/gc/7ccb8e921a140e4f.thumb.webp",
+      "sourceAsset": "/ANE_BASE/Maps/Tatooine/GLD/GC_Tatooine_RINV_V1",
+      "thumbnailUrl": "/maps/gc/cb2a91dddee63018.thumb.webp",
       "worldBoundsCm": [
         -195000.0,
         -185000.0,
@@ -61488,10 +61992,10 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": "/maps/gc/7ccb8e921a140e4f.webp",
+      "imageUrl": "/maps/gc/cb2a91dddee63018.webp",
       "layerId": "GC_Tatooine_RINV_V2",
-      "mapId": "7ccb8e921a140e4f",
-      "mapName": "tatooine",
+      "mapId": "cb2a91dddee63018",
+      "mapName": "Tatooine",
       "points": [
         {
           "activationPhase": null,
@@ -61818,8 +62322,8 @@
           "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_RINV_V2"
         }
       ],
-      "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_RINV_V2",
-      "thumbnailUrl": "/maps/gc/7ccb8e921a140e4f.thumb.webp",
+      "sourceAsset": "/ANE_BASE/Maps/Tatooine/GLD/GC_Tatooine_RINV_V2",
+      "thumbnailUrl": "/maps/gc/cb2a91dddee63018.thumb.webp",
       "worldBoundsCm": [
         -195000.0,
         -185000.0,
@@ -61828,6 +62332,10 @@
       ]
     },
     "GC_Tatooine_RINV_V3": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Tatooine_RINV_V2"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -61857,7 +62365,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/cb2a91dddee63018.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -195000.0,
+        -185000.0,
+        155000.0,
+        165000.0
+      ]
     },
     "GC_Tatooine_SKM_V1": {
       "coverage": {
@@ -61877,10 +62390,10 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": "/maps/gc/7ccb8e921a140e4f.webp",
+      "imageUrl": "/maps/gc/cb2a91dddee63018.webp",
       "layerId": "GC_Tatooine_SKM_V1",
-      "mapId": "7ccb8e921a140e4f",
-      "mapName": "tatooine",
+      "mapId": "cb2a91dddee63018",
+      "mapName": "Tatooine",
       "points": [
         {
           "activationPhase": null,
@@ -61973,8 +62486,8 @@
           "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_SKM_V1"
         }
       ],
-      "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_SKM_V1",
-      "thumbnailUrl": "/maps/gc/7ccb8e921a140e4f.thumb.webp",
+      "sourceAsset": "/ANE_BASE/Maps/Tatooine/GLD/GC_Tatooine_SKM_V1",
+      "thumbnailUrl": "/maps/gc/cb2a91dddee63018.thumb.webp",
       "worldBoundsCm": [
         -200000.140625,
         -199999.875,
@@ -62000,10 +62513,10 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": "/maps/gc/7ccb8e921a140e4f.webp",
+      "imageUrl": "/maps/gc/cb2a91dddee63018.webp",
       "layerId": "GC_Tatooine_SKM_V2",
-      "mapId": "7ccb8e921a140e4f",
-      "mapName": "tatooine",
+      "mapId": "cb2a91dddee63018",
+      "mapName": "Tatooine",
       "points": [
         {
           "activationPhase": null,
@@ -62114,8 +62627,8 @@
           "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_SKM_V2"
         }
       ],
-      "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_SKM_V2",
-      "thumbnailUrl": "/maps/gc/7ccb8e921a140e4f.thumb.webp",
+      "sourceAsset": "/ANE_BASE/Maps/Tatooine/GLD/GC_Tatooine_SKM_V2",
+      "thumbnailUrl": "/maps/gc/cb2a91dddee63018.thumb.webp",
       "worldBoundsCm": [
         -200000.140625,
         -199999.875,
@@ -62141,10 +62654,10 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": "/maps/gc/7ccb8e921a140e4f.webp",
+      "imageUrl": "/maps/gc/cb2a91dddee63018.webp",
       "layerId": "GC_Tatooine_Seed_V1",
-      "mapId": "7ccb8e921a140e4f",
-      "mapName": "tatooine",
+      "mapId": "cb2a91dddee63018",
+      "mapName": "Tatooine",
       "points": [
         {
           "activationPhase": null,
@@ -62219,8 +62732,8 @@
           "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_Seed_V1"
         }
       ],
-      "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_Seed_V1",
-      "thumbnailUrl": "/maps/gc/7ccb8e921a140e4f.thumb.webp",
+      "sourceAsset": "/ANE_BASE/Maps/Tatooine/GLD/GC_Tatooine_Seed_V1",
+      "thumbnailUrl": "/maps/gc/cb2a91dddee63018.thumb.webp",
       "worldBoundsCm": [
         -200000.140625,
         -199999.875,
@@ -68511,6 +69024,10 @@
       ]
     },
     "GC_Umbara_SEED_V1": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_Umbara_SEED_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -68536,7 +69053,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/ae369b10eb78717a.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -80000.0,
+        -80000.0,
+        80000.0,
+        80000.0
+      ]
     },
     "GC_Umbara_SKM_V1": {
       "coverage": {
@@ -68821,6 +69343,10 @@
       ]
     },
     "GC_VenatorAssault_SKMSEED": {
+      "boundsEvidence": {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_VenatorAssault_SKMSEED"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -68846,7 +69372,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/c701bb3e3e82211f.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -85540.0,
+        -85540.0,
+        64460.0,
+        64460.0
+      ]
     },
     "GC_VenatorAssault_SKM_V1": {
       "coverage": {
@@ -69434,6 +69965,10 @@
       ]
     },
     "GC_VenatorAssault_SKM_V2": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-gc-json",
+        "sourceLayerId": "GC_VenatorAssault_SKMSEED"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "partial",
@@ -69459,7 +69994,12 @@
       "points": [],
       "sourceAsset": null,
       "thumbnailUrl": "/maps/gc/c701bb3e3e82211f.thumb.webp",
-      "worldBoundsCm": null
+      "worldBoundsCm": [
+        -85540.0,
+        -85540.0,
+        64460.0,
+        64460.0
+      ]
     },
     "GC_VenatorAssault_Seed_V1": {
       "coverage": {
@@ -70062,6 +70602,10 @@
       ]
     },
     "GC_Yavin4_AAS_V1": {
+      "boundsEvidence": {
+        "method": "reviewed-alias-catalog",
+        "sourceLayerId": "GC_Yavin4_SKM_V1"
+      },
       "coverage": {
         "discoveredCategories": [],
         "status": "unavailable",
@@ -70084,14 +70628,19 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/2c954eba0bfc99c7.webp",
       "layerId": "GC_Yavin4_AAS_V1",
       "mapId": "2c954eba0bfc99c7",
       "mapName": "Yavin",
       "points": [],
       "sourceAsset": "/ANE_BASE/Maps/Yavin/GLD/GC_Yavin4_AAS_V1",
-      "thumbnailUrl": null,
-      "worldBoundsCm": null
+      "thumbnailUrl": "/maps/gc/2c954eba0bfc99c7.thumb.webp",
+      "worldBoundsCm": [
+        -100796.0,
+        -100795.0,
+        100764.0,
+        100764.0
+      ]
     },
     "GC_Yavin4_INS_V1": {
       "coverage": {
@@ -70114,7 +70663,7 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/2c954eba0bfc99c7.webp",
       "layerId": "GC_Yavin4_INS_V1",
       "mapId": "2c954eba0bfc99c7",
       "mapName": "Yavin",
@@ -70157,7 +70706,7 @@
         }
       ],
       "sourceAsset": "/ANE_BASE/Maps/Yavin/GLD/GC_Yavin4_INS_V1",
-      "thumbnailUrl": null,
+      "thumbnailUrl": "/maps/gc/2c954eba0bfc99c7.thumb.webp",
       "worldBoundsCm": [
         -100796.0,
         -100795.0,
@@ -70187,7 +70736,7 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/2c954eba0bfc99c7.webp",
       "layerId": "GC_Yavin4_INV_V1",
       "mapId": "2c954eba0bfc99c7",
       "mapName": "Yavin",
@@ -70410,7 +70959,7 @@
         }
       ],
       "sourceAsset": "/ANE_BASE/Maps/Yavin/GLD/GC_Yavin4_INV_V1",
-      "thumbnailUrl": null,
+      "thumbnailUrl": "/maps/gc/2c954eba0bfc99c7.thumb.webp",
       "worldBoundsCm": [
         -126002.0,
         -126002.0,
@@ -70440,7 +70989,7 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/2c954eba0bfc99c7.webp",
       "layerId": "GC_Yavin4_INV_V2",
       "mapId": "2c954eba0bfc99c7",
       "mapName": "Yavin",
@@ -70645,7 +71194,7 @@
         }
       ],
       "sourceAsset": "/ANE_BASE/Maps/Yavin/GLD/GC_Yavin4_INV_V2",
-      "thumbnailUrl": null,
+      "thumbnailUrl": "/maps/gc/2c954eba0bfc99c7.thumb.webp",
       "worldBoundsCm": [
         -126002.0,
         -126002.0,
@@ -70675,7 +71224,7 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/2c954eba0bfc99c7.webp",
       "layerId": "GC_Yavin4_INV_V3",
       "mapId": "2c954eba0bfc99c7",
       "mapName": "Yavin",
@@ -70880,7 +71429,7 @@
         }
       ],
       "sourceAsset": "/ANE_BASE/Maps/Yavin/GLD/GC_Yavin4_INV_V3",
-      "thumbnailUrl": null,
+      "thumbnailUrl": "/maps/gc/2c954eba0bfc99c7.thumb.webp",
       "worldBoundsCm": [
         -126002.0,
         -126002.0,
@@ -70910,7 +71459,7 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/2c954eba0bfc99c7.webp",
       "layerId": "GC_Yavin4_SKM_V1",
       "mapId": "2c954eba0bfc99c7",
       "mapName": "Yavin",
@@ -71007,7 +71556,7 @@
         }
       ],
       "sourceAsset": "/ANE_BASE/Maps/Yavin/GLD/GC_Yavin4_SKM_V1",
-      "thumbnailUrl": null,
+      "thumbnailUrl": "/maps/gc/2c954eba0bfc99c7.thumb.webp",
       "worldBoundsCm": [
         -100796.0,
         -100795.0,
@@ -71037,7 +71586,7 @@
       "imageTransform": {
         "flipY": false
       },
-      "imageUrl": null,
+      "imageUrl": "/maps/gc/2c954eba0bfc99c7.webp",
       "layerId": "GC_Yavin4_SKM_V2",
       "mapId": "2c954eba0bfc99c7",
       "mapName": "Yavin",
@@ -71134,7 +71683,7 @@
         }
       ],
       "sourceAsset": "/ANE_BASE/Maps/Yavin/GLD/GC_Yavin4_SKM_V2",
-      "thumbnailUrl": null,
+      "thumbnailUrl": "/maps/gc/2c954eba0bfc99c7.thumb.webp",
       "worldBoundsCm": [
         -100796.0,
         -100795.0,
@@ -71189,11 +71738,6 @@
       "name": "Kashyyyk",
       "sourceAsset": "/ANE_BASE/Maps/Kashyyyk/GL_Kashyyyk"
     },
-    "7ccb8e921a140e4f": {
-      "id": "7ccb8e921a140e4f",
-      "name": "tatooine",
-      "sourceAsset": "/ANE_BASE/Maps/tatooine/GLD/GC_Tatooine_RAAS_V1"
-    },
     "862cf30ed92b7d84": {
       "id": "862cf30ed92b7d84",
       "name": "Ryloth",
@@ -71217,7 +71761,7 @@
     "c2baed891a18d438": {
       "id": "c2baed891a18d438",
       "name": "Kavado",
-      "sourceAsset": null
+      "sourceAsset": "/ANE_BASE/Maps/Kavado/GL_Kavado"
     },
     "c67b849a189f9b56": {
       "id": "c67b849a189f9b56",
@@ -71232,7 +71776,7 @@
     "cb2a91dddee63018": {
       "id": "cb2a91dddee63018",
       "name": "Tatooine",
-      "sourceAsset": null
+      "sourceAsset": "/ANE_BASE/Maps/Tatooine/GL_Tatooine"
     },
     "dafe3d0e049099a6": {
       "id": "dafe3d0e049099a6",
@@ -71248,11 +71792,6 @@
       "id": "e702ab89945077e8",
       "name": "MorakLegacy",
       "sourceAsset": null
-    },
-    "e96123086d14c45b": {
-      "id": "e96123086d14c45b",
-      "name": "Kavado",
-      "sourceAsset": "/ANE_BASE/maps/Kavado/GL_Kavado"
     },
     "e9dd171bfb27a8e6": {
       "id": "e9dd171bfb27a8e6",
@@ -71281,5 +71820,18 @@
     }
   },
   "schemaVersion": 4,
+  "sourceEvidence": {
+    "bounds": "GC-config/tooling/data/gc.json Maps[].minimapCornersPosition",
+    "canonicalCatalogSha256": "bd2887a7ed6d9df0a008c2641affcdc249906f4417efa8105afcfd5ff54fb1dc",
+    "catalog": "GC-config/tooling/data/map_catalog.json",
+    "evidenceCounts": {
+      "gc-json-exact": 37,
+      "reviewed-alias-catalog": 20,
+      "reviewed-alias-gc-json": 4
+    },
+    "exactLayerRecords": 37,
+    "gcDataSha256": "87f4693cbec71e755fb1e0a45360f5be8ae3b74c6558783f1f0855b39b8606c7",
+    "reviewedAliasRecords": 24
+  },
   "sourceFingerprint": "e453b8654d750e7272cf2d9a8a91bb69f42d725985d8f325dfe1a07b582671d6"
 }

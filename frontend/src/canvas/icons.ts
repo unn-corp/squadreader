@@ -403,6 +403,17 @@ export function deployableIconUrl(d: Deployable, snap?: Snapshot | null): string
   return vanillaDeployableIconUrl(d);
 }
 
+// Weapon art is optional in the current canvas, but expose the same provider
+// lookup for kill-feed/detail panels that have a held or causer class. There
+// is deliberately no vanilla guess here: an unknown weapon should remain
+// text-only until its provider supplies an exact binding.
+export function weaponIconUrl(
+  className: string | null | undefined,
+  snap?: Snapshot | null,
+): string | null {
+  return assetUrl("weaponIcons", className, snap);
+}
+
 function vanillaDeployableIconUrl(d: Deployable): string | null {
   if (d.isFob) return "./icons/markers/fob.png";
   const cs = (d.classShort ?? "").toUpperCase();

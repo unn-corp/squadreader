@@ -22,6 +22,7 @@ const catalog: AssetProviderCatalog = {
         rolePrefixes: ["ALPHA_"],
       },
       roleIcons: { ALPHA_SL: "./icons/alpha/sl.webp" },
+      weaponIcons: { ALPHA_Pistol_C: "./icons/alpha/pistol.webp" },
     },
     beta: {
       id: "beta",
@@ -42,6 +43,8 @@ const snapshot = {
 ok(selectAssetProvider(snapshot, catalog).id === "alpha", "runtime class selects mod");
 ok(assetUrl("roleIcons", "ALPHA_SL", snapshot, catalog) === "./icons/alpha/sl.webp",
   "selected provider exact binding wins");
+ok(assetUrl("weaponIcons", "ALPHA_Pistol_C", snapshot, catalog) === "./icons/alpha/pistol.webp",
+  "selected provider weapon binding wins");
 ok(assetUrl("roleIcons", "OVERLAP", snapshot, catalog) === null,
   "selected provider does not borrow another mod");
 ok(assetUrl("roleIcons", "OVERLAP", null, catalog) === "./icons/beta/overlap.webp",

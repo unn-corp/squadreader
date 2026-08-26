@@ -33,6 +33,7 @@ vehicle, kit, weapon, deployable, marker, faction, and map assets.
       "roleIcons": { "EX_Rifleman": "./icons/example-mod/rifleman.webp" },
       "vehicleIcons": { "BP_EX_Tank_C": "./icons/example-mod/tank.webp" },
       "deployableIcons": {},
+      "weaponIcons": {},
       "markerIcons": {},
       "factionIcons": {}
     }
@@ -70,8 +71,8 @@ tokens such as `SL`, `Medic`, or `Pilot`. The CUE4Parse texture helper from GC
 Maps decodes the referenced client textures; the content-addressed output name
 is `sha256(assetPath)[:16].webp`.
 
-The current generated provider has 883 exact GC role bindings and 14 exact
-vehicle bindings. It includes the captured classes `BP_LAAT_DEV_C`,
+The current generated provider has 883 exact GC role bindings, 15 vehicle
+bindings, 5 deployable bindings, and 1 weapon binding. It includes the captured classes `BP_LAAT_DEV_C`,
 `BP_LAAT_Carrier2_C`, `BP_HMP_dev_C`, and `BP_HMP_Carrier_C`, mapped to the
 authored LAAT, LAAT-C, HMP, and HMP carrier map icons respectively. A missing
 binding is recorded as unresolved instead of being guessed.
@@ -82,6 +83,7 @@ Rebuild the provider against a local client package set with:
 OOZ=/tmp/ooz/oozdec .venv/bin/python scripts/extract_asset_provider.py \
   --tooling-dir /path/to/GC-config/tooling \
   --mod-paks /path/to/mod/Content/Paks/Windows \
+  --game-paks /path/to/Squad/SquadGame/Content/Paks \
   --roles-json data/static/gc/roles.json \
   --out data/static/asset_providers.json
 ```
@@ -89,6 +91,12 @@ OOZ=/tmp/ooz/oozdec .venv/bin/python scripts/extract_asset_provider.py \
 Then decode the provider's `sourceAssets` with the shared
 `cue_texture_exporter`, add the derived WebPs to the artifact, package, and
 run `python scripts/verify_gc_asset_bundle.py`.
+
+The provider also binds the observed
+`BP_Emplaced_ZU23-2_Laser_Antiaircannon_Base_C`, the five observed deployable
+classes, and `BP_DC-18_C`. Each binding stores its source path and confidence
+in `bindingEvidence`; a reviewed UI-data or runtime alias is intentionally
+distinguishable from a direct Blueprint property reference.
 
 ## Runtime wiring
 

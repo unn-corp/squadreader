@@ -3,7 +3,49 @@
   "providers": {
     "gc": {
       "assetRoot": "./icons/gc",
-      "deployableIcons": {},
+      "bindingEvidence": {
+        "deployableIcons": {
+          "AA_Turret_GAR_C": {
+            "confidence": "exact",
+            "source": "AA_Turret_GAR_C.ChildActorClass -> ZU23.MapIcon"
+          },
+          "BP_ANE_Ammocrate_Republic_C": {
+            "confidence": "reviewed-ui-data",
+            "source": "BP_ANE_Ammocrate_Republic_C.MapItem.DataClass"
+          },
+          "BP_ShieldBubble_Hangar_C": {
+            "confidence": "reviewed-semantic",
+            "source": "BP_ShieldBubble_Hangar_C -> ShieldIcon"
+          },
+          "BP_helicopter_repair_pad_C": {
+            "confidence": "reviewed-runtime-alias",
+            "source": "BP_helicopter_repair_zoneInvisible.SQMapIcon"
+          },
+          "BP_vehicle_repair_republic_C": {
+            "confidence": "exact",
+            "source": "BP_vehicle_repair_republic_C.SQMapIcon"
+          }
+        },
+        "vehicleIcons": {
+          "BP_Emplaced_ZU23-2_Laser_Antiaircannon_Base_C": {
+            "confidence": "exact",
+            "source": "BP_Emplaced_ZU23-2_Laser_Antiaircannon_Base_C.MapIcon"
+          }
+        },
+        "weaponIcons": {
+          "BP_DC-18_C": {
+            "confidence": "exact",
+            "source": "BP_DC-18_C.HUDTexture"
+          }
+        }
+      },
+      "deployableIcons": {
+        "AA_Turret_GAR_C": "./icons/gc/2932706a7c2fad3f.webp",
+        "BP_ANE_Ammocrate_Republic_C": "./icons/gc/3920258987646e0b.webp",
+        "BP_ShieldBubble_Hangar_C": "./icons/gc/ea4ed46198ddaae8.webp",
+        "BP_helicopter_repair_pad_C": "./icons/gc/c86063f31f194a10.webp",
+        "BP_vehicle_repair_republic_C": "./icons/gc/36f7a410c4a6e33d.webp"
+      },
       "detect": {
         "factionPrefixes": [
           "332nd",
@@ -45,7 +87,8 @@
         "vehicleClassPrefixes": [
           "BP_LAAT_",
           "BP_HMP_",
-          "BP_GC_LAATLE_"
+          "BP_GC_LAATLE_",
+          "BP_Emplaced_"
         ]
       },
       "factionIcons": {},
@@ -938,6 +981,13 @@
         "TUSKEN_V1_SL_Sarim_CMD": "./icons/gc/a3c6aec180ece52c.webp"
       },
       "sourceAssets": {
+        "deployableIcons": {
+          "AA_Turret_GAR_C": "/Game/UI/HUD/DeployableIcons/deployable_AntiAirGun",
+          "BP_ANE_Ammocrate_Republic_C": "/ANE_BASE/Art/Icons/Misc/ammocrate",
+          "BP_ShieldBubble_Hangar_C": "/ANE_BASE/Gameplay/GameModes/Contention/ShieldIcon",
+          "BP_helicopter_repair_pad_C": "/Game/UI/HUD/DeployableIcons/deployable_helipad",
+          "BP_vehicle_repair_republic_C": "/Game/UI/HUD/DeployableIcons/deployable_repairstation"
+        },
         "roleIcons": {
           "332nd_Mando": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_arctrooper",
           "CIS_Lego_Droid": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_riflemanCIS",
@@ -1824,6 +1874,7 @@
           "TUSKEN_V1_SL_Sarim_CMD": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_cmd"
         },
         "vehicleIcons": {
+          "BP_Emplaced_ZU23-2_Laser_Antiaircannon_Base_C": "/Game/UI/HUD/DeployableIcons/deployable_AntiAirGun",
           "BP_GC_LAATLE_C": "/ANE_BASE/Art/Icons/LAATLE/LAATleTop",
           "BP_GC_LAATLE_GE_C": "/ANE_BASE/Art/Icons/LAATLE/LAATleTop",
           "BP_HMP_Carrier_C": "/ANE_BASE/Art/Icons/HMP/HMPC_MapIcon",
@@ -1838,6 +1889,9 @@
           "BP_LAAT_DEV_GE_C": "/ANE_BASE/Art/Icons/LAAT/LAAT_MapIcon",
           "BP_LAAT_DEV_Skirmish_Child_C": "/ANE_BASE/Art/Icons/LAAT/LAAT_MapIcon",
           "BP_LAAT_DEV_Skirmish_Child_GE_C": "/ANE_BASE/Art/Icons/LAAT/LAAT_MapIcon"
+        },
+        "weaponIcons": {
+          "BP_DC-18_C": "/ANE_BASE/UI/HUD/Inventory/Weapons/Rifles/DC-17_Pistol_Hud"
         }
       },
       "unresolvedAssets": [
@@ -1975,6 +2029,7 @@
         "role icon reference missing: TUSKEN_V2_Demolitionist"
       ],
       "vehicleIcons": {
+        "BP_Emplaced_ZU23-2_Laser_Antiaircannon_Base_C": "./icons/gc/2932706a7c2fad3f.webp",
         "BP_GC_LAATLE_C": "./icons/gc/8c6d1de9344c771d.webp",
         "BP_GC_LAATLE_GE_C": "./icons/gc/8c6d1de9344c771d.webp",
         "BP_HMP_Carrier_C": "./icons/gc/e39a5c0f26d8ad15.webp",
@@ -1990,7 +2045,10 @@
         "BP_LAAT_DEV_Skirmish_Child_C": "./icons/gc/7e5807e497e642ff.webp",
         "BP_LAAT_DEV_Skirmish_Child_GE_C": "./icons/gc/7e5807e497e642ff.webp"
       },
-      "version": "local-cooked-assets"
+      "version": "local-cooked-assets",
+      "weaponIcons": {
+        "BP_DC-18_C": "./icons/gc/1a95223542eb1604.webp"
+      }
     },
     "vanilla": {
       "id": "vanilla",

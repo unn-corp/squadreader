@@ -1,12 +1,14 @@
 {
   "bundle": "gc-static-assets",
   "counts": {
+    "assetProviderDeployableBindings": 5,
     "assetProviderRoleBindings": 883,
-    "assetProviderVehicleBindings": 14,
-    "decodedIcons": 199,
+    "assetProviderVehicleBindings": 15,
+    "assetProviderWeaponBindings": 1,
+    "decodedIcons": 203,
     "factions": 42,
     "layerSetups": 156,
-    "mapImages": 46,
+    "mapImages": 50,
     "mapLayers": 188,
     "roles": 1640,
     "unresolvedIcons": 3,
@@ -16,7 +18,7 @@
   "files": [
     {
       "path": "data/static/asset_providers.json",
-      "sha256": "be99b550da12aafa8404d8b9956c89806c943027d29429f76311204ea56f930f"
+      "sha256": "2a5406f2ca94b23d694f8cb82557dadbf556d7591c64d939f50624bb6a90d87b"
     },
     {
       "path": "icons/gc/005e2210e55e29d2.webp",
@@ -95,6 +97,10 @@
       "sha256": "ba21085b2cc1ef28f0eb618550050e2595646ba38197a587fcc35f74730ed500"
     },
     {
+      "path": "icons/gc/1a95223542eb1604.webp",
+      "sha256": "91f8a9a5354b2b1025f2ef239af2dead3f0ef1dcfe8231ad617414aedc476600"
+    },
+    {
       "path": "icons/gc/1b594720e47b48db.webp",
       "sha256": "e40e46b0ba972ac07bf15e75e8a361a6b88aca8f8e003dcc2cb9d3605a6a9ba9"
     },
@@ -155,6 +161,10 @@
       "sha256": "814e7126d636ada64c509933560922a223bf3e89aab93947faec077f8f4b3d38"
     },
     {
+      "path": "icons/gc/2932706a7c2fad3f.webp",
+      "sha256": "5f0ab1026f4877970117f0a958b264def4092fcd6f388133e9eed84970ef1d3c"
+    },
+    {
       "path": "icons/gc/29a147b53472fa0c.webp",
       "sha256": "95eae5d730de55d9f42e5f15869c0d7a4787ebd08e33df80e888ede0991c05c1"
     },
@@ -181,6 +191,10 @@
     {
       "path": "icons/gc/329e430ce68fb0e7.webp",
       "sha256": "565b4b10f35f6fbd2005ec4fe114ec7cc3cde189eda45fafc03efc4fc1d0e976"
+    },
+    {
+      "path": "icons/gc/36f7a410c4a6e33d.webp",
+      "sha256": "ee4fc1953d44f4e4d32d9ce0b1e08896ee8246ea49e2a61c6505a7d63f63ac97"
     },
     {
       "path": "icons/gc/370e180c9eb6f763.webp",
@@ -651,6 +665,10 @@
       "sha256": "d471ce73a59d8a15b2cab0f52cc70c82d5c8905e8a1033ade5b62cc9dfdf3a72"
     },
     {
+      "path": "icons/gc/c86063f31f194a10.webp",
+      "sha256": "80349223e140768d8aaafe00fe279b4b1ec7ea669e1a5d3e763cfe908bd154e8"
+    },
+    {
       "path": "icons/gc/c96f7172468849cf.webp",
       "sha256": "15daa758560c2f461b6b907e68966c8e16fc988c504bb5572a22547a85df36ce"
     },
@@ -839,6 +857,14 @@
       "sha256": "4340e0bbc5b9d8074068d94822fb4237045a91283576f6a57ea763d775c63b52"
     },
     {
+      "path": "sqmaps/gc/2c954eba0bfc99c7.thumb.webp",
+      "sha256": "6b39ef74b75a5fd23b7fd4b2384fcc42d17d9c77a2a7fc8271061260917d1c13"
+    },
+    {
+      "path": "sqmaps/gc/2c954eba0bfc99c7.webp",
+      "sha256": "f715498554d6a6cf519aa43a71014d9b214b546bf8c14b6ae8a08808bbda6b5b"
+    },
+    {
       "path": "sqmaps/gc/2d59232425bf26b2.thumb.webp",
       "sha256": "dff59598830363c9c38444ef9db5173671689a2644ca4f921cac5320b954306d"
     },
@@ -863,20 +889,20 @@
       "sha256": "53c6f556943319e39724e2d40d94f31693073cf69662a0df62dd5ef28498b7f6"
     },
     {
+      "path": "sqmaps/gc/6b7ceef53145c432.thumb.webp",
+      "sha256": "3c24e47ffa1a8191bc12b12958a3741d676eb82e9a2fb1a416eedd6227adb0fe"
+    },
+    {
+      "path": "sqmaps/gc/6b7ceef53145c432.webp",
+      "sha256": "7e822ebb6b33472c89126f451618f74c0ce15292e19e916d0af9b1fc0a73834e"
+    },
+    {
       "path": "sqmaps/gc/6face45ae3927182.thumb.webp",
       "sha256": "e84eaf7e8b449115d1bd8e067d78ba38f46cd9f2674afb16161230b5774df0aa"
     },
     {
       "path": "sqmaps/gc/6face45ae3927182.webp",
       "sha256": "728f8c394b6d8a93efec487f05af9a673ba61f9715a7521bd518fbe173b17ff0"
-    },
-    {
-      "path": "sqmaps/gc/7ccb8e921a140e4f.thumb.webp",
-      "sha256": "d65afb83309e22d3b74288e27a72d129984e39396ba0578e676e4fca41a9426e"
-    },
-    {
-      "path": "sqmaps/gc/7ccb8e921a140e4f.webp",
-      "sha256": "1e8ac770629edbf62b94a2baf5a1f22ae5d627a49b0c671fd4a67b5a576355c4"
     },
     {
       "path": "sqmaps/gc/862cf30ed92b7d84.thumb.webp",
@@ -909,6 +935,14 @@
     {
       "path": "sqmaps/gc/ae369b10eb78717a.webp",
       "sha256": "33771e12b706fe48db089010e7c169fd45eb3be7114b8c57167524b29063852d"
+    },
+    {
+      "path": "sqmaps/gc/c2baed891a18d438.thumb.webp",
+      "sha256": "38f87f951dd87a7628cb2320ed3c604de31c6fca8d1ed5dbd2b34d24a069ceb6"
+    },
+    {
+      "path": "sqmaps/gc/c2baed891a18d438.webp",
+      "sha256": "423c2afc6eeeb6b35a6236785aba283e45942fc20e2be7d1d82ccef0b61891ef"
     },
     {
       "path": "sqmaps/gc/c67b849a189f9b56.thumb.webp",

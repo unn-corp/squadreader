@@ -1790,9 +1790,45 @@
       "output": "/icons/gc/6d14d3d82e4f68aa.webp",
       "status": "decoded",
       "width": 460
+    },
+    {
+      "assetPath": "/ANE_BASE/UI/HUD/Inventory/Weapons/Rifles/DC-17_Pistol_Hud",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 500,
+      "output": "/icons/gc/1a95223542eb1604.webp",
+      "status": "decoded",
+      "width": 1000
+    },
+    {
+      "assetPath": "/Game/UI/HUD/DeployableIcons/deployable_AntiAirGun",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/2932706a7c2fad3f.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/Game/UI/HUD/DeployableIcons/deployable_helipad",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/c86063f31f194a10.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/Game/UI/HUD/DeployableIcons/deployable_repairstation",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/36f7a410c4a6e33d.webp",
+      "status": "decoded",
+      "width": 128
     }
   ],
-  "decoded": 199,
+  "decoded": 203,
   "failures": [
     {
       "assetPath": "/ANE_BASE/BoughtOrGiven/SWBF/CIS_FRIG_INT/ship_iconsSS",
@@ -1814,6 +1850,6 @@
     }
   ],
   "schemaVersion": 1,
-  "source": "local GC client packages",
+  "source": "local GC client and base-game client packages",
   "unresolved": 3
 }

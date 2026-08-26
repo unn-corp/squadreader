@@ -72,16 +72,37 @@ def _sha256(path: Path) -> str:
 
 
 def _map_url(url: str) -> str:
+    if url.startswith("/maps/gc/"):
+        return url
     prefix = "/maps/"
     if not url.startswith(prefix):
         raise ValueError(f"unexpected map URL: {url}")
     return f"/maps/gc/{url[len(prefix):]}"
 
 
-def _package_map_catalog(source: Path, destination: Path) -> tuple[dict[str, Any], set[str]]:
+def _package_map_catalog(
+    source: Path,
+    destination: Path,
+    canonical_source: Path | None = None,
+    gc_data_source: Path | None = None,
+) -> tuple[dict[str, Any], set[str]]:
     catalog = _load_json(source)
     if not isinstance(catalog, dict) or not isinstance(catalog.get("layers"), dict):
         raise ValueError("map catalog must contain a layers object")
+    if canonical_source is not None:
+        if gc_data_source is None:
+            raise ValueError("canonical map catalog requires GC bounds data")
+        from normalize_gc_map_catalog import normalize
+
+        canonical = _load_json(canonical_source)
+        gc_data = _load_json(gc_data_source)
+        catalog = normalize(
+            catalog,
+            canonical,
+            gc_data,
+            gc_data_sha256=_sha256(gc_data_source),
+            canonical_sha256=_sha256(canonical_source),
+        )
 
     map_files: set[str] = set()
     for layer in catalog["layers"].values():
@@ -105,52 +126,68 @@ def _package_icon_manifest(
     destination: Path,
     derived_dir: Path,
     repo_root: Path,
+    additional_source: Path | None = None,
+    additional_derived_dir: Path | None = None,
 ) -> tuple[dict[str, Any], int]:
-    raw = _load_json(source)
-    if not isinstance(raw, dict) or not isinstance(raw.get("assets"), list):
-        raise ValueError("icon manifest must contain an assets list")
+    sources = [(source, derived_dir)]
+    if additional_source is not None:
+        if additional_derived_dir is None:
+            raise ValueError("additional icon manifest requires a derived directory")
+        sources.append((additional_source, additional_derived_dir))
+    raw_manifests = [_load_json(path) for path, _derived in sources]
+    for raw in raw_manifests:
+        if not isinstance(raw, dict) or not isinstance(raw.get("assets"), list):
+            raise ValueError("icon manifest must contain an assets list")
 
     assets: list[dict[str, Any]] = []
-    for item in raw["assets"]:
-        if not isinstance(item, dict):
-            raise ValueError("icon manifest asset is not an object")
-        source_asset = item.get("asset")
-        output = item.get("output")
-        if not isinstance(source_asset, str) or not isinstance(output, str):
-            raise ValueError("icon manifest asset lacks asset/output")
-        filename = Path(output).name
-        source_file = derived_dir / filename
-        if not source_file.is_file():
-            raise FileNotFoundError(source_file)
-        _copy(source_file, repo_root / "icons" / "gc" / filename)
-        assets.append(
-            {
-                "assetPath": source_asset,
-                "output": f"/icons/gc/{filename}",
-                "width": item.get("width"),
-                "height": item.get("height"),
-                "channelOrder": item.get("channelOrder"),
-                "format": item.get("format"),
-                "status": "decoded",
-            }
-        )
+    seen_assets: set[str] = set()
+    for raw, (_manifest_path, derived_root) in zip(
+        raw_manifests, sources, strict=True
+    ):
+        for item in raw["assets"]:
+            if not isinstance(item, dict):
+                raise ValueError("icon manifest asset is not an object")
+            source_asset = item.get("asset")
+            output = item.get("output")
+            if not isinstance(source_asset, str) or not isinstance(output, str):
+                raise ValueError("icon manifest asset lacks asset/output")
+            if source_asset in seen_assets:
+                continue
+            seen_assets.add(source_asset)
+            filename = Path(output).name
+            source_file = derived_root / filename
+            if not source_file.is_file():
+                raise FileNotFoundError(source_file)
+            _copy(source_file, repo_root / "icons" / "gc" / filename)
+            assets.append(
+                {
+                    "assetPath": source_asset,
+                    "output": f"/icons/gc/{filename}",
+                    "width": item.get("width"),
+                    "height": item.get("height"),
+                    "channelOrder": item.get("channelOrder"),
+                    "format": item.get("format"),
+                    "status": "decoded",
+                }
+            )
 
     failures: list[dict[str, Any]] = []
-    for item in raw.get("failures", []):
-        if not isinstance(item, dict):
-            raise ValueError("icon manifest failure is not an object")
-        failures.append(
-            {
-                "assetPath": item.get("Asset"),
-                "output": None,
-                "status": "unavailable",
-                "error": item.get("Error", "unknown extraction failure"),
-            }
-        )
+    for raw in raw_manifests:
+        for item in raw.get("failures", []):
+            if not isinstance(item, dict):
+                raise ValueError("icon manifest failure is not an object")
+            failures.append(
+                {
+                    "assetPath": item.get("Asset"),
+                    "output": None,
+                    "status": "unavailable",
+                    "error": item.get("Error", "unknown extraction failure"),
+                }
+            )
 
     packaged = {
         "schemaVersion": 1,
-        "source": raw.get("source", "local GC client packages"),
+        "source": "local GC client and base-game client packages",
         "decoded": len(assets),
         "unresolved": len(failures),
         "assets": assets,
@@ -160,10 +197,18 @@ def _package_icon_manifest(
     return packaged, len(assets)
 
 
-def package(artifact_root: Path, repo_root: Path) -> None:
+def package(
+    artifact_root: Path,
+    repo_root: Path,
+    canonical_map_catalog: Path | None = None,
+    gc_maps_json: Path | None = None,
+    canonical_map_assets: Path | None = None,
+) -> None:
     catalogs_root = artifact_root / "catalogs"
     icon_manifest_source = artifact_root / "icons" / "derived-manifest.json"
     icon_derived_root = artifact_root / "icons" / "derived"
+    runtime_icon_manifest = artifact_root / "runtime-icons" / "derived-manifest.json"
+    runtime_icon_derived_root = artifact_root / "runtime-icons" / "derived"
     map_catalog_source = catalogs_root / "map_catalog.json"
 
     gc_data = repo_root / "data" / "static" / "gc"
@@ -177,15 +222,22 @@ def package(artifact_root: Path, repo_root: Path) -> None:
     map_catalog, map_files = _package_map_catalog(
         map_catalog_source,
         gc_data / "map_catalog.json",
+        canonical_map_catalog,
+        gc_maps_json,
     )
     for filename in sorted(map_files):
-        _copy(artifact_root / "maps" / filename, gc_maps / filename)
+        source_map = artifact_root / "maps" / filename
+        if not source_map.is_file() and canonical_map_assets is not None:
+            source_map = canonical_map_assets / filename
+        _copy(source_map, gc_maps / filename)
 
     icon_manifest, icon_count = _package_icon_manifest(
         icon_manifest_source,
         gc_data / "icon_manifest.json",
         icon_derived_root,
         repo_root,
+        runtime_icon_manifest if runtime_icon_manifest.is_file() else None,
+        runtime_icon_derived_root if runtime_icon_manifest.is_file() else None,
     )
 
     # The provider manifest is generated by extract_asset_provider.py because
@@ -249,6 +301,16 @@ def package(artifact_root: Path, repo_root: Path) -> None:
                 for provider in (provider_catalog or {}).get("providers", {}).values()
                 if isinstance(provider, dict)
             ),
+            "assetProviderDeployableBindings": sum(
+                len(provider.get("deployableIcons", {}))
+                for provider in (provider_catalog or {}).get("providers", {}).values()
+                if isinstance(provider, dict)
+            ),
+            "assetProviderWeaponBindings": sum(
+                len(provider.get("weaponIcons", {}))
+                for provider in (provider_catalog or {}).get("providers", {}).values()
+                if isinstance(provider, dict)
+            ),
         },
         "manifests": {
             "dataRoot": "data/static/gc",
@@ -280,12 +342,33 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--artifact-root", type=Path, required=True)
     parser.add_argument(
+        "--canonical-map-catalog",
+        type=Path,
+        help="Optional GC Maps map_catalog.json used to normalize layer identity.",
+    )
+    parser.add_argument(
+        "--gc-maps-json",
+        type=Path,
+        help="GC Maps gc.json containing exact Maps[] minimap bounds.",
+    )
+    parser.add_argument(
+        "--canonical-map-assets",
+        type=Path,
+        help="Optional directory containing canonical GC map WebPs/thumbs.",
+    )
+    parser.add_argument(
         "--repo-root",
         type=Path,
         default=Path(__file__).resolve().parents[1],
     )
     args = parser.parse_args()
-    package(args.artifact_root.resolve(), args.repo_root.resolve())
+    package(
+        args.artifact_root.resolve(),
+        args.repo_root.resolve(),
+        args.canonical_map_catalog.resolve() if args.canonical_map_catalog else None,
+        args.gc_maps_json.resolve() if args.gc_maps_json else None,
+        args.canonical_map_assets.resolve() if args.canonical_map_assets else None,
+    )
     return 0
 
 

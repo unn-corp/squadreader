@@ -8,6 +8,8 @@ from pathlib import Path
 sys.path.insert(0, "scripts")
 
 import verify_gc_map_coverage as coverage
+from normalize_gc_map_catalog import normalize
+from extract_asset_provider import VEHICLE_ICON_ASSETS, _runtime_bindings
 
 from sqreader.squad import snapshot as sn
 from sqreader.squad.metadata import Metadata
@@ -63,6 +65,91 @@ def test_gc_map_catalog_is_auto_detected_from_runtime_display_name(tmp_path):
     assert layer["texture"] == "267f397274370fc9"
     assert layer["topLeft"] == {"x": -203192.0, "y": -203192.0}
     assert layer["bottomRight"] == {"x": 203192.0, "y": 203192.0}
+
+
+def test_gc_map_catalog_normalizer_uses_exact_gc_bounds_and_namespaced_images():
+    catalog = {
+        "schemaVersion": 4,
+        "sourceFingerprint": "pak-fingerprint",
+        "layers": {
+            "GC_Test_AAS_V1": {
+                "layerId": "GC_Test_AAS_V1",
+                "mapId": "old-case-id",
+                "mapName": "test",
+                "imageUrl": "/maps/old-case-id.webp",
+                "thumbnailUrl": "/maps/old-case-id.thumb.webp",
+                "worldBoundsCm": None,
+            },
+        },
+        "maps": {},
+    }
+    canonical = {
+        "layers": {
+            "GC_Test_AAS_V1": {
+                "mapId": "canonical-id",
+                "mapName": "Test",
+                "imageUrl": "/maps/canonical-id.webp",
+                "thumbnailUrl": "/maps/canonical-id.thumb.webp",
+                "sourceAsset": "/ANE_BASE/Maps/Test/GLD/GC_Test_AAS_V1",
+            },
+        },
+        "maps": {
+            "canonical-id": {
+                "id": "canonical-id",
+                "name": "Test",
+                "sourceAsset": "/ANE_BASE/Maps/Test/GLD/GC_Test_AAS_V1",
+            },
+        },
+    }
+    gc_data = {
+        "Maps": [{
+            "rawName": "GC_Test_AAS_V1",
+            "minimapCornersPosition": {
+                "min": {"x": -10, "y": -20},
+                "max": {"x": 30, "y": 40},
+            },
+        }],
+    }
+
+    output = normalize(catalog, canonical, gc_data)
+    layer = output["layers"]["GC_Test_AAS_V1"]
+
+    assert layer["mapId"] == "canonical-id"
+    assert layer["imageUrl"] == "/maps/gc/canonical-id.webp"
+    assert layer["thumbnailUrl"] == "/maps/gc/canonical-id.thumb.webp"
+    assert layer["worldBoundsCm"] == [-10.0, -20.0, 30.0, 40.0]
+    assert layer["boundsEvidence"] == {
+        "method": "gc-json-exact",
+        "sourceLayerId": "GC_Test_AAS_V1",
+    }
+
+
+def test_packaged_gc_map_catalog_is_strictly_render_ready():
+    report = coverage.verify_static(Path(__file__).resolve().parents[1])
+
+    assert report["ok"], report["summary"]
+    assert report["summary"]["catalogLayers"] == 188
+    assert report["summary"]["renderReadyLayers"] == 188
+
+
+def test_gc_runtime_asset_bindings_require_available_exact_texture_targets():
+    index = {
+        **{asset: (None, 0) for asset in VEHICLE_ICON_ASSETS.values()},
+        "/Game/UI/HUD/DeployableIcons/deployable_AntiAirGun": (None, 0),
+        "/ANE_BASE/Art/Icons/Misc/ammocrate": (None, 0),
+        "/ANE_BASE/Gameplay/GameModes/Contention/ShieldIcon": (None, 0),
+        "/Game/UI/HUD/DeployableIcons/deployable_helipad": (None, 0),
+        "/Game/UI/HUD/DeployableIcons/deployable_repairstation": (None, 0),
+        "/ANE_BASE/UI/HUD/Inventory/Weapons/Rifles/DC-17_Pistol_Hud": (None, 0),
+    }
+
+    bindings, sources, unresolved = _runtime_bindings(index)
+
+    assert not unresolved
+    assert "BP_Emplaced_ZU23-2_Laser_Antiaircannon_Base_C" in bindings["vehicleIcons"]
+    assert len(bindings["deployableIcons"]) == 5
+    assert bindings["weaponIcons"]["BP_DC-18_C"].endswith("1a95223542eb1604.webp")
+    assert sources["weaponIcons"]["BP_DC-18_C"].endswith("DC-17_Pistol_Hud")
 
 
 def test_gc_map_texture_resolves_from_packaged_subdirectory(tmp_path):
