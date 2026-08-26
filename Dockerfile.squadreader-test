@@ -41,4 +41,10 @@ RUN chmod 0755 /usr/local/bin/squadreader-test-entrypoint \
 USER steam
 WORKDIR /home/steam
 
+# Metadata.load() runs from the installed virtualenv package. Point it at the
+# static catalog baked from the fork rather than the package's nonexistent
+# source-relative data directory. Runtime recordings remain under
+# READER_DATA_DIR and are independent of this path.
+ENV SQREADER_DATA_DIR=/opt/sqreader/data/static
+
 ENTRYPOINT ["/usr/local/bin/squadreader-test-entrypoint"]

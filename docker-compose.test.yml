@@ -31,6 +31,7 @@ services:
       MULTIHOME: "${MULTIHOME:-0.0.0.0}"
       MOD_IDS: "${MOD_IDS:-2428425228}"
       GC_CONFIG_DIR: /opt/gc-config
+      SQREADER_DATA_DIR: "${SQREADER_DATA_DIR:-/opt/sqreader/data/static}"
       READER_DATA_DIR: /var/lib/sqreader
       READER_PORT: "${READER_PORT:-8766}"
       READER_HZ: "${READER_HZ:-0.5}"

@@ -43,6 +43,7 @@ QUERYPORT=27165
 BEACONPORT=15000
 RCONPORT=21116
 READER_PORT=8766
+SQREADER_DATA_DIR=/opt/sqreader/data/static
 MOD_IDS=2428425228
 ```
 
@@ -64,6 +65,12 @@ Steam/Squad install and recordings outside the Git checkout. The Dokploy
 Application path uses the same non-secret GC profile baked at
 `/opt/gc-config`; a later Compose deployment can override it with the staged
 host directory.
+
+The first live Application deployment required explicit Swarm port bindings
+and a host bind for the large Squad install. If the Dokploy Application is
+redeployed, verify that its Advanced → Ports and Storage settings preserve
+these bindings before scaling it back up; otherwise a fresh task can lose the
+published game ports or reinstall the server into ephemeral container storage.
 
 ## Config policy
 

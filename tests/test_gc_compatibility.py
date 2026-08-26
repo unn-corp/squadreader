@@ -152,6 +152,17 @@ def test_gc_runtime_asset_bindings_require_available_exact_texture_targets():
     assert sources["weaponIcons"]["BP_DC-18_C"].endswith("DC-17_Pistol_Hud")
 
 
+def test_asset_provider_autodetects_gc_game_state_from_loaded_catalog():
+    metadata = Metadata.load(Path(__file__).resolve().parents[1] / "data" / "static")
+
+    assert metadata.asset_provider_id(
+        {"instanceClass": "BP_GameStateGC_C"},
+        [{"factionId": "GARP1_CombinedArms"}],
+        [],
+        [],
+    ) == "gc"
+
+
 def test_gc_map_texture_resolves_from_packaged_subdirectory(tmp_path):
     gc_maps = tmp_path / "sqmaps" / "gc"
     gc_maps.mkdir(parents=True)

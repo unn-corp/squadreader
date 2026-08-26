@@ -30,6 +30,7 @@ IFS=$'\n\t'
 : "${MOD_IDS:=2428425228}"
 : "${GC_CONFIG_DIR:=/opt/gc-config}"
 : "${OBSERVER_SO:=/opt/sqreader-runtime/gc_allow_ptrace_observer.so}"
+: "${SQREADER_DATA_DIR:=/opt/sqreader/data/static}"
 : "${READER_DATA_DIR:=/opt/sqreader-runtime}"
 : "${READER_PORT:=8766}"
 : "${READER_HZ:=0.5}"
@@ -97,6 +98,47 @@ copy_test_config() {
             install -m 0644 "$GC_CONFIG_DIR/$name" "$SERVER_CONFIG_DIR/$name"
         fi
     done
+}
+
+configure_rcon() {
+    [[ -n "$RCONPASSWORD" ]] || die "RCONPASSWORD must be set"
+    [[ "$RCONPASSWORD" != *$'\n'* && "$RCONPASSWORD" != *$'\r'* ]] || \
+        die "RCONPASSWORD must not contain newlines"
+
+    RCON_CONFIG_PATH="$SERVER_CONFIG_DIR/Rcon.cfg" \
+        RCON_IP_VALUE="$RCONIP" \
+        RCON_PORT_VALUE="$RCONPORT" \
+        RCON_PASSWORD_VALUE="$RCONPASSWORD" \
+        python3 - <<'PY'
+import os
+import re
+from pathlib import Path
+
+path = Path(os.environ["RCON_CONFIG_PATH"])
+lines = path.read_text(encoding="utf-8", errors="replace").splitlines(keepends=True) \
+    if path.exists() else []
+
+values = {
+    "IP": os.environ["RCON_IP_VALUE"],
+    "Port": os.environ["RCON_PORT_VALUE"],
+    "Password": os.environ["RCON_PASSWORD_VALUE"],
+}
+
+for key, value in values.items():
+    pattern = re.compile(rf"^(\s*){re.escape(key)}\s*=.*(?:\r?\n)?$", re.IGNORECASE)
+    replacement = f"{key}={value}\n"
+    for index, line in enumerate(lines):
+        if pattern.match(line):
+            lines[index] = replacement
+            break
+    else:
+        lines.append(replacement)
+
+path.parent.mkdir(parents=True, exist_ok=True)
+path.write_text("".join(lines), encoding="utf-8")
+PY
+    chmod 0600 "$SERVER_CONFIG_DIR/Rcon.cfg"
+    log "configured RCON on $RCONIP:$RCONPORT"
 }
 
 install_mods() {
@@ -237,11 +279,15 @@ run_reader() {
     )
     log "starting SquadReader on http://0.0.0.0:$READER_PORT for pid=$pid"
     cd /opt/sqreader
-    exec "$READER_BIN" "${args[@]}"
+    # The package is installed into a virtualenv, so its source-relative
+    # metadata discovery cannot see the checkout's static catalog by itself.
+    # Keep the static catalog separate from the persistent recording output.
+    SQREADER_DATA_DIR="$SQREADER_DATA_DIR" exec "$READER_BIN" "${args[@]}"
 }
 
 install_squad
 copy_test_config
+configure_rcon
 set_server_name
 install_mods
 
