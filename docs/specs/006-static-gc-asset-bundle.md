@@ -23,9 +23,10 @@ python scripts/package_gc_assets.py \
   --artifact-root /path/to/GC-squadreader-assets/YYYY-MM-DD
 
 python scripts/verify_gc_asset_bundle.py
+python scripts/verify_gc_map_coverage.py --allow-incomplete
 ```
 
-The package command copies only JSON catalogs and decoded WebP files. It does not copy `.pak`, `.utoc`, `.ucas`, raw texture buffers, or machine-specific source paths.
+The package command copies only JSON catalogs and decoded WebP files. It does not copy `.pak`, `.utoc`, `.ucas`, raw texture buffers, or machine-specific source paths. The second verifier checks the backend layer lookup and reports incomplete layers; omit `--allow-incomplete` for a release gate.
 
 ## Committed layout
 
@@ -59,7 +60,8 @@ The icon and map manifests use public paths rooted at `/icons/gc/` and `/maps/gc
 - 199 decoded icon textures, preserving the source dimensions recorded in the manifest.
 - 3 icon candidates explicitly unresolved because no decodable client pixel payload was available.
 - 883 exact GC role bindings and 14 exact GC vehicle bindings in the multi-provider manifest.
+- Layer bounds may be inherited only from an exact `mapId` with one authoritative bounds tuple; the audit labels this source `mapId-shared`.
 
 ## Deliberate limitations
 
-The provider manifest covers the captured GC role catalog and the explicitly observed live vehicle classes. New runtime classes, weapons, deployables, and marker bindings still require a fresh snapshot plus an extraction update. The offline map catalog also reports partial World Partition coverage and leaves layers without safe imagery as `null` rather than borrowing an unverified image.
+The provider manifest covers the captured GC role catalog and the explicitly observed live vehicle classes. New runtime classes, weapons, deployables, and marker bindings still require a fresh snapshot plus an extraction update. The offline map catalog also reports partial World Partition coverage and leaves layers without safe imagery or unambiguous bounds unresolved rather than borrowing unverified data.

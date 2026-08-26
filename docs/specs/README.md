@@ -11,6 +11,7 @@ Specs for adapting SquadReader to Galactic Contention and validating it against 
 - [GC Maps pattern traceability](./005-gc-maps-patterns-traceability.md) — learned extractor patterns mapped to SquadReader requirements and verification.
 - [Static GC asset bundle](./006-static-gc-asset-bundle.md) — packaged local catalogs, map imagery, icon textures, verification, and extraction limits.
 - [Multi-provider asset resolution](./008-multi-provider-asset-resolution.md) — the data contract and runtime selection rules for vanilla plus mod asset sets.
+- [GC map/layer coverage verification](./009-gc-map-layer-coverage.md) — strict catalog readiness checks and runtime coverage reporting.
 
 ## Runbooks
 
@@ -18,4 +19,4 @@ Specs for adapting SquadReader to Galactic Contention and validating it against 
 
 ## Current boundary
 
-The fork now contains a namespaced, verified static GC asset bundle and a data-driven provider registry extracted from local client packages. Runtime coverage is still extended incrementally as new live classes are observed.
+The fork now contains a namespaced GC asset bundle, a data-driven provider registry, and a fail-closed map/layer coverage audit. The committed extraction remains incomplete until missing imagery and ambiguous bounds are resolved.

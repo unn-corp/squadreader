@@ -144,7 +144,9 @@ def _install_soft_path_support() -> None:
     ZenPackage._value = value
 
 
-def _role_bindings(index: dict[str, tuple[Any, int]], roles: dict[str, Any]) -> tuple[dict[str, str], dict[str, str], list[str]]:
+def _role_bindings(
+    index: dict[str, tuple[Any, int]], roles: dict[str, Any]
+) -> tuple[dict[str, str], dict[str, str], list[str]]:
     from ue_zen import datatable_rows
 
     role_icons: dict[str, str] = {}
@@ -257,7 +259,8 @@ def main() -> int:
     parser.add_argument(
         "--tooling-dir",
         type=Path,
-        help="GC Maps tooling directory containing ue_zen.py (defaults to sibling GC-config/tooling)",
+        help=("GC Maps tooling directory containing ue_zen.py "
+              "(defaults to sibling GC-config/tooling)"),
     )
     args = parser.parse_args()
     catalog = build(

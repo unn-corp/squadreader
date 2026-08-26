@@ -1,6 +1,13 @@
 """Regression coverage for GC's Blueprint-derived runtime classes."""
 
 import json
+import subprocess
+import sys
+from pathlib import Path
+
+sys.path.insert(0, "scripts")
+
+import verify_gc_map_coverage as coverage
 
 from sqreader.squad import snapshot as sn
 from sqreader.squad.metadata import Metadata
@@ -65,3 +72,169 @@ def test_gc_map_texture_resolves_from_packaged_subdirectory(tmp_path):
     expected.write_bytes(b"webp-fixture")
 
     assert _resolve_sqmap(tmp_path / "sqmaps", "267f397274370fc9") == expected
+
+
+def test_gc_missing_variant_bounds_are_inherited_only_from_unique_map_id(tmp_path):
+    data_root = tmp_path / "data" / "static" / "gc"
+    data_root.mkdir(parents=True)
+    map_record = {
+        "mapId": "test-map",
+        "mapName": "TestMap",
+        "imageUrl": "/maps/gc/test-map.webp",
+        "thumbnailUrl": "/maps/gc/test-map.thumb.webp",
+        "worldBoundsCm": [-100.0, -200.0, 100.0, 200.0],
+    }
+    missing_variant = dict(map_record, worldBoundsCm=None)
+    (data_root / "map_catalog.json").write_text(json.dumps({
+        "layers": {
+            "GC_Test_AAS_V1": map_record,
+            "GC_Test_AAS_V2": missing_variant,
+        },
+    }), encoding="utf-8")
+    maps = tmp_path / "sqmaps" / "gc"
+    maps.mkdir(parents=True)
+    (maps / "test-map.webp").write_bytes(b"webp")
+    (maps / "test-map.thumb.webp").write_bytes(b"webp")
+
+    report = coverage.verify_static(tmp_path)
+
+    assert report["ok"]
+    assert report["summary"]["renderReadyLayers"] == 2
+    assert report["summary"]["boundsSources"] == {"layer": 1, "mapId-shared": 1}
+    inherited = Metadata.load(tmp_path / "data" / "static").layer_bounds_for("Test AAS V2")
+    assert inherited is not None
+    assert inherited["boundsSource"] == "mapId-shared"
+
+
+def test_gc_ambiguous_map_id_does_not_invent_variant_bounds(tmp_path):
+    data_root = tmp_path / "data" / "static" / "gc"
+    data_root.mkdir(parents=True)
+    common = {
+        "mapId": "ambiguous",
+        "mapName": "Ambiguous",
+        "imageUrl": "/maps/gc/ambiguous.webp",
+        "thumbnailUrl": "/maps/gc/ambiguous.thumb.webp",
+    }
+    layers = {
+        "GC_Ambiguous_AAS_V1": dict(common, worldBoundsCm=[-100, -100, 100, 100]),
+        "GC_Ambiguous_AAS_V2": dict(common, worldBoundsCm=[-200, -200, 200, 200]),
+        "GC_Ambiguous_AAS_V3": dict(common, worldBoundsCm=None),
+    }
+    (data_root / "map_catalog.json").write_text(
+        json.dumps({"layers": layers}), encoding="utf-8")
+    maps = tmp_path / "sqmaps" / "gc"
+    maps.mkdir(parents=True)
+    (maps / "ambiguous.webp").write_bytes(b"webp")
+    (maps / "ambiguous.thumb.webp").write_bytes(b"webp")
+
+    report = coverage.verify_static(tmp_path)
+
+    assert not report["ok"]
+    third = next(item for item in report["layers"]
+                 if item["layerId"] == "GC_Ambiguous_AAS_V3")
+    assert "ambiguous_bounds" in third["issues"]
+
+
+def test_gc_conflicting_map_name_alias_is_fail_closed(tmp_path):
+    data_root = tmp_path / "data" / "static" / "gc"
+    data_root.mkdir(parents=True)
+    layers = {}
+    for suffix, map_id, texture in (("V1", "map-a", "map-a"),
+                                    ("V2", "map-b", "map-b")):
+        layers[f"GC_Shared_AAS_{suffix}"] = {
+            "mapId": map_id,
+            "mapName": "SharedMap",
+            "imageUrl": f"/maps/gc/{texture}.webp",
+            "thumbnailUrl": f"/maps/gc/{texture}.thumb.webp",
+            "worldBoundsCm": [-100, -100, 100, 100],
+        }
+    (data_root / "map_catalog.json").write_text(
+        json.dumps({"layers": layers}), encoding="utf-8")
+    maps = tmp_path / "sqmaps" / "gc"
+    maps.mkdir(parents=True)
+    for texture in ("map-a", "map-b"):
+        (maps / f"{texture}.webp").write_bytes(b"webp")
+        (maps / f"{texture}.thumb.webp").write_bytes(b"webp")
+
+    metadata = Metadata.load(tmp_path / "data" / "static")
+
+    assert metadata.layer_bounds_for("SharedMap") is None
+    assert metadata.layer_bounds_for("Shared AAS V1") is not None
+    assert metadata.layer_bounds_for("Shared AAS V2") is not None
+
+
+def test_runtime_coverage_checks_provider_and_exact_bindings(tmp_path):
+    data_root = tmp_path / "data" / "static" / "gc"
+    data_root.mkdir(parents=True)
+    (data_root / "map_catalog.json").write_text(json.dumps({
+        "layers": {
+            "GC_Test_AAS_V1": {
+                "mapId": "test-map",
+                "mapName": "TestMap",
+                "imageUrl": "/maps/gc/test-map.webp",
+                "thumbnailUrl": "/maps/gc/test-map.thumb.webp",
+                "worldBoundsCm": [-100, -100, 100, 100],
+            },
+        },
+    }), encoding="utf-8")
+    (tmp_path / "sqmaps" / "gc").mkdir(parents=True)
+    (tmp_path / "sqmaps" / "gc" / "test-map.webp").write_bytes(b"webp")
+    (tmp_path / "sqmaps" / "gc" / "test-map.thumb.webp").write_bytes(b"webp")
+    (tmp_path / "data" / "static" / "asset_providers.json").write_text(json.dumps({
+        "schemaVersion": 1,
+        "defaultProviderId": "vanilla",
+        "providers": {
+            "vanilla": {"id": "vanilla", "label": "vanilla"},
+            "test": {
+                "id": "test", "label": "test",
+                "detect": {"gameStateInstanceClasses": ["BP_TestGameState_C"]},
+                "roleIcons": {"TEST_Rifleman": "./icons/test/rifle.webp"},
+                "vehicleIcons": {"BP_TestVehicle_C": "./icons/test/vehicle.webp"},
+                "deployableIcons": {"BP_TestDeployable_C": "./icons/test/deployable.webp"},
+                "markerIcons": {"BP_TestMarker_C": "./icons/test/marker.webp"},
+                "weaponIcons": {"BP_TestWeapon_C": "./icons/test/weapon.webp"},
+            },
+        },
+    }), encoding="utf-8")
+    snap = {
+        "gameState": {
+            "mapName": "Test AAS V1",
+            "instanceClass": "BP_TestGameState_C",
+            "layer": {"name": "Test AAS V1"},
+        },
+        "teams": [],
+        "players": [{"roleId": "TEST_Rifleman",
+                      "soldier": {"weapon": {"className": "BP_TestWeapon_C"}}}],
+        "vehicles": [{"classShort": "BP_TestVehicle_C"}],
+        "deployables": [{"classShort": "BP_TestDeployable_C"}],
+        "markers": [{"classShort": "BP_TestMarker_C"}],
+    }
+    snapshot_path = tmp_path / "snapshot.json"
+    snapshot_path.write_text(json.dumps(snap), encoding="utf-8")
+
+    report = coverage.verify_runtime(tmp_path, [snapshot_path])
+
+    assert report["ok"]
+    assert report["expectedCatalogLayers"] == 1
+    assert report["observedCatalogLayers"] == 1
+    assert report["unobservedCatalogLayers"] == []
+    assert report["providerObservations"] == {"test": 1}
+    assert report["unbound"] == {}
+
+
+def test_gc_coverage_cli_fails_closed_on_incomplete_catalog(tmp_path):
+    data_root = tmp_path / "data" / "static" / "gc"
+    data_root.mkdir(parents=True)
+    (data_root / "map_catalog.json").write_text(json.dumps({
+        "layers": {"GC_Incomplete_AAS_V1": {"mapId": "missing"}},
+    }), encoding="utf-8")
+
+    result = subprocess.run(
+        [sys.executable, str(Path(coverage.__file__)), "--repo-root", str(tmp_path)],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+
+    assert result.returncode == 1
+    assert "missing_bounds" in result.stdout

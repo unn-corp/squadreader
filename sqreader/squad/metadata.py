@@ -22,6 +22,7 @@ time. Callers do `meta = load_metadata()` once at startup.
 from __future__ import annotations
 
 import json
+import math
 import os
 import sys
 from dataclasses import dataclass, field
@@ -77,13 +78,36 @@ def _normalise_layer_key(value: str) -> str:
     return "".join(ch.lower() for ch in value if ch.isalnum())
 
 
-def _gc_layer_record(layer_id: str, raw: dict[str, Any]) -> dict[str, Any] | None:
+def _valid_world_bounds(value: Any) -> tuple[float, float, float, float] | None:
+    """Return finite, ordered bounds, rejecting malformed extraction output."""
+    if not isinstance(value, list) or len(value) != 4:
+        return None
+    if any(isinstance(v, bool) or not isinstance(v, (int, float))
+           or not math.isfinite(float(v)) for v in value):
+        return None
+    bounds = (float(value[0]), float(value[1]), float(value[2]), float(value[3]))
+    if bounds[0] >= bounds[2] or bounds[1] >= bounds[3]:
+        return None
+    return bounds
+
+
+def _gc_layer_record(
+    layer_id: str,
+    raw: dict[str, Any],
+    inherited_bounds: tuple[float, float, float, float] | None = None,
+) -> dict[str, Any] | None:
     """Adapt one GC Maps catalog layer to SquadReader's layer schema."""
-    bounds = raw.get("worldBoundsCm")
+    bounds = _valid_world_bounds(raw.get("worldBoundsCm"))
+    bounds_source = "layer"
+    if bounds is None and inherited_bounds is not None:
+        # A layer variant can omit its GLD package even though the catalog has
+        # an exact mapId match with another variant. Reusing bounds is safe only
+        # when that mapId has one and only one authoritative bounds tuple; the
+        # loader computes that condition before calling us.
+        bounds = inherited_bounds
+        bounds_source = "mapId-shared"
     image_url = raw.get("imageUrl")
-    if (not isinstance(bounds, list) or len(bounds) != 4
-            or not all(isinstance(v, (int, float)) for v in bounds)
-            or not isinstance(image_url, str) or not image_url):
+    if bounds is None or not isinstance(image_url, str) or not image_url:
         # A catalog entry without imagery cannot be rendered by the replay
         # canvas, so leave it unavailable rather than inventing a texture.
         return None
@@ -104,6 +128,7 @@ def _gc_layer_record(layer_id: str, raw: dict[str, Any]) -> dict[str, Any] | Non
         "texture": texture,
         "topLeft": {"x": min_x, "y": min_y},
         "bottomRight": {"x": max_x, "y": max_y},
+        "boundsSource": bounds_source,
     }
 
 
@@ -151,24 +176,64 @@ class Metadata:
             asset_provider_catalog=_load_json(d / "asset_providers.json") or {},
         )
         gc_catalog = _load_json(gc_root / "map_catalog.json") or {}
-        for layer_id, raw in (gc_catalog.get("layers") or {}).items():
+        gc_layers = gc_catalog.get("layers") or {}
+        # Build a conservative inheritance index.  mapId is the extracted
+        # content identity for the tactical texture; it is stronger than a
+        # map-name or layer-name similarity.  Ambiguous bounds are deliberately
+        # not inherited.
+        map_bounds: dict[str, set[tuple[float, float, float, float]]] = {}
+        for raw in gc_layers.values():
+            if not isinstance(raw, dict):
+                continue
+            map_id = raw.get("mapId")
+            bounds = _valid_world_bounds(raw.get("worldBoundsCm"))
+            if isinstance(map_id, str) and bounds is not None:
+                map_bounds.setdefault(map_id, set()).add(bounds)
+
+        alias_records: dict[str, tuple[tuple[Any, ...], dict[str, Any]]] = {}
+        alias_conflicts: set[str] = set()
+        for layer_id, raw in gc_layers.items():
             if not isinstance(layer_id, str) or not isinstance(raw, dict):
                 continue
-            record = _gc_layer_record(layer_id, raw)
+            map_id = raw.get("mapId")
+            bounds = _valid_world_bounds(raw.get("worldBoundsCm"))
+            candidates = map_bounds.get(map_id, set()) if isinstance(map_id, str) else set()
+            inherited = next(iter(candidates)) if bounds is None and len(candidates) == 1 else None
+            record = _gc_layer_record(layer_id, raw, inherited)
             if record is None:
                 continue
-            aliases = {
+            aliases = [
                 layer_id,
                 layer_id.removeprefix("GC_"),
                 raw.get("displayName"),
                 raw.get("mapName"),
-            }
+            ]
+            identity = (
+                record.get("mapId"), record.get("texture"),
+                record.get("topLeft", {}).get("x"),
+                record.get("topLeft", {}).get("y"),
+                record.get("bottomRight", {}).get("x"),
+                record.get("bottomRight", {}).get("y"),
+            )
             for alias in aliases:
                 if isinstance(alias, str) and alias:
-                    m.gc_layer_bounds[_normalise_layer_key(alias)] = record
+                    key = _normalise_layer_key(alias)
+                    if not key or key in alias_conflicts:
+                        continue
+                    previous = alias_records.get(key)
+                    if previous is not None and previous[0] != identity:
+                        # Do not silently let one map win a shared alias such
+                        # as Tatooine. Full layer IDs remain available.
+                        alias_conflicts.add(key)
+                        alias_records.pop(key, None)
+                    elif previous is None:
+                        alias_records[key] = (identity, record)
             map_id = record.get("mapId")
             if isinstance(map_id, str):
                 m.map_config.setdefault(map_id, record)
+        m.gc_layer_bounds = {
+            key: value[1] for key, value in alias_records.items()
+        }
         # Build derived indices
         for pool_key, pool in (m.squad_pools.get("infantryPools") or {}).items():
             label = pool.get("label") or pool_key
@@ -314,7 +379,8 @@ class Metadata:
             if not isinstance(detect, dict):
                 continue
             score = 0
-            if isinstance(instance_class, str) and instance_class in (detect.get("gameStateInstanceClasses") or []):
+            if (isinstance(instance_class, str)
+                    and instance_class in (detect.get("gameStateInstanceClasses") or [])):
                 score += 100
             score += sum(25 for role in role_ids
                          if role in (provider.get("roleIcons") or {}))
