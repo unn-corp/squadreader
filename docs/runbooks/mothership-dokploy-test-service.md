@@ -34,13 +34,18 @@ READER_PORT=8766
 MOD_IDS=2428425228
 ```
 
-The bind paths in the Compose file are host paths on mothership. They keep
-the large Steam/Squad install and recordings outside the Git checkout.
+The Compose bind paths are host paths on mothership. They keep the large
+Steam/Squad install and recordings outside the Git checkout. The Dokploy
+Application path uses the same non-secret GC profile baked at
+`/opt/gc-config`; a later Compose deployment can override it with the staged
+host directory.
 
 ## Config policy
 
-Stage the PSG test server's non-secret `ServerConfig` files into the host
-config directory with `prepare_gc_config.sh`. Do not copy `Rcon.cfg` or
+The PSG test server's non-secret `ServerConfig` files are staged into the
+mothership host config directory with `prepare_gc_config.sh` for the portable
+Compose path. The Dokploy Application image includes the same non-secret GC
+rotation profile under `/opt/gc-config`. Do not copy `Rcon.cfg` or
 `License.cfg`: RCON is injected through the environment and the test server
 uses the reader's synthetic match IDs when no OWI license is present.
 

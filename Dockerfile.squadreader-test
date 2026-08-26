@@ -18,6 +18,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 COPY . /opt/sqreader
+COPY deploy/gc-test-config /opt/gc-config
 
 RUN python3 -m venv /opt/sqreader-venv \
     && /opt/sqreader-venv/bin/pip install --no-cache-dir --upgrade pip \

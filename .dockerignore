@@ -21,6 +21,8 @@ dist
 *.log
 .env
 .env.*
+**/Rcon.cfg
+**/License.cfg
 sqreader.config.json
 packaging/entitlements.env
 *.pem
