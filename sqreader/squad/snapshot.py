@@ -767,7 +767,8 @@ class SnapshotCaches:
         # accepted once on next lookup, then replaced with a tuple.
         cur_gen = self.subclass_gen
         for cache_attr in (
-            "is_subgs", "is_player_state", "is_vehicle", "is_marker", "is_deployable",
+            "is_subgs", "is_player_state", "is_vehicle", "is_marker",
+            "is_deployable",
             "is_vehicle_spawner", "is_rally", "is_squad_data_marker",
             "is_tracked_projectile", "is_lane_initializer",
             "is_raas_visualizer",
