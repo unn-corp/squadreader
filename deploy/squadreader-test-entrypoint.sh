@@ -13,6 +13,7 @@ IFS=$'\n\t'
 : "${STEAM_BETA_BRANCH:=}"
 : "${STEAM_BETA_PASSWORD:=}"
 : "${FORCE_STEAM_UPDATE:=0}"
+: "${WORKSHOP_DOWNLOAD_ATTEMPTS:=20}"
 : "${WORKSHOPID:=393380}"
 : "${MODPATH:=${STEAMAPPDIR}/SquadGame/Plugins/Mods}"
 : "${PORT:=7787}"
@@ -100,6 +101,9 @@ copy_test_config() {
 
 install_mods() {
     mkdir -p "$MODPATH"
+    [[ "$WORKSHOP_DOWNLOAD_ATTEMPTS" =~ ^[1-9][0-9]*$ ]] || \
+        die "WORKSHOP_DOWNLOAD_ATTEMPTS must be a positive integer"
+
     # Remove only numeric workshop links/directories, leaving any image-baked
     # plugin metadata intact.
     find "$MODPATH" -mindepth 1 -maxdepth 1 \
@@ -119,12 +123,25 @@ install_mods() {
             continue
         fi
 
-        log "installing workshop item $id"
-        bash "$STEAMCMDDIR/steamcmd.sh" \
-            +force_install_dir "$STEAMAPPDIR" \
-            +login anonymous \
-            +workshop_download_item "$WORKSHOPID" "$id" \
-            +quit
+        local downloaded=0 status=0 attempt
+        for ((attempt = 1; attempt <= WORKSHOP_DOWNLOAD_ATTEMPTS; attempt++)); do
+            log "installing workshop item $id (attempt $attempt/$WORKSHOP_DOWNLOAD_ATTEMPTS)"
+            if bash "$STEAMCMDDIR/steamcmd.sh" \
+                +force_install_dir "$STEAMAPPDIR" \
+                +login anonymous \
+                +workshop_download_item "$WORKSHOPID" "$id" \
+                +quit; then
+                downloaded=1
+                break
+            else
+                status=$?
+                log "workshop item $id download failed with status $status; retrying"
+                (( attempt < WORKSHOP_DOWNLOAD_ATTEMPTS )) && sleep 5
+            fi
+        done
+
+        [[ "$downloaded" == "1" ]] || \
+            die "workshop item $id failed after $WORKSHOP_DOWNLOAD_ATTEMPTS attempts"
         [[ -d "$target" ]] || die "workshop item $id did not download"
         touch "$ready_marker"
         ln -sfn "$target" "$MODPATH/$id"

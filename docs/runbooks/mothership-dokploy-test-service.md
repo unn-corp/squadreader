@@ -13,10 +13,11 @@ configuration is mounted separately so secrets never enter Git.
 - Non-secret config staging: `deploy/prepare_gc_config.sh`
 - GC workshop item: `2428425228`
 - Default test ports: game `7787/udp`, query `27165/tcp+udp`, beacon
-  `15000/udp`, RCON `21116/tcp`, reader `8766/tcp`
+  `15000/udp`, RCON target `21116/tcp`, reader `8766/tcp`
 
-The defaults intentionally use RCON `21116` and reader `8766`; mothership
-already has another service using `21115`.
+The container defaults use RCON `21116` and reader `8766`. On mothership, the
+test service publishes RCON as host port `22116` because ports `21115` through
+`21119` are already occupied by RustDesk.
 
 ## Dokploy
 
@@ -37,10 +38,10 @@ Dokploy's environment/secret store:
 
 ```text
 RCON_PASSWORD=<secret>
-SQUAD_GAME_PORT=7787
-SQUAD_QUERY_PORT=27165
-SQUAD_BEACON_PORT=15000
-RCON_PORT=21116
+PORT=7787
+QUERYPORT=27165
+BEACONPORT=15000
+RCONPORT=21116
 READER_PORT=8766
 MOD_IDS=2428425228
 ```
@@ -55,7 +56,7 @@ HTTP domain:
 | 27165 | 27165 | UDP |
 | 27165 | 27165 | TCP |
 | 15000 | 15000 | UDP |
-| 21116 | 21116 | TCP |
+| 22116 | 21116 | TCP |
 | 8766 | 8766 | TCP |
 
 The Compose bind paths are host paths on mothership. They keep the large
