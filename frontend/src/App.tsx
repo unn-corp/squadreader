@@ -28,11 +28,17 @@ import { useReplayPlayback } from "./api/playback";
 import { useKillFeed } from "./killfeed/useKillFeed";
 import { useReplayKillFeed } from "./killfeed/useReplayKillFeed";
 import { useViewerStore } from "./state/viewerStore";
+import { loadAssetProviders } from "./data/assetProviders";
 
 export default function App() {
   const mode = useViewerStore((s) => s.mode);
   const setMode = useViewerStore((s) => s.setMode);
   const setReplay = useViewerStore((s) => s.setReplay);
+
+  // Provider manifests are server data, not a GC-specific frontend build.
+  // Load once so the renderer can select vanilla or any installed mod set
+  // from the current snapshot.
+  useEffect(() => { void loadAssetProviders(); }, []);
 
   // Boot from URL params (one-shot on mount): `?mode=replay&id=...`
   // → flip to replay and seed the replay slice. The picker auto-opens

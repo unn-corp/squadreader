@@ -37,6 +37,7 @@ def verify(repo_root: Path) -> list[str]:
     bundle_path = data_root / "asset_bundle.json"
     icon_manifest_path = data_root / "icon_manifest.json"
     map_catalog_path = data_root / "map_catalog.json"
+    provider_manifest_path = repo_root / "data" / "static" / "asset_providers.json"
 
     for path in (bundle_path, icon_manifest_path, map_catalog_path):
         if not path.is_file():
@@ -47,6 +48,7 @@ def verify(repo_root: Path) -> list[str]:
     bundle = _load(bundle_path)
     icon_manifest = _load(icon_manifest_path)
     map_catalog = _load(map_catalog_path)
+    provider_catalog = _load(provider_manifest_path) if provider_manifest_path.is_file() else None
 
     if bundle.get("schemaVersion") != 1:
         errors.append("asset bundle schemaVersion must be 1")
@@ -54,6 +56,14 @@ def verify(repo_root: Path) -> list[str]:
         errors.append("icon manifest schemaVersion must be 1")
     if map_catalog.get("schemaVersion") != 4:
         errors.append("map catalog schemaVersion must be 4")
+    if provider_catalog is not None:
+        if provider_catalog.get("schemaVersion") != 1:
+            errors.append("asset provider schemaVersion must be 1")
+        providers = provider_catalog.get("providers")
+        if not isinstance(providers, dict) or not providers:
+            errors.append("asset provider manifest must contain providers")
+        elif provider_catalog.get("defaultProviderId") not in providers:
+            errors.append("asset provider defaultProviderId is not registered")
 
     bundled_paths: set[str] = set()
     for item in bundle.get("files", []):
@@ -65,7 +75,9 @@ def verify(repo_root: Path) -> list[str]:
         if not isinstance(relative_path, str) or not isinstance(expected_hash, str):
             errors.append("bundle file entry lacks path/sha256")
             continue
-        if not (relative_path.startswith("icons/gc/") or relative_path.startswith("sqmaps/gc/")):
+        if not (relative_path.startswith("icons/gc/")
+                or relative_path.startswith("sqmaps/gc/")
+                or relative_path == "data/static/asset_providers.json"):
             errors.append(f"bundle file is outside GC asset roots: {relative_path}")
             continue
         bundled_paths.add(relative_path)
@@ -84,7 +96,10 @@ def verify(repo_root: Path) -> list[str]:
     for extra in sorted(actual_paths - bundled_paths):
         errors.append(f"unlisted GC asset file: {extra}")
     for missing in sorted(bundled_paths - actual_paths):
-        errors.append(f"listed GC asset file is not a WebP output: {missing}")
+        if missing != "data/static/asset_providers.json":
+            errors.append(f"listed GC asset file is not a WebP output: {missing}")
+    if provider_catalog is not None and "data/static/asset_providers.json" not in bundled_paths:
+        errors.append("asset provider manifest is not listed in bundle files")
 
     decoded = icon_manifest.get("assets", [])
     if icon_manifest.get("decoded") != len(decoded):

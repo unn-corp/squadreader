@@ -123,6 +123,10 @@ class Metadata:
     # layer lookup below normalises the runtime FText name against this index.
     gc_layer_bounds: dict[str, dict[str, Any]] = field(default_factory=dict)
     gc_roles: dict[str, Any] = field(default_factory=dict)
+    # Data-driven asset providers.  The default provider is vanilla; mod
+    # providers are generated from their cooked package references and loaded
+    # without changing the renderer.
+    asset_provider_catalog: dict[str, Any] = field(default_factory=dict)
 
     # Derived reverse indices, built once at construction:
     _role_keyword_to_pool: dict[str, tuple[str, str]] = field(default_factory=dict)
@@ -144,6 +148,7 @@ class Metadata:
             layer_bounds=_load_json(d / "layer_bounds.json") or {},
             capzones=_load_json(d / "capzones.json") or {},
             gc_roles=_load_json(gc_root / "roles.json") or {},
+            asset_provider_catalog=_load_json(d / "asset_providers.json") or {},
         )
         gc_catalog = _load_json(gc_root / "map_catalog.json") or {}
         for layer_id, raw in (gc_catalog.get("layers") or {}).items():
@@ -241,6 +246,93 @@ class Metadata:
             return []
         pts = self.capzones.get(layer_name)
         return pts if isinstance(pts, list) else []
+
+    def asset_providers(self) -> dict[str, Any]:
+        """Return the provider registry for the HTTP bootstrap endpoint."""
+        catalog = self.asset_provider_catalog
+        if not isinstance(catalog, dict) or not isinstance(catalog.get("providers"), dict):
+            return {
+                "schemaVersion": 1,
+                "defaultProviderId": "vanilla",
+                "providers": {
+                    "vanilla": {
+                        "id": "vanilla",
+                        "label": "Squad (vanilla)",
+                        "version": "builtin",
+                    }
+                },
+            }
+        return catalog
+
+    @staticmethod
+    def _matches_prefix(value: Any, prefixes: Any) -> bool:
+        return (isinstance(value, str)
+                and any(isinstance(prefix, str) and value.startswith(prefix)
+                        for prefix in (prefixes if isinstance(prefixes, list) else [])))
+
+    def asset_provider_id(
+        self,
+        game_state: dict[str, Any] | None,
+        teams: list[dict[str, Any]],
+        players: list[dict[str, Any]],
+        vehicles: list[dict[str, Any]],
+    ) -> str | None:
+        """Select the best registered provider for one snapshot.
+
+        Explicit snapshot metadata wins.  Otherwise providers score only
+        positive evidence from runtime identifiers: game-state class, faction
+        id, exact role/vehicle bindings, and declared prefixes.  No provider
+        is selected from a display name or from a generic ``BP_`` heuristic.
+        """
+        catalog = self.asset_providers()
+        providers = catalog.get("providers", {})
+        if not isinstance(providers, dict):
+            return None
+        explicit = game_state.get("assetProviderId") if isinstance(game_state, dict) else None
+        if isinstance(explicit, str) and explicit in providers:
+            return explicit
+
+        role_ids = {
+            p.get("roleId") for p in players if isinstance(p, dict)
+            and isinstance(p.get("roleId"), str)
+        }
+        faction_ids = {
+            t.get("factionId") for t in teams if isinstance(t, dict)
+            and isinstance(t.get("factionId"), str)
+        }
+        vehicle_classes = {
+            v.get("classShort") for v in vehicles if isinstance(v, dict)
+            and isinstance(v.get("classShort"), str)
+        }
+        instance_class = game_state.get("instanceClass") if isinstance(game_state, dict) else None
+        best_id: str | None = None
+        best_score = 0
+        for provider_id, provider in providers.items():
+            if not isinstance(provider, dict) or provider_id == catalog.get("defaultProviderId"):
+                continue
+            detect = provider.get("detect")
+            if not isinstance(detect, dict):
+                continue
+            score = 0
+            if isinstance(instance_class, str) and instance_class in (detect.get("gameStateInstanceClasses") or []):
+                score += 100
+            score += sum(25 for role in role_ids
+                         if role in (provider.get("roleIcons") or {}))
+            score += sum(25 for cls in vehicle_classes
+                         if cls in (provider.get("vehicleIcons") or {}))
+            score += sum(15 for faction in faction_ids
+                         if self._matches_prefix(faction, detect.get("factionPrefixes")))
+            if any(self._matches_prefix(role, detect.get("rolePrefixes")) for role in role_ids):
+                score += 10
+            if any(self._matches_prefix(cls, detect.get("vehicleClassPrefixes"))
+                   for cls in vehicle_classes):
+                score += 10
+            if score > best_score:
+                best_id, best_score = provider_id, score
+        if best_id:
+            return best_id
+        default = catalog.get("defaultProviderId")
+        return default if isinstance(default, str) and default in providers else None
 
 
 __all__ = ["Metadata", "DEFAULT_DATA_DIR"]

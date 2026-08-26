@@ -1,6 +1,6 @@
 # Static GC asset bundle
 
-Status: extraction completed from the local GC Windows client packages on 2026-08-26. Runtime bindings remain pending the live-server capture.
+Status: extraction completed from the local GC Windows client packages on 2026-08-26. Runtime asset-provider bindings are now generated for the captured GC replay; additional live classes remain incremental.
 
 ## Purpose
 
@@ -40,6 +40,8 @@ data/static/gc/
   vehicle_counts.json
   vehicle_delays.json
   vehicle_profiles.json
+data/static/
+  asset_providers.json
 icons/gc/
 sqmaps/gc/
 ```
@@ -54,9 +56,10 @@ The icon and map manifests use public paths rooted at `/icons/gc/` and `/maps/gc
 - 687 vehicle count setups and 687 vehicle delay setups.
 - 188 configured map layers.
 - 23 map images plus 23 thumbnails.
-- 157 decoded icon textures, preserving the source dimensions recorded in the manifest.
+- 199 decoded icon textures, preserving the source dimensions recorded in the manifest.
 - 3 icon candidates explicitly unresolved because no decodable client pixel payload was available.
+- 883 exact GC role bindings and 14 exact GC vehicle bindings in the multi-provider manifest.
 
 ## Deliberate limitations
 
-The catalogs do not claim runtime class names for vehicles, kits, weapons, or deployables. Those names must be observed from a live GC server snapshot and then mapped to these canonical assets. The offline map catalog also reports partial World Partition coverage and leaves layers without safe imagery as `null` rather than borrowing an unverified image.
+The provider manifest covers the captured GC role catalog and the explicitly observed live vehicle classes. New runtime classes, weapons, deployables, and marker bindings still require a fresh snapshot plus an extraction update. The offline map catalog also reports partial World Partition coverage and leaves layers without safe imagery as `null` rather than borrowing an unverified image.

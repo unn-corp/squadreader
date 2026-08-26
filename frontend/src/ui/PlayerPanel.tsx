@@ -10,6 +10,7 @@ import { roleIconUrl } from "../canvas/icons";
 import { weaponDisplayName, weaponStatic } from "../data/weaponsStatic";
 import { useStaticCatalogs } from "../data/staticCatalogs";
 import { useViewerStore } from "../state/viewerStore";
+import { useAssetProviders } from "../data/assetProviders";
 import type { Player, Snapshot } from "../state/types";
 
 function fmtInt(v: number | null | undefined) {
@@ -58,6 +59,7 @@ function movedSince(prev: Snapshot | null, p: Player): boolean | null {
 
 export function PlayerPanel() {
   useStaticCatalogs();  // re-render once the weapon catalog loads in
+  useAssetProviders();  // re-render once mod role icons are available
   const key       = useViewerStore((s) => s.selectedPlayerKey);
   const snap      = useViewerStore((s) => s.curSnap);
   const prevSnap  = useViewerStore((s) => s.prevSnap);
@@ -100,7 +102,7 @@ export function PlayerPanel() {
   const stats   = (p.stats ?? {}) as Record<string, unknown>;
   const voice   = p.voiceChannel && p.voiceChannel !== "none" ? p.voiceChannel : null;
 
-  const roleUrl  = roleIconUrl(p);
+  const roleUrl  = roleIconUrl(p, snap);
   const roleId   = p.roleId ?? "—";
   const rolePool = p.rolePoolLabel ?? p.rolePool ?? "";
   const tc       = teamColor(p.teamId);

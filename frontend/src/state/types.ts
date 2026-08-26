@@ -445,6 +445,10 @@ export interface GameState {
   mapName: string | null;
   gameModeName: string | null;
   instanceClass: string | null;
+  // Selected by the backend from runtime identifiers when provider metadata
+  // is available. Older recordings omit it; the frontend then detects from
+  // the same provider registry for backward compatibility.
+  assetProviderId?: string | null;
   layer?: LayerBounds | null;
   mapConfig?: unknown;
   lane?: LaneGraph | null;

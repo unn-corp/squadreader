@@ -18,6 +18,7 @@ Endpoints
     GET /api/recordings         list FINALIZED .sqrx files with sidecar metadata
     GET /api/recording/<id>     decompressed NDJSON stream for one finished file
     GET /api/recording/<id>/meta  just the sidecar metadata for one file
+    GET /api/asset-providers  asset-provider registry for the frontend
 
 The `/api/recordings*` endpoints only activate when the server is
 started with a `recordings_dir` (passed through from
@@ -371,8 +372,6 @@ def _make_handler(
     _metadata_box: list[Any] = []
 
     def _layer_bounds(layer_name: Optional[str]) -> Optional[dict]:
-        if not layer_name:
-            return None
         if not _metadata_box:
             try:
                 from .squad.metadata import Metadata
@@ -382,10 +381,41 @@ def _make_handler(
         md = _metadata_box[0]
         if md is None:
             return None
+        if not layer_name:
+            return None
         try:
             return md.layer_bounds_for(layer_name)
         except Exception:
             return None
+
+    def _asset_providers() -> dict[str, Any]:
+        if not _metadata_box:
+            try:
+                from .squad.metadata import Metadata
+                _metadata_box.append(Metadata.load())
+            except Exception:
+                _metadata_box.append(None)
+        md = _metadata_box[0]
+        if md is None:
+            return {
+                "schemaVersion": 1,
+                "defaultProviderId": "vanilla",
+                "providers": {
+                    "vanilla": {
+                        "id": "vanilla",
+                        "label": "Squad (vanilla)",
+                        "version": "builtin",
+                    }
+                },
+            }
+        try:
+            return md.asset_providers()
+        except Exception:
+            return {
+                "schemaVersion": 1,
+                "defaultProviderId": "vanilla",
+                "providers": {},
+            }
 
     class _H(http.server.BaseHTTPRequestHandler):
         # The replay endpoint streams with HTTP/1.1 chunked transfer coding.
@@ -424,6 +454,8 @@ def _make_handler(
                 self._handle_leaderboard()
             elif path in ("/api/weapons", "/api/weapons/"):
                 self._handle_weapon_meta()
+            elif path in ("/api/asset-providers", "/api/asset-providers/"):
+                self._send_json(_asset_providers())
             elif path in ("/api/heatmap", "/api/heatmap/"):
                 self._handle_heatmap()
             elif path in ("/api/matches", "/api/matches/"):

@@ -1,7 +1,8 @@
 // Icon URL resolvers + Image cache + alpha-bbox auto-fit for
 // visual-weight normalisation. Ported from the old viewer; no React.
 
-import type { Deployable, Marker, Vehicle } from "../state/types";
+import type { Deployable, Marker, Snapshot, Vehicle } from "../state/types";
+import { assetUrl } from "../data/assetProviders";
 
 interface CachedImage extends HTMLImageElement {
   _bbox?: { x: number; y: number; w: number; h: number } | null;
@@ -324,7 +325,13 @@ function scVehicleIcon(cs: string): string | null {
   return null;
 }
 
-export function vehicleIconUrl(v: Vehicle): string | null {
+export function vehicleIconUrl(v: Vehicle, snap?: Snapshot | null): string | null {
+  const providerUrl = assetUrl("vehicleIcons", v.classShort, snap);
+  if (providerUrl) return providerUrl;
+  return vanillaVehicleIconUrl(v);
+}
+
+function vanillaVehicleIconUrl(v: Vehicle): string | null {
   // Turreted armour keeps the legacy two-piece base (turret layer rotates via
   // vehicleTurretIconUrl). Everything else uses the SquadCalc granular set,
   // falling back to the legacy coarse icon when nothing matches.
@@ -390,7 +397,13 @@ function legacyVehicleIconUrl(v: Vehicle): string | null {
   return VEHICLE_ICON["Transport"]!;
 }
 
-export function deployableIconUrl(d: Deployable): string | null {
+export function deployableIconUrl(d: Deployable, snap?: Snapshot | null): string | null {
+  const providerUrl = assetUrl("deployableIcons", d.classShort, snap);
+  if (providerUrl) return providerUrl;
+  return vanillaDeployableIconUrl(d);
+}
+
+function vanillaDeployableIconUrl(d: Deployable): string | null {
   if (d.isFob) return "./icons/markers/fob.png";
   const cs = (d.classShort ?? "").toUpperCase();
   if (cs.includes("HAB"))      return "./icons/deployables/deployable_hab.png";
@@ -407,7 +420,13 @@ export function deployableIconUrl(d: Deployable): string | null {
 // Squad role FName, e.g. 'WPMC_LAT_02' / 'CAF_SL_05') because it's
 // more discriminating than rolePool (which buckets Recruit/Grenadier/
 // Raider under "Generic"). Order matters — most-specific first.
-export function roleIconUrl(p: { roleId: string | null }): string | null {
+export function roleIconUrl(p: { roleId: string | null }, snap?: Snapshot | null): string | null {
+  const providerUrl = assetUrl("roleIcons", p.roleId, snap);
+  if (providerUrl) return providerUrl;
+  return vanillaRoleIconUrl(p);
+}
+
+function vanillaRoleIconUrl(p: { roleId: string | null }): string | null {
   const rid = (p.roleId ?? "").toLowerCase();
   if (!rid || rid === "none") return null;
   const base = "./icons/roles/";

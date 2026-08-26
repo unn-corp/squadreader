@@ -10,11 +10,12 @@ import { weaponDisplayName, weaponStatic } from "../data/weaponsStatic";
 import { vehicleWeaponStatic } from "../data/vehicleWeaponsStatic";
 import { useStaticCatalogs } from "../data/staticCatalogs";
 import { useViewerStore } from "../state/viewerStore";
+import { useAssetProviders } from "../data/assetProviders";
 import { playerKey } from "./PlayerPanel";
 import {
   damageTypeCategoryLabel, deathCauseFromDamageType, deathCausePhrase,
 } from "../killfeed/diff";
-import type { KillFeedEntry } from "../state/types";
+import type { KillFeedEntry, Snapshot } from "../state/types";
 
 function fmtGameTime(s: number | null) {
   if (s == null || !Number.isFinite(s) || s < 0) return "00:00";
@@ -49,10 +50,11 @@ interface NameChipProps {
   name: string;
   team: number | null;
   roleId: string | null;
+  snapshot: Snapshot | null;
   onClick: () => void;
 }
-function NameChip({ name, team, roleId, onClick }: NameChipProps) {
-  const url = roleIconUrl({ roleId });
+function NameChip({ name, team, roleId, snapshot, onClick }: NameChipProps) {
+  const url = roleIconUrl({ roleId }, snapshot);
   return (
     <span className="kf-name"
           style={{ color: teamColor(team) }}
@@ -70,8 +72,8 @@ function VehicleChip({ cls }: { cls: string | null }) {
   return <span className="kf-veh" title={name}>{name}</span>;
 }
 
-interface RowProps { e: KillFeedEntry; select: (name: string | null) => void; }
-function Row({ e, select }: RowProps) {
+interface RowProps { e: KillFeedEntry; snapshot: Snapshot | null; select: (name: string | null) => void; }
+function Row({ e, snapshot, select }: RowProps) {
   const time = fmtGameTime(e.gameTimeSec);
   const rowCls = ["kf-row",
     e.wounded ? "kf-wounded" : "",
@@ -86,7 +88,7 @@ function Row({ e, select }: RowProps) {
     return (
       <div className={rowCls + " kf-row-world"}>
         <span className="kf-time">{time}</span>
-        <NameChip name={e.victim} team={e.victimTeam} roleId={e.victimRoleId}
+        <NameChip name={e.victim} team={e.victimTeam} roleId={e.victimRoleId} snapshot={snapshot}
                   onClick={() => select(e.victim)} />
         <VehicleChip cls={e.victimVehicleClass} />
         <span className="kf-world-phrase" title={worldCause.title}>
@@ -101,7 +103,7 @@ function Row({ e, select }: RowProps) {
     <div className={rowCls} title={e.wounded ? "Wounded (incap)" : undefined}>
       <span className="kf-time">{time}</span>
       {e.killer
-        ? <NameChip name={e.killer} team={e.killerTeam} roleId={e.killerRoleId}
+        ? <NameChip name={e.killer} team={e.killerTeam} roleId={e.killerRoleId} snapshot={snapshot}
                     onClick={() => select(e.killer)} />
         : <span className="kf-name kf-name-mute">
             {e.suicide ? "Suicide" : "?"}
@@ -117,7 +119,7 @@ function Row({ e, select }: RowProps) {
         {e.headshot && <span className="kf-hs" title="Headshot">HS</span>}
         <span className="kf-arrow">›</span>
       </span>
-      <NameChip name={e.victim} team={e.victimTeam} roleId={e.victimRoleId}
+      <NameChip name={e.victim} team={e.victimTeam} roleId={e.victimRoleId} snapshot={snapshot}
                 onClick={() => select(e.victim)} />
       <VehicleChip cls={e.victimVehicleClass} />
     </div>
@@ -126,7 +128,9 @@ function Row({ e, select }: RowProps) {
 
 export function KillFeed() {
   useStaticCatalogs();  // re-render once the weapon catalogs load in
+  useAssetProviders();  // re-render once mod role icons are available
   const entries = useViewerStore((s) => s.killFeed);
+  const snapshot = useViewerStore((s) => s.curSnap);
   const visible = useViewerStore((s) => s.killFeedVisible);
   const toggle  = useViewerStore((s) => s.toggleKillFeed);
   const clear   = useViewerStore((s) => s.clearKillFeed);
@@ -162,7 +166,7 @@ export function KillFeed() {
           {entries.length === 0 && (
             <div className="kf-empty">No kills yet</div>
           )}
-          {entries.map((e) => <Row key={e.id} e={e} select={select} />)}
+          {entries.map((e) => <Row key={e.id} e={e} snapshot={snapshot} select={select} />)}
         </div>
       )}
     </div>

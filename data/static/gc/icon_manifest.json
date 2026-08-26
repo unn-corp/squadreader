@@ -991,6 +991,384 @@
       "width": 32
     },
     {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_arcleader",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/7d97c1bfa28b7125.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_arctrooper",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/cd6333a8db8ceca7.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_autorifle",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/94d9aa4cc6f05e3d.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_closequarter",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/3cf0fe8623d1c5d8.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_cmd",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 118,
+      "output": "/icons/gc/a3c6aec180ece52c.webp",
+      "status": "decoded",
+      "width": 118
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_commando",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/9e1b28131f9cf8dc.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_crewman",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/8eb951be0dd8e288.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_geonosian",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/22da91c9441a6f3f.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_geonosianElite",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/87a64a1e0f68ead5.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_grenadier",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/1409773c6af11b89.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_gungan",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/9a87ecc100e231a4.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_gunganElite",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/01dffaec94ee3d3b.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_heavyantitank",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/45c5e42c67119873.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_jetpack",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 118,
+      "output": "/icons/gc/8496c70d9d66a0fb.webp",
+      "status": "decoded",
+      "width": 118
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_leadcrewman",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/787bd4491aca645c.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_leadpilot",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/21c17eb3fc81df3c.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_leadshadow",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/58cdf5dca746e928.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_lightantitank",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/87f2f3f758b040c5.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_marksman",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 182,
+      "output": "/icons/gc/2fd85515acada885.webp",
+      "status": "decoded",
+      "width": 182
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_medic",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/e0cc2cfa2d317558.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_pilot",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/477338dda3821914.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_rifleman",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/545386e990515505.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_rifleman_scope",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/908780eddc7cb0c6.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_shadowtrooper",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/1980e9e2f2efb3f3.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_squadleader",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/0dc88fd9512cc7e0.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Clones/Roles/T_role_zsix",
+      "channelOrder": "BGRA",
+      "format": "webp",
+      "height": 118,
+      "output": "/icons/gc/c9b0d100ac741f0b.webp",
+      "status": "decoded",
+      "width": 118
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_autorifleCIS",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/b3f9cc595e42f970.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_bxcommando",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/52e918e2361b9640.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_crewmanCIS",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/c96f7172468849cf.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_grenadierCIS",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/52f5f9dcbf4a078f.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_hatCIS",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/db95651f25c8c3d9.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_latCIS",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/224d6d3393d27f1d.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_leadcrewmanCIS",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/532234662c28c6bc.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_leadpilotCIS",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/1b594720e47b48db.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_magnaguard",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/5954d574e409c83f.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_marksmanCIS",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/a85d216c8068bb04.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_medicCIS",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/d57a58d732c260b2.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_pilotCIS",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/c75a869082e54402.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_riflemanCIS",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/5a7edac08876d8cb.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_squadleaderCIS",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/bef3ca9f86a4866e.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_superduperdroid",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/e9507396aebb34b6.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
+      "assetPath": "/ANE_BASE/Gameplay/HUD/Droids/Roles/T_role_tacticaldroid",
+      "channelOrder": "RGBA",
+      "format": "webp",
+      "height": 128,
+      "output": "/icons/gc/60d2c4dd4afeed03.webp",
+      "status": "decoded",
+      "width": 128
+    },
+    {
       "assetPath": "/ANE_BASE/Gameplay/Teams/TeamImages/Droids/FedDroidsIcon",
       "channelOrder": "RGBA",
       "format": "webp",
@@ -1414,7 +1792,7 @@
       "width": 460
     }
   ],
-  "decoded": 157,
+  "decoded": 199,
   "failures": [
     {
       "assetPath": "/ANE_BASE/BoughtOrGiven/SWBF/CIS_FRIG_INT/ship_iconsSS",

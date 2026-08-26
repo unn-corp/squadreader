@@ -3931,6 +3931,11 @@ def build_snapshot(pm: ProcessMemory, arr: GUObjectArray,
             kind = metadata.vehicle_kind(cs)
             if kind:
                 v["kind"] = kind
+        provider_id = metadata.asset_provider_id(game_state, teams, players, vehicles)
+        if game_state is not None and provider_id:
+            # This is a compact, stable selector. The frontend still detects
+            # providers for older recordings that predate this field.
+            game_state["assetProviderId"] = provider_id
         # Layer lookup from the live MapName (FText decode).
         if game_state:
             layer_name = game_state.get("mapName")

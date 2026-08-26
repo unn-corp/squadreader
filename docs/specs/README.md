@@ -9,7 +9,8 @@ Specs for adapting SquadReader to Galactic Contention and validating it against 
 - [Live server validation plan](./003-live-server-validation.md) — test environment, fixture matrix, failure classification, and go/no-go rules.
 - [Local asset extraction and live test build](./004-local-asset-extraction-and-test-build.md) — package inputs, derived assets, adapter generation, harness phases, and failure codes.
 - [GC Maps pattern traceability](./005-gc-maps-patterns-traceability.md) — learned extractor patterns mapped to SquadReader requirements and verification.
-- [Static GC asset bundle](./006-static-gc-asset-bundle.md) — packaged local catalogs, map imagery, icon textures, verification, and explicit extraction limits.
+- [Static GC asset bundle](./006-static-gc-asset-bundle.md) — packaged local catalogs, map imagery, icon textures, verification, and extraction limits.
+- [Multi-provider asset resolution](./008-multi-provider-asset-resolution.md) — the data contract and runtime selection rules for vanilla plus mod asset sets.
 
 ## Runbooks
 
@@ -17,4 +18,4 @@ Specs for adapting SquadReader to Galactic Contention and validating it against 
 
 ## Current boundary
 
-The fork now contains a namespaced, verified static GC asset bundle extracted from local client packages. Runtime class-name bindings, live-server testing, adapter generation, and frontend integration remain pending the controlled server capture.
+The fork now contains a namespaced, verified static GC asset bundle and a data-driven provider registry extracted from local client packages. Runtime coverage is still extended incrementally as new live classes are observed.

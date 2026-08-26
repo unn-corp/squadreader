@@ -1,7 +1,9 @@
 {
   "bundle": "gc-static-assets",
   "counts": {
-    "decodedIcons": 157,
+    "assetProviderRoleBindings": 883,
+    "assetProviderVehicleBindings": 14,
+    "decodedIcons": 199,
     "factions": 42,
     "layerSetups": 156,
     "mapImages": 46,
@@ -13,8 +15,16 @@
   },
   "files": [
     {
+      "path": "data/static/asset_providers.json",
+      "sha256": "be99b550da12aafa8404d8b9956c89806c943027d29429f76311204ea56f930f"
+    },
+    {
       "path": "icons/gc/005e2210e55e29d2.webp",
       "sha256": "d889b0dc80988d63a24aa71709c009cd2fa5256f71cf6b781cc920d0834cb647"
+    },
+    {
+      "path": "icons/gc/01dffaec94ee3d3b.webp",
+      "sha256": "582d9421c3a259dc0f85c8184e315493766c6af0ff0b7cf7327667c2108800e5"
     },
     {
       "path": "icons/gc/02796a6215ad851a.webp",
@@ -41,12 +51,20 @@
       "sha256": "4c2511f734d69c8fb16abd5c2c2fb54309458a1a9c9331a169406541869356ad"
     },
     {
+      "path": "icons/gc/0dc88fd9512cc7e0.webp",
+      "sha256": "f08e78b05450647da1274bc741fbf6b8f625071b583994b1f4ac5c02280ab16f"
+    },
+    {
       "path": "icons/gc/0f273c8c84c556ce.webp",
       "sha256": "3c321a18081853bb2aa1523c0a6eac3e067d0151703cfb91d398ac63af75c4c9"
     },
     {
       "path": "icons/gc/139f58bdd05a9daf.webp",
       "sha256": "928486eb56ebaed756ab3277a68e5c2fe0fb93c36ca30a5c796b2dd86942846b"
+    },
+    {
+      "path": "icons/gc/1409773c6af11b89.webp",
+      "sha256": "f017a8ef2a845e52751017970d4b83891930d37ffbd8b3a60c2c2a23c87b68ba"
     },
     {
       "path": "icons/gc/14b9f1304b842f3e.webp",
@@ -71,6 +89,14 @@
     {
       "path": "icons/gc/189801d9a70661bb.webp",
       "sha256": "afc89a7ecf970f29be24a0abcdcaf399b7d5c5cc2c7bbe3a34b16f4811c48bbc"
+    },
+    {
+      "path": "icons/gc/1980e9e2f2efb3f3.webp",
+      "sha256": "ba21085b2cc1ef28f0eb618550050e2595646ba38197a587fcc35f74730ed500"
+    },
+    {
+      "path": "icons/gc/1b594720e47b48db.webp",
+      "sha256": "e40e46b0ba972ac07bf15e75e8a361a6b88aca8f8e003dcc2cb9d3605a6a9ba9"
     },
     {
       "path": "icons/gc/1c55664b478647cb.webp",
@@ -99,6 +125,18 @@
     {
       "path": "icons/gc/211c79785bfa9a94.webp",
       "sha256": "bf9ee4b7729505ac1ca37b6e3e1c8529667049f5cc02b6d40f29dc53560d4eb0"
+    },
+    {
+      "path": "icons/gc/21c17eb3fc81df3c.webp",
+      "sha256": "4f73d9120298918d7cdeed33664a6da0a0d2a5b26ffe3ca2dadcc48aad3da2a7"
+    },
+    {
+      "path": "icons/gc/224d6d3393d27f1d.webp",
+      "sha256": "9f23226264c196cccaadffcc1cac9441f42ab4e37cf76a495ccb928cb368a8de"
+    },
+    {
+      "path": "icons/gc/22da91c9441a6f3f.webp",
+      "sha256": "e01071d3b2506c465594d9b87effc1574e2b28cf19a2d2ac2e38214e7422ff37"
     },
     {
       "path": "icons/gc/2425a6d1a1e233cb.webp",
@@ -133,6 +171,10 @@
       "sha256": "a19eb3cc230ccd8995f9d238b7db37458a3045cb62360dfcfd87bf6869e6b0bb"
     },
     {
+      "path": "icons/gc/2fd85515acada885.webp",
+      "sha256": "1294d5776013107314a75192837e8cc09679227f7f2901b7ae4aaa145da3f301"
+    },
+    {
       "path": "icons/gc/30f74b3f28d1bc33.webp",
       "sha256": "b2b5df5f4f12d7eb67b89664cd9fb24dd5d897da1dcd0b9f88d4d915109e5606"
     },
@@ -157,6 +199,10 @@
       "sha256": "9ae0918f34ab19c5e23457ec9f3f314066941c12f5d6a081a68af7cb595be098"
     },
     {
+      "path": "icons/gc/3cf0fe8623d1c5d8.webp",
+      "sha256": "a93185582ddb205376ab718c1be94ccbbed4e93f3c598d485f6ecf46618ff848"
+    },
+    {
       "path": "icons/gc/3d6be4fda3b61b35.webp",
       "sha256": "09d5e29b3d4dc9af6f1bd61d4d93bbd64b5266fa942116dfad1e9c1dbc58fbc1"
     },
@@ -169,8 +215,16 @@
       "sha256": "011a7a94f31d7d62875e1b729fbc21d98871ea5b01431f1692aafa63f5572f17"
     },
     {
+      "path": "icons/gc/45c5e42c67119873.webp",
+      "sha256": "76b757ff382e2db34c1b888a14c687e62477c5c06445b0d9e324c93921dfe625"
+    },
+    {
       "path": "icons/gc/469a6adbd6cf59a1.webp",
       "sha256": "91b1ab679dce86f64bd4fa8d643269017a0362b677678d3a5650f1d940054779"
+    },
+    {
+      "path": "icons/gc/477338dda3821914.webp",
+      "sha256": "ca41bcc11ee4d9fa87d4cde071fb790d4447367ffacbcc45c4703e0d4a70d723"
     },
     {
       "path": "icons/gc/47e426f8dfe1afbf.webp",
@@ -193,6 +247,26 @@
       "sha256": "43b73e0822eea096aa7c8a523dc4dc46ba3e89121559661956f62799e6b3e4b5"
     },
     {
+      "path": "icons/gc/52e918e2361b9640.webp",
+      "sha256": "5c17e97d1a512d8a1b7848b420f1901d0df7bf08cb97218e893f2447639ae79c"
+    },
+    {
+      "path": "icons/gc/52f5f9dcbf4a078f.webp",
+      "sha256": "6308541d18573be5badb66c65a4394d67dca793d7e8599af627c9bdd3e267927"
+    },
+    {
+      "path": "icons/gc/532234662c28c6bc.webp",
+      "sha256": "8ab217652411e48f4fa457bc1c3e9820505ffb6bd63252a26e2f916b3315f844"
+    },
+    {
+      "path": "icons/gc/545386e990515505.webp",
+      "sha256": "44da61f603e00f434a8bae71703e04dde395d19d235209efc199e636e6c55db7"
+    },
+    {
+      "path": "icons/gc/58cdf5dca746e928.webp",
+      "sha256": "b57aa247d23e844cd51f6360b83e3db05088e09e386fc9a37b35d4e7ca9d237f"
+    },
+    {
       "path": "icons/gc/58f088f6ed14cb27.webp",
       "sha256": "94d85d1b9543d1ee9a39e0654114fdaff15f73a61135de34ac8973c2ed54caeb"
     },
@@ -201,8 +275,16 @@
       "sha256": "202212dc90b5766bae06ac17fa64e85b5168216547f8b7ebb9caef7139622f67"
     },
     {
+      "path": "icons/gc/5954d574e409c83f.webp",
+      "sha256": "e8a10115ee98dde45cad847a72108a7c6bee1ef80897950e243dbafc0cee9d0f"
+    },
+    {
       "path": "icons/gc/5a23b4c21c33033d.webp",
       "sha256": "d322891e9218b7515e555ac5d8342f29243725377bfa4ed8d88e20f9b4e26460"
+    },
+    {
+      "path": "icons/gc/5a7edac08876d8cb.webp",
+      "sha256": "b617465ae670f1e12d8207b8ec8b30bc89d1f0a14ddaea217a87dbc14814de13"
     },
     {
       "path": "icons/gc/5d4045ca6d9af587.webp",
@@ -219,6 +301,10 @@
     {
       "path": "icons/gc/609af830d3c8c824.webp",
       "sha256": "1fd086610c780e59544bf90901894e63cd5be675c471a3b9e61882996379735b"
+    },
+    {
+      "path": "icons/gc/60d2c4dd4afeed03.webp",
+      "sha256": "b8353932e1e564b3e7f2f1d891951c0229dcc3decbf3189de124b554d995f245"
     },
     {
       "path": "icons/gc/61f90653e4b0d64b.webp",
@@ -253,6 +339,10 @@
       "sha256": "18e71f6e3d6122698f2813038ca8226e6c701b99e308c7c490904f63b181629a"
     },
     {
+      "path": "icons/gc/787bd4491aca645c.webp",
+      "sha256": "d2e7ba656302a9cde745fce5508c4c4cde38c4f3b741a979db56d2352032ca18"
+    },
+    {
       "path": "icons/gc/79446be698b09411.webp",
       "sha256": "bfb7f7ad684f33893b1a076cbaf758de0ff7730149d30e4379c6f215ce2321e3"
     },
@@ -271,6 +361,10 @@
     {
       "path": "icons/gc/7d80d78751c4cc35.webp",
       "sha256": "797e249afb61fb35a6248ad229c28c0d9fc290bc1526ac9e28070768f23f48bf"
+    },
+    {
+      "path": "icons/gc/7d97c1bfa28b7125.webp",
+      "sha256": "5891208578b153362463ae3591d26df5f50826f5803bdb9c0cd73de3f76e5391"
     },
     {
       "path": "icons/gc/7e16d48e4bf41ba3.webp",
@@ -309,6 +403,18 @@
       "sha256": "642c78277e756f00d42630ef12d1db3ce57f586415f64aa438ea6825e1d1f282"
     },
     {
+      "path": "icons/gc/8496c70d9d66a0fb.webp",
+      "sha256": "ffb280e70981b96ae4da4bad1ffb4c7a64b7ffddb6a476020d5ec2de7801ab74"
+    },
+    {
+      "path": "icons/gc/87a64a1e0f68ead5.webp",
+      "sha256": "99d06356f0f561df46660cf772124d5e6a6f40b2291284584e53d1b7f5bb33e0"
+    },
+    {
+      "path": "icons/gc/87f2f3f758b040c5.webp",
+      "sha256": "6efbd8d06a8ca07a165bb6b1249b9f6773fcc995d2bda1cdd824e34a77a45d84"
+    },
+    {
       "path": "icons/gc/881f5da4241f1812.webp",
       "sha256": "7a4222251c69211eefb609afbe4074bc5d1d0d83548666de1e6ed0b3daf09b0f"
     },
@@ -333,6 +439,10 @@
       "sha256": "b47ec001b07b064dd797ff4a42d12bb62397501c8d53693104b3560bcb00b19f"
     },
     {
+      "path": "icons/gc/8eb951be0dd8e288.webp",
+      "sha256": "08ab9e409c2e27dbd48d42f84ecfb1e40bb210eef18a7d479315a8dc22d88bb6"
+    },
+    {
       "path": "icons/gc/8f5dca1c9996d12d.webp",
       "sha256": "4bbeddd688eead33fd7599b6dc49c628591292b1fe35d57160209dd84c4c0553"
     },
@@ -345,6 +455,10 @@
       "sha256": "aa61f7737e8727bd79b9511b34c868848351a4362bbaf3cf2a04b2a3f969fa0e"
     },
     {
+      "path": "icons/gc/908780eddc7cb0c6.webp",
+      "sha256": "3c9337c8d33762a9881d7441ee1b2af48a67d3ea9303c7ca6d1183628d77d27a"
+    },
+    {
       "path": "icons/gc/917853c213fd5fd1.webp",
       "sha256": "19f92815372927dacf5cf6c584e53df869fcf105d00033d4c3c634e0b53cd5d9"
     },
@@ -355,6 +469,10 @@
     {
       "path": "icons/gc/93bf32a0c0440ad0.webp",
       "sha256": "09fb22ccd8aa3008a7120eeeeefcf5d31bf9ace3456f5f96a4d249febaf707bb"
+    },
+    {
+      "path": "icons/gc/94d9aa4cc6f05e3d.webp",
+      "sha256": "aceae9232227ceb30f0e3009d79416ffe025537b83ae3d924da8650adb4700b9"
     },
     {
       "path": "icons/gc/962feb524f76a2f0.webp",
@@ -389,6 +507,10 @@
       "sha256": "056ec1e55965404323577269457eba43035f4cbb20d9be8299e4f773be2c8a2a"
     },
     {
+      "path": "icons/gc/9a87ecc100e231a4.webp",
+      "sha256": "5e530a13a1688ff5ef0368def165c8a1e4a9104b7474f56c6f83b48506b418f2"
+    },
+    {
       "path": "icons/gc/9b02e254b0df7b09.webp",
       "sha256": "5bc3402aaac3b060e9414dedf14c09de971be95c2c51a9aba430b430815683be"
     },
@@ -399,6 +521,10 @@
     {
       "path": "icons/gc/9d93b90d2954aad4.webp",
       "sha256": "d5b86f85dab8f5f4254cf471b205e418f77eeb3992a1feb0dd4fc990f6f99713"
+    },
+    {
+      "path": "icons/gc/9e1b28131f9cf8dc.webp",
+      "sha256": "0e513067a825ddb5ca3da20b0abd27000bc1ca11e93df5a37eb3286b6439bd9a"
     },
     {
       "path": "icons/gc/a0ba48ae41dc7865.webp",
@@ -417,8 +543,16 @@
       "sha256": "565b4b10f35f6fbd2005ec4fe114ec7cc3cde189eda45fafc03efc4fc1d0e976"
     },
     {
+      "path": "icons/gc/a3c6aec180ece52c.webp",
+      "sha256": "ce42e87dd5e8a8d3becff6f0f9606bf3ada927fd09f12c115615911e8e3b2bc5"
+    },
+    {
       "path": "icons/gc/a6c98d23d1b55eac.webp",
       "sha256": "dd3ae572816441654f887bc52dfa2a61fd6c2e3b6d5c01e4b6200db34041bd61"
+    },
+    {
+      "path": "icons/gc/a85d216c8068bb04.webp",
+      "sha256": "cdb1330e4b0c20c482aaf18c6f43bdb26fa7a16465a464e6b0fc02fc80b39489"
     },
     {
       "path": "icons/gc/a8cb10500ddcaef2.webp",
@@ -449,6 +583,10 @@
       "sha256": "4c7c276fdf6a03d2fb977a6fe87cb0c2603965a90eb7d6f6dce21dfcc1479148"
     },
     {
+      "path": "icons/gc/b3f9cc595e42f970.webp",
+      "sha256": "5c3365cecd23118ff0b299502f6985f4de2b16aaf552a40bbdfb65e9318f6258"
+    },
+    {
       "path": "icons/gc/b6c538080ca460e3.webp",
       "sha256": "b47ec001b07b064dd797ff4a42d12bb62397501c8d53693104b3560bcb00b19f"
     },
@@ -477,6 +615,10 @@
       "sha256": "aef7ba31a2b4f003a5072bf950df048150c3b57fd23d6f9d47a707435c42f989"
     },
     {
+      "path": "icons/gc/bef3ca9f86a4866e.webp",
+      "sha256": "eef82e9abc3735abbf6a7608ff802ef78d0c36ad20161a2fa39b1f16ecf82e20"
+    },
+    {
       "path": "icons/gc/c01ceb5063f235e8.webp",
       "sha256": "3a11802ae491100fb9ee7dfc48e0908bca3f85566ef2b94057113246e9791e83"
     },
@@ -493,6 +635,10 @@
       "sha256": "8c685af714aecb78781eebe0bdb8ad4e210d8ada0c39744e74a24553834f6911"
     },
     {
+      "path": "icons/gc/c75a869082e54402.webp",
+      "sha256": "9a30c655ad08f1345822e42b8aaaf48070a7f08bf31bc384c813a3a9e7bf43dd"
+    },
+    {
       "path": "icons/gc/c7a17e5744331e1c.webp",
       "sha256": "832a3986d0534784117ab03440b48603e256c139b011224c3a22f7a46f4f50a3"
     },
@@ -505,8 +651,16 @@
       "sha256": "d471ce73a59d8a15b2cab0f52cc70c82d5c8905e8a1033ade5b62cc9dfdf3a72"
     },
     {
+      "path": "icons/gc/c96f7172468849cf.webp",
+      "sha256": "15daa758560c2f461b6b907e68966c8e16fc988c504bb5572a22547a85df36ce"
+    },
+    {
       "path": "icons/gc/c981da77d1710723.webp",
       "sha256": "202212dc90b5766bae06ac17fa64e85b5168216547f8b7ebb9caef7139622f67"
+    },
+    {
+      "path": "icons/gc/c9b0d100ac741f0b.webp",
+      "sha256": "b5fb2d7c56daf776c2c87bd3c1c32bb0ed5227c56c41a6ce5e9d59e8161740ea"
     },
     {
       "path": "icons/gc/ca58982db89efe14.webp",
@@ -525,6 +679,10 @@
       "sha256": "623de8b8e1be413c0008e171782e2ddb2aabe6f68c0f285e6f91ab6481d22ce8"
     },
     {
+      "path": "icons/gc/cd6333a8db8ceca7.webp",
+      "sha256": "22cfe0d63cbb663dc9575970f0b6b002ee4e2fb956846725b0b2a054b5dfdfef"
+    },
+    {
       "path": "icons/gc/ceac504ac0e19ea2.webp",
       "sha256": "3a23f67235edd7b22ed25070abfe875a702c6474ba644eba5115e72b901a55c5"
     },
@@ -541,6 +699,10 @@
       "sha256": "b2b5df5f4f12d7eb67b89664cd9fb24dd5d897da1dcd0b9f88d4d915109e5606"
     },
     {
+      "path": "icons/gc/d57a58d732c260b2.webp",
+      "sha256": "2d43f7790cb075c9ae5f0a77dbfea5850d1d60479adfd1fb5c4fc09c2351b1f7"
+    },
+    {
       "path": "icons/gc/d7d0741b3f55025d.webp",
       "sha256": "6ed25b88d4be2a7026c8f7eeb671955db35763fee75571f81b113198f8f0bf7c"
     },
@@ -551,6 +713,10 @@
     {
       "path": "icons/gc/db4a0e458da3fd71.webp",
       "sha256": "5037f4d5e0602d261d74b271a1411100b3a241c5c710e9bf548db23a2531a038"
+    },
+    {
+      "path": "icons/gc/db95651f25c8c3d9.webp",
+      "sha256": "d4b9d9cda092dd5e5cd14d807dce6c66967c0286af9be86adfe5d339d08da5d2"
     },
     {
       "path": "icons/gc/dc7960e4c5bb60a9.webp",
@@ -567,6 +733,10 @@
     {
       "path": "icons/gc/dff85664f9e9b4f2.webp",
       "sha256": "84db1687c6ec9182041df29cfec1a81a174cdae542a0e40378a9f220b68ecaf9"
+    },
+    {
+      "path": "icons/gc/e0cc2cfa2d317558.webp",
+      "sha256": "4f904958d25ef0062c54cbd9f5485d71d13108e074bb2b2ba5706eec2ef8e443"
     },
     {
       "path": "icons/gc/e1d6b45971ca5952.webp",
@@ -599,6 +769,10 @@
     {
       "path": "icons/gc/e607b02a99a91577.webp",
       "sha256": "4eea76f442a3aa2d2b1e92a080472ce262bcd20d142e412f24491815fb585585"
+    },
+    {
+      "path": "icons/gc/e9507396aebb34b6.webp",
+      "sha256": "c2c4540ea4360156bd4dac79d71968062c55bc016e966dcffb9d246863c1e0b3"
     },
     {
       "path": "icons/gc/ea4ed46198ddaae8.webp",
@@ -827,11 +1001,12 @@
   ],
   "generatedDate": "2026-08-26",
   "limitations": [
-    "Runtime class-name bindings are intentionally absent until a live GC server snapshot is captured.",
+    "Provider bindings cover the captured GC role catalog and explicitly observed live vehicle classes; new runtime classes require a fresh provider extraction.",
     "Three discovered icon candidates were not decodable UTexture2D client payloads and remain explicitly unresolved.",
     "World Partition actor coverage is partial in the offline map catalog."
   ],
   "manifests": {
+    "assetProviders": "data/static/asset_providers.json",
     "dataRoot": "data/static/gc",
     "iconAssetRoot": "icons/gc",
     "iconManifest": "data/static/gc/icon_manifest.json",

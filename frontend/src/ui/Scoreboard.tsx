@@ -10,7 +10,8 @@ import { useMemo } from "react";
 import { teamColor } from "../canvas/draw";
 import { factionFlagUrl, roleIconUrl } from "../canvas/icons";
 import { useViewerStore } from "../state/viewerStore";
-import type { Player, SquadState, TeamState } from "../state/types";
+import { useAssetProviders } from "../data/assetProviders";
+import type { Player, Snapshot, SquadState, TeamState } from "../state/types";
 import { playerKey } from "./PlayerPanel";
 
 interface SbStats {
@@ -57,6 +58,7 @@ interface ColumnProps {
   teamState: TeamState | null;
   players: Player[];
   squads: SquadState[];
+  snapshot: Snapshot | null;
   closed: number[];
   toggleSquad: (team: 1 | 2, id: number) => void;
   selectPlayer: (key: string) => void;
@@ -95,7 +97,7 @@ function StatIcon({ col }: { col: Col }) {
   );
 }
 
-function TeamColumn({ team, teamState, players, squads, closed, toggleSquad, selectPlayer }: ColumnProps) {
+function TeamColumn({ team, teamState, players, squads, snapshot, closed, toggleSquad, selectPlayer }: ColumnProps) {
   const tc = teamColor(team);
   // SL detection: each squad has `leaderStateAddr` (the player state
   // pointer of its leader). Build addr → squadId map then per-player
@@ -247,7 +249,7 @@ function TeamColumn({ team, teamState, players, squads, closed, toggleSquad, sel
                     const isFTL = !isSL && num(p.stats?.["fireTeamPosition"]) === 0
                                        && num(p.stats?.["fireTeamIndex"]) > 0;
                     const dead = num(p.soldier?.health) <= 0;
-                    const roleUrl = roleIconUrl(p);
+                    const roleUrl = roleIconUrl(p, snapshot);
                     const badge = isSL ? "SL" : isFTL ? "FTL" : "";
                     const badgeCls = isSL ? "is-sl" : isFTL ? "is-ftl" : "";
                     return (
@@ -282,6 +284,7 @@ function TeamColumn({ team, teamState, players, squads, closed, toggleSquad, sel
 }
 
 export function Scoreboard() {
+  useAssetProviders();  // repaint role icons after the provider manifest loads
   const visible       = useViewerStore((s) => s.scoreboardVisible);
   const close         = useViewerStore((s) => s.setScoreboardVisible);
   const closedSquads  = useViewerStore((s) => s.scoreboardClosedSquads);
@@ -317,10 +320,10 @@ export function Scoreboard() {
           <button onClick={() => close(false)} title="close (Tab / Esc)">✕</button>
         </header>
         <div className="sb-cols">
-          <TeamColumn team={1} teamState={team1} players={p1} squads={squads}
+          <TeamColumn team={1} teamState={team1} players={p1} squads={squads} snapshot={snap}
                       closed={closedSquads[1]} toggleSquad={toggleSquad}
                       selectPlayer={selectPlayer} />
-          <TeamColumn team={2} teamState={team2} players={p2} squads={squads}
+          <TeamColumn team={2} teamState={team2} players={p2} squads={squads} snapshot={snap}
                       closed={closedSquads[2]} toggleSquad={toggleSquad}
                       selectPlayer={selectPlayer} />
         </div>

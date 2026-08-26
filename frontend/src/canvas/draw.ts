@@ -692,7 +692,7 @@ function drawDeployables(ctx: CanvasRenderingContext2D, snap: Snapshot,
   for (const d of snap.deployables ?? []) {
     if (!d.position) continue;
     const [x, y] = worldToScreen(view, cs, d.position.x, d.position.y);
-    const url = deployableIconUrl(d);
+    const url = deployableIconUrl(d, snap);
     // FOB+HAB are the key landmarks (bigger badge, emphasis bezel).
     // Other deployables (mines, ammo crates, repair stations) get the
     // same badge wrapper but smaller and without the emphasis bezel.
@@ -950,7 +950,7 @@ function drawVehicles(ctx: CanvasRenderingContext2D, snap: Snapshot,
     const hasYaw  = v.yaw != null;
     const yawRaw  = hasYaw ? (v.yaw! * Math.PI) / 180 : 0;
     const yawIcon = hasYaw ? yawRaw + Math.PI / 2 : 0;
-    const url     = vehicleIconUrl(v);
+    const url     = vehicleIconUrl(v, snap);
     const vehImg  = url ? icon(url) : null;
     const ready   = !!(vehImg && vehImg.complete && vehImg.naturalWidth > 0);
     // Vehicles read bigger than players (more important on the map) and
@@ -1581,7 +1581,7 @@ function drawPlayers(ctx: CanvasRenderingContext2D, snap: Snapshot,
     // expressed via marker shrink. Keeps the map visually consistent and
     // avoids the "some players look further away than others" illusion.
     const size = 28 * cs.dpr;
-    const url = roleIconUrl(p);
+    const url = roleIconUrl(p, snap);
     const roleImg = url ? icon(url) : null;
     const ready = !!(roleImg && roleImg.complete && roleImg.naturalWidth > 0);
     const col = teamColor(p.teamId);
