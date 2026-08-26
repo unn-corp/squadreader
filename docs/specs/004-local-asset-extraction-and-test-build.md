@@ -57,6 +57,13 @@ Extend GC Maps' existing package reader and extractors rather than creating a se
 - Oodle decompression: existing `oozdec` prerequisite.
 - Structured package decoding: existing role, map, vehicle, and setup extractors.
 
+Structured GC package parsing must follow `ue_zen.py`'s learned format boundary:
+
+- GC uses tagged property serialization; structured extraction does not require `.usmap`, `global.utoc`, or CUE4Parse.
+- Packages carrying `PKG_UnversionedProperties` are rejected with an explicit unsupported-format error; the extractor must not guess.
+- All structured extractors share one reader and one object-reference implementation.
+- Oodle path is an explicit toolchain input or environment override. `/tmp` may hold build scratch, but committed outputs cannot depend on `/tmp` surviving.
+
 Raw staging layout is outside tracked source:
 
 ```text
@@ -111,6 +118,14 @@ Texture decoding uses the existing CUE4Parse helper boundary:
 - The map catalog extractor already handles client texture requests and WebP rendering.
 - New icon extraction must reuse the same request/result model.
 
+Map texture selection follows GC Maps' conservative rules:
+
+- Prefer exact map-scoped tactical/minimap assets.
+- Exclude generic HUD, loading, and unrelated image assets.
+- Use a complete-ID audited override only when the server package is absent; that override supplies imagery only.
+- Do not infer a texture from a layer-name substring when multiple candidates exist.
+- Do not publish a stale image as current after a failed decode.
+
 Output layout:
 
 ```text
@@ -145,6 +160,16 @@ Add extractors where current catalogs do not expose required records:
 - Deployable class and ownership references from role/loadout assets.
 - Explicit icon asset references for each canonical record.
 
+Runtime and package evidence have separate trust levels:
+
+1. Live reader observations establish exact runtime names.
+2. Exact decoded package references establish canonical asset identity and relationships.
+3. Committed GC catalogs establish reviewed display/faction/role records.
+4. Complete-ID audited overrides may supply a narrowly scoped field such as imagery.
+5. Filename substring scans may discover candidates only; they cannot establish identity or absence.
+
+When a property references another asset, resolve that object reference and read the target property. Do not classify an asset from nearby strings or byte proximity. This follows the vehicle-count extraction pattern: setup → `LimitedCount` reference → `BaseAvailability` value.
+
 Every catalog record has:
 
 ```json
@@ -164,6 +189,14 @@ Every catalog record has:
 ```
 
 `runtimeNames` stays empty until confirmed by the live reader. Package asset names are evidence for catalog identity, not proof of the name emitted by server memory.
+
+For map/layer records, preserve GC Maps coverage semantics:
+
+- `measured` — required data decoded from the exact cooked source.
+- `partial` — some data decoded; each unavailable category has a reason.
+- `unavailable` — no safe assertion available.
+- Point `active` and `possible` states remain distinct.
+- Randomized-layer candidates may be borrowed only across the exact same tactical image and coordinate frame; activation phases are not copied across layers.
 
 CAP-005 — Maintainer can produce SquadReader-compatible generated metadata from reviewed mappings.
 
@@ -192,6 +225,7 @@ Mapping rules:
 - `capzones.json` is generated only from proven geometry. GC map points alone do not create zone shapes.
 - `gc_icon_manifest.json` maps runtime and canonical identifiers to derived assets.
 - Missing mappings remain `unmapped`, `ambiguous`, `unsupported`, or `unavailable`.
+- Complete-ID aliases are reviewed data, not fuzzy matching.
 
 `adapter-manifest.json` includes source fingerprint, catalog revisions, generated files, schema versions, mapping counts, unresolved counts, and tool commit.
 
@@ -226,13 +260,16 @@ Execution phases:
 
 1. Validate source, adapter, and test configuration.
 2. Record server PID, executable identity, reader commit, mod revision, and data fingerprints.
-3. Run `sqreader doctor` against the live process.
-4. Run one `sqreader snapshot` and validate required top-level fields.
-5. Run bounded `sqreader watch` with NDJSON and `.sqrx` output.
-6. Parse observations into runtime inventory.
-7. Validate map/layer, faction, vehicle, kit, weapon, and deployable mappings.
-8. Validate generated asset manifest and required fixture assets.
-9. Write JSON and Markdown reports.
+3. Run independent derived-artifact verification before attaching to the live process.
+4. Run `sqreader doctor` against the live process.
+5. Run one `sqreader snapshot` and validate required top-level fields.
+6. Run bounded `sqreader watch` with NDJSON and `.sqrx` output.
+7. Parse observations into runtime inventory.
+8. Validate map/layer, faction, vehicle, kit, weapon, and deployable mappings.
+9. Validate generated asset manifest and required fixture assets.
+10. Write JSON and Markdown reports.
+
+Generated outputs are written to a staging directory. Promotion to the active adapter is atomic and occurs only after verification. A failed run leaves the last known-good adapter intact and records the new data as unavailable or failed.
 
 Suggested private invocation:
 
@@ -289,19 +326,35 @@ Required error classes:
 - `asset_manifest_missing`
 - `recording_invalid`
 
+Independent verification must also cover negative cases:
+
+- near-match layer IDs such as `V1` versus `V10` do not resolve;
+- an audited imagery override does not provide points, bounds, or phases;
+- an empty package scan refuses replacement;
+- invalid coverage rows become explicit `unavailable` records;
+- randomized-layer candidates do not inherit a phase from another layer;
+- private or raw package inputs never enter public output.
+
 ## Constraints
 
 - Local game/mod files are the only package source.
 - Server, client, and base-game packages must be pinned and fingerprinted independently.
 - Raw package files and raw decoded payloads stay outside tracked source.
 - Extraction is deterministic for unchanged inputs.
+- One shared structured-package reader is used; no parallel parser or hidden format fallback is introduced.
+- `.usmap` and `global.utoc` are not added as structured GC extraction prerequisites; unversioned packages fail explicitly.
+- CUE4Parse is limited to exact client `UTexture` decoding, not used as the canonical structured-property reader.
 - Required requests fail closed; best-effort discovery cannot hide required failures.
+- Required extraction results are staged, independently verified, then atomically promoted.
+- Failed runs cannot partially overwrite the last known-good generated adapter.
 - Reader and server run on the same Linux host with required process-memory permissions.
 - First test supports one server instance and one pinned GC build.
 - Test output remains private and local; central push is disabled.
 - Generated metadata cannot overwrite bundled vanilla data.
 - Package names, display names, and filename similarity cannot prove runtime identity.
+- Runtime identity is established by live observation; package scans only provide candidate/canonical asset evidence.
 - Map points cannot be promoted to capture-zone geometry without source evidence.
+- Every generated consumer payload derives from one versioned source/manifest set; hand-maintained duplicate catalogs are prohibited.
 - No production integration begins until the live compatibility report passes.
 
 ## Non-goals
