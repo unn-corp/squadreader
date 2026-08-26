@@ -340,6 +340,13 @@ def _resolve_sqmap(sqmaps_dir: Path, name: str) -> Optional[Path]:
             p = sqmaps_dir / f"{stem}{ext}"
             if p.is_file():
                 return p
+            # GC Maps assets are packaged under sqmaps/gc, while the
+            # frontend intentionally requests a bare texture name. Keeping
+            # the subdirectory lookup here lets GC layer metadata be selected
+            # automatically without exposing path separators to the URL.
+            gc_path = sqmaps_dir / "gc" / f"{stem}{ext}"
+            if gc_path.is_file():
+                return gc_path
     return None
 
 

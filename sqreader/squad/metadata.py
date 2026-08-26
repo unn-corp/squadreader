@@ -72,6 +72,41 @@ def _load_json(path: Path) -> dict[str, Any] | None:
         return None
 
 
+def _normalise_layer_key(value: str) -> str:
+    """Make UE/display layer names comparable without guessing words."""
+    return "".join(ch.lower() for ch in value if ch.isalnum())
+
+
+def _gc_layer_record(layer_id: str, raw: dict[str, Any]) -> dict[str, Any] | None:
+    """Adapt one GC Maps catalog layer to SquadReader's layer schema."""
+    bounds = raw.get("worldBoundsCm")
+    image_url = raw.get("imageUrl")
+    if (not isinstance(bounds, list) or len(bounds) != 4
+            or not all(isinstance(v, (int, float)) for v in bounds)
+            or not isinstance(image_url, str) or not image_url):
+        # A catalog entry without imagery cannot be rendered by the replay
+        # canvas, so leave it unavailable rather than inventing a texture.
+        return None
+    min_x, min_y, max_x, max_y = (float(v) for v in bounds)
+    texture = Path(image_url).stem
+    map_id = raw.get("mapId") or texture
+    map_name = raw.get("mapName") or layer_id.removeprefix("GC_")
+    game_mode = raw.get("gameMode")
+    if not isinstance(game_mode, str) or not game_mode:
+        for mode in ("RAAS", "RINV", "AAS", "SKM", "TC", "INV"):
+            if f"_{mode}_" in layer_id or layer_id.endswith(f"_{mode}"):
+                game_mode = mode
+                break
+    return {
+        "mapId": map_id,
+        "mapName": map_name,
+        "gameMode": game_mode,
+        "texture": texture,
+        "topLeft": {"x": min_x, "y": min_y},
+        "bottomRight": {"x": max_x, "y": max_y},
+    }
+
+
 @dataclass
 class Metadata:
     # Raw tables (kept around so callers can pass them to the frontend
@@ -84,6 +119,10 @@ class Metadata:
     # scripts/fetch_capzones.py from SquadCalc. Keyed by full display layer
     # name (same keys as layer_bounds). Missing file → {} → merge is a no-op.
     capzones: dict[str, Any] = field(default_factory=dict)
+    # GC Maps' extracted catalogs are kept separate from stock Squad metadata;
+    # layer lookup below normalises the runtime FText name against this index.
+    gc_layer_bounds: dict[str, dict[str, Any]] = field(default_factory=dict)
+    gc_roles: dict[str, Any] = field(default_factory=dict)
 
     # Derived reverse indices, built once at construction:
     _role_keyword_to_pool: dict[str, tuple[str, str]] = field(default_factory=dict)
@@ -93,13 +132,38 @@ class Metadata:
     @classmethod
     def load(cls, data_dir: Path | None = None) -> "Metadata":
         d = data_dir or DEFAULT_DATA_DIR
+        gc_root = d / "gc"
+        if not gc_root.is_dir() and (d / "map_catalog.json").is_file():
+            # Useful for an operator-provided data directory that points
+            # directly at the extracted GC catalog root.
+            gc_root = d
         m = cls(
             vehicle_factions=_load_json(d / "vehicle_factions.json") or {},
             squad_pools=_load_json(d / "squad_pools.json") or {},
             map_config=_load_json(d / "map_config.json") or {},
             layer_bounds=_load_json(d / "layer_bounds.json") or {},
             capzones=_load_json(d / "capzones.json") or {},
+            gc_roles=_load_json(gc_root / "roles.json") or {},
         )
+        gc_catalog = _load_json(gc_root / "map_catalog.json") or {}
+        for layer_id, raw in (gc_catalog.get("layers") or {}).items():
+            if not isinstance(layer_id, str) or not isinstance(raw, dict):
+                continue
+            record = _gc_layer_record(layer_id, raw)
+            if record is None:
+                continue
+            aliases = {
+                layer_id,
+                layer_id.removeprefix("GC_"),
+                raw.get("displayName"),
+                raw.get("mapName"),
+            }
+            for alias in aliases:
+                if isinstance(alias, str) and alias:
+                    m.gc_layer_bounds[_normalise_layer_key(alias)] = record
+            map_id = record.get("mapId")
+            if isinstance(map_id, str):
+                m.map_config.setdefault(map_id, record)
         # Build derived indices
         for pool_key, pool in (m.squad_pools.get("infantryPools") or {}).items():
             label = pool.get("label") or pool_key
@@ -143,6 +207,11 @@ class Metadata:
         """
         if not role_id or role_id == "None":
             return None
+        gc_role = (self.gc_roles.get("roles") or {}).get(role_id)
+        if isinstance(gc_role, dict):
+            unit = gc_role.get("unit")
+            if isinstance(unit, str) and unit:
+                return {"key": unit.replace("/", "_"), "label": unit}
         for tok in role_id.split("_"):
             hit = self._role_keyword_to_pool.get(tok.lower())
             if hit:
@@ -158,7 +227,8 @@ class Metadata:
     def layer_bounds_for(self, layer_name: str | None) -> dict[str, Any] | None:
         if not layer_name:
             return None
-        return self.layer_bounds.get(layer_name)
+        return (self.layer_bounds.get(layer_name)
+                or self.gc_layer_bounds.get(_normalise_layer_key(layer_name)))
 
     def capzones_for(self, layer_name: str | None) -> list[dict[str, Any]]:
         """Static cap-zone points for a layer, or [] if none/unknown.

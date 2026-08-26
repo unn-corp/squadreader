@@ -11,6 +11,10 @@ Specs for adapting SquadReader to Galactic Contention and validating it against 
 - [GC Maps pattern traceability](./005-gc-maps-patterns-traceability.md) — learned extractor patterns mapped to SquadReader requirements and verification.
 - [Static GC asset bundle](./006-static-gc-asset-bundle.md) — packaged local catalogs, map imagery, icon textures, verification, and explicit extraction limits.
 
+## Runbooks
+
+- [Local GC server connection and reader validation](../runbooks/local-gc-server-connection.md) — the observed LAN connection, live-join evidence, RCON checks, reader capture, map-roll test, and failure signatures.
+
 ## Current boundary
 
 The fork now contains a namespaced, verified static GC asset bundle extracted from local client packages. Runtime class-name bindings, live-server testing, adapter generation, and frontend integration remain pending the controlled server capture.

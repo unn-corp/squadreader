@@ -16,6 +16,9 @@ The launcher is `scripts/run_gc_server.sh`. It compiles
 missing or older than the source, then applies that helper only to the server
 launch through `LD_PRELOAD`.
 
+The operator-facing LAN connection and live-join procedure is documented in
+[`docs/runbooks/local-gc-server-connection.md`](../runbooks/local-gc-server-connection.md).
+
 ## Observed build and example paths
 
 The local dedicated-server installation used for this smoke attempt reported:
@@ -87,6 +90,11 @@ bash scripts/run_gc_server.sh \
   -- \
   -log -unattended
 ```
+
+This loopback topology is sufficient for the original reader-only smoke test;
+it is not the working Proton-client connection topology. For a live client,
+use the LAN bind and direct-console procedure in the
+[local GC connection runbook](../runbooks/local-gc-server-connection.md).
 
 The first run compiles the helper at:
 
@@ -190,6 +198,27 @@ watch state:  WaitingToStart, players=0, vehicles=12
 These gates establish that the reader can inspect this local live GC process.
 They do not establish complete GC metadata enrichment or production readiness.
 
+## Follow-up: direct LAN client connection
+
+After the initial no-player smoke run, the server was restarted with the
+deterministic `GC_BespinPlatforms_AAS_V2` layer and bound to
+`192.168.1.111`. A Squad client joined through the in-game console with:
+
+```text
+open 192.168.1.111:7787
+```
+
+The server log recorded `Login request`, `Join request`, `PostLogin`, the
+transition to `InProgress`, `RestartPlayer`, and `Join succeeded`. Loopback
+binding did not produce this Proton-client handshake; the LAN bind did.
+
+RCON `ListPlayers` showed one active player with team, squad, and
+`GAR_P1_Rifleman` role. A reader snapshot taken against the confirmed binary
+PID reported `matchState=InProgress`, `soldiersLive=1`, and
+`vehicleSeatsLive=1`, but still reported `players=[]` and
+`playerStatesNonCDO=0`. The connection gate therefore passes while reader
+player-state enrichment remains an explicit compatibility gap.
+
 The new harness also passed local non-server checks: Bash syntax validation,
 GCC compilation of the shared library with warnings enabled, and a disposable
 external launcher check that observed the scoped `LD_PRELOAD` plus the three
@@ -207,9 +236,11 @@ ready for integration sign-off**.
   players were connected for player-stat gates and vanilla static-geometry
   gates do not cover the GC layer. Build-specific offset validation is still
   required.
-- The live process exposed vehicle and deployable objects, but no controlled
-  player was connected. Kits and weapons therefore still need a player/client
-  fixture before their exact runtime classes can be recorded.
+- The live process exposed vehicle and deployable objects. A controlled player
+  connection is now verified by server logs and RCON, but the reader snapshot
+  still does not emit a player entry; kits and weapons therefore still need a
+  player-state mapping/capture path before their exact runtime classes can be
+  considered reader-verified.
 - The current reader metadata loader does not consume the GC bundle under
   `data/static/gc/*.json`. The raw snapshot is usable, but GC icons, map
   catalog enrichment, faction labels, role metadata, and vehicle profiles are

@@ -651,6 +651,9 @@ class SnapshotCaches:
     class_name: dict[int, str | None] = field(default_factory=dict)
     # class_addr -> (gen, is-subclass-of-SQGameState?)
     is_subgs: dict[int, SubclassCacheValue] = field(default_factory=dict)
+    # class_addr -> is-subclass-of-SQPlayerState? GC's PlayerState is a
+    # Blueprint subclass (GC_PlayerState_C), not the native base class.
+    is_player_state: dict[int, SubclassCacheValue] = field(default_factory=dict)
     # class_addr -> is-subclass-of-SQVehicle?
     is_vehicle: dict[int, SubclassCacheValue] = field(default_factory=dict)
     # class_addr -> is-subclass-of-SQMapMarker?
@@ -764,7 +767,7 @@ class SnapshotCaches:
         # accepted once on next lookup, then replaced with a tuple.
         cur_gen = self.subclass_gen
         for cache_attr in (
-            "is_subgs", "is_vehicle", "is_marker", "is_deployable",
+            "is_subgs", "is_player_state", "is_vehicle", "is_marker", "is_deployable",
             "is_vehicle_spawner", "is_rally", "is_squad_data_marker",
             "is_tracked_projectile", "is_lane_initializer",
             "is_raas_visualizer",
@@ -865,6 +868,7 @@ class SnapshotCaches:
         return {
             "class_name":              len(self.class_name),
             "is_subgs":                len(self.is_subgs),
+            "is_player_state":         len(self.is_player_state),
             "is_vehicle":              len(self.is_vehicle),
             "is_marker":               len(self.is_marker),
             "is_deployable":           len(self.is_deployable),
@@ -1368,6 +1372,21 @@ def _is_subclass_of(pm: ProcessMemory, class_addr: int,
     if len(chain) >= 2:
         cache[class_addr] = (current_gen, is_sub)
     return is_sub
+
+
+def _matches_player_state_class(pm: ProcessMemory, class_addr: int,
+                                 base_class_addr: int,
+                                 cache: dict[int, Any],
+                                 current_gen: int = 0) -> bool:
+    """Match native and Blueprint-derived PlayerState classes.
+
+    Stock Squad commonly instantiates the native ``SQPlayerState`` class,
+    while GC instantiates ``GC_PlayerState_C`` with ``SQPlayerState`` in its
+    SuperStruct chain.  The player reader uses the reflected base layout, so
+    subclass matching is safe and keeps both runtimes on the same path.
+    """
+    return _is_subclass_of(pm, class_addr, base_class_addr,
+                           cache, current_gen)
 
 
 def find_subclass_instance(pm: ProcessMemory, arr: GUObjectArray,
@@ -3079,7 +3098,7 @@ def build_snapshot(pm: ProcessMemory, arr: GUObjectArray,
         paths = resolve_paths(pm, arr, alloc)
 
     # Walk GUObjectArray ONCE. Things to collect on this pass:
-    #   - non-CDO instances whose class IS exactly SQPlayerState
+    #   - non-CDO instances whose class IS SQPlayerState or a subclass
     #   - a non-CDO SQGameState subclass instance (singleton)
     #   - non-CDO instances of any SQVehicle subclass
     #   - counts of SQSoldier / SQVehicleSeat for the diagnostics block
@@ -3096,6 +3115,7 @@ def build_snapshot(pm: ProcessMemory, arr: GUObjectArray,
     _subgen = caches.subclass_gen
     class_cache = caches.class_name
     is_subgs_cache = caches.is_subgs
+    is_player_state_cache = caches.is_player_state
     is_vehicle_cache = caches.is_vehicle
     is_marker_cache = caches.is_marker
     sq_player_state_class = paths.sq_player_state_class
@@ -3245,7 +3265,8 @@ def build_snapshot(pm: ProcessMemory, arr: GUObjectArray,
                 return None
             obj_class_cache[idx] = (serial, class_addr)
 
-        if class_addr == sq_player_state_class:
+        if _matches_player_state_class(pm, class_addr, sq_player_state_class,
+                                       is_player_state_cache, _subgen):
             nm = _uobject_name(pm, obj_addr, alloc) or ""
             if not nm.startswith("Default__"):
                 return (_wd.KIND_PLAYER, obj_addr, 0)
