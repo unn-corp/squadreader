@@ -12,6 +12,7 @@ IFS=$'\n\t'
 : "${STEAM_BETA_APP:=774961}"
 : "${STEAM_BETA_BRANCH:=}"
 : "${STEAM_BETA_PASSWORD:=}"
+: "${FORCE_STEAM_UPDATE:=0}"
 : "${WORKSHOPID:=393380}"
 : "${MODPATH:=${STEAMAPPDIR}/SquadGame/Plugins/Mods}"
 : "${PORT:=7787}"
@@ -46,6 +47,11 @@ die() { printf '[squadreader-test] ERROR: %s\n' "$*" >&2; exit 1; }
 
 install_squad() {
     mkdir -p "$STEAMAPPDIR"
+    if [[ "$FORCE_STEAM_UPDATE" != "1" && -x "$STEAMAPPDIR/SquadGameServer.sh" ]]; then
+        log "Squad already installed; skipping update"
+        return 0
+    fi
+
     if [[ -n "$STEAM_BETA_BRANCH" ]]; then
         log "updating Squad beta branch $STEAM_BETA_BRANCH"
         bash "$STEAMCMDDIR/steamcmd.sh" \
@@ -105,14 +111,22 @@ install_mods() {
     local id target
     for id in "${ids[@]}"; do
         [[ "$id" =~ ^[0-9]+$ ]] || die "invalid workshop id: $id"
+        target="$STEAMAPPDIR/steamapps/workshop/content/$WORKSHOPID/$id"
+        local ready_marker="$STEAMAPPDIR/.sqreader-workshop-${WORKSHOPID}-${id}.ready"
+        if [[ -f "$ready_marker" && -d "$target" ]]; then
+            log "workshop item $id already installed; skipping update"
+            ln -sfn "$target" "$MODPATH/$id"
+            continue
+        fi
+
         log "installing workshop item $id"
         bash "$STEAMCMDDIR/steamcmd.sh" \
             +force_install_dir "$STEAMAPPDIR" \
             +login anonymous \
             +workshop_download_item "$WORKSHOPID" "$id" \
             +quit
-        target="$STEAMAPPDIR/steamapps/workshop/content/$WORKSHOPID/$id"
         [[ -d "$target" ]] || die "workshop item $id did not download"
+        touch "$ready_marker"
         ln -sfn "$target" "$MODPATH/$id"
     done
 }
