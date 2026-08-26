@@ -101,6 +101,20 @@ def test_finalized_recording_is_served_and_listed(tmp_path):
         srv.server_close()
 
 
+def test_finalized_recording_stream_uses_http11_for_chunked_body(tmp_path):
+    srv, port = _serve(tmp_path)
+    try:
+        _make_sqrx(tmp_path, "wire", state="finalized", in_progress=False)
+
+        with _get(port, "/api/recording/wire") as r:
+            assert r.version == 11
+            assert r.headers.get("Transfer-Encoding") == "chunked"
+            assert r.read()
+    finally:
+        srv.shutdown()
+        srv.server_close()
+
+
 def test_near_live_recordings_are_refused_and_unlisted(tmp_path):
     # active = still recording; unverified = shutdown-interrupted partial;
     # nosidecar = actively-writing file with no sidecar yet (→ unverified stub).

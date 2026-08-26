@@ -388,6 +388,12 @@ def _make_handler(
             return None
 
     class _H(http.server.BaseHTTPRequestHandler):
+        # The replay endpoint streams with HTTP/1.1 chunked transfer coding.
+        # BaseHTTPRequestHandler defaults to HTTP/1.0, where Transfer-Encoding
+        # is not a valid response framing mechanism; browsers reject that body
+        # as a content-decoding failure before the replay parser sees it.
+        protocol_version = "HTTP/1.1"
+
         # silence stdlib's per-request logging — too noisy at 5 Hz
         def log_message(self, *_args) -> None:
             pass
