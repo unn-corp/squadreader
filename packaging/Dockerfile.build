@@ -28,11 +28,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # cryptography ships manylinux wheels with the Rust extension prebuilt — let
 # pip fetch those rather than dragging a Rust toolchain into the image.
-RUN python3 -m pip install --no-cache-dir \
+RUN python3 -m pip install --no-cache-dir --upgrade "pip>=26.2.2" \
+    && python3 -m pip install --no-cache-dir \
         "nuitka>=2.4" \
         "zstandard>=0.22,<1.0" \
-        "cryptography>=42" \
+        "cryptography>=50.0.0" \
         "numpy>=1.24" \
+        "certifi>=2026.10.19" \
         "ordered-set" "wheel"
 
 WORKDIR /src

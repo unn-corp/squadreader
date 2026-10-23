@@ -23,4 +23,18 @@ relevant areas are:
 
 ## Supported versions
 
+Outbound enrollment, push, update and notification requests use the application's
+certifi CA bundle (2026.10.19 or newer), without adding host or environment CA
+stores. Custom host roots must not re-enable distrusted issuers. Redirects stay
+on the same scheme, hostname and port; cross-origin redirects, including HTTPS
+to HTTP downgrades, are refused before forwarding authentication headers. Point
+the configured central/webhook URL directly at its final origin. Explicit local
+HTTP development endpoints remain supported.
+
+Rebuild the committed frontend after dependency changes. Compiled agents must
+include certifi's data bundle; `sqreader selftest` checks it without networking.
+Updating this source does not patch already distributed binaries, host Python /
+OpenSSL, reverse-proxy NGINX or a game-server container. Verify those artifacts
+and their vendor security updates separately before deployment.
+
 Only the latest release receives security fixes.

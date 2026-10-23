@@ -70,6 +70,8 @@ python3 -m nuitka \
     --include-package=sqreader \
     --include-package=zstandard \
     --include-package=cryptography \
+    --include-package=certifi \
+    --include-package-data=certifi \
     --include-module=_cffi_backend \
     --include-data-dir=data/static=data/static \
     --python-flag=no_docstrings \

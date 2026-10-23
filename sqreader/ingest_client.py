@@ -25,6 +25,8 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+
+from .http_client import open_url
 from pathlib import Path
 from typing import Any
 
@@ -404,7 +406,7 @@ def _send(req: urllib.request.Request, *, timeout: float) -> bytes:
     max_retries = len(_RETRY_BACKOFFS)
     for attempt in range(max_retries + 1):
         try:
-            with urllib.request.urlopen(req, timeout=timeout) as resp:  # noqa: S310
+            with open_url(req, timeout=timeout) as resp:
                 return resp.read()
         except urllib.error.HTTPError as exc:
             if 500 <= exc.code < 600 and attempt < max_retries:

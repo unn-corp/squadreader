@@ -2405,10 +2405,20 @@ def cmd_selftest(args: argparse.Namespace) -> int:
             raise FileNotFoundError(f"no metadata tables under {d}")
         return f"{n} tables at {d}"
 
+    def _tls() -> str:
+        import certifi
+
+        from .http_client import tls_context
+        n = len(tls_context().get_ca_certs())
+        if not n:
+            raise ValueError("application CA bundle is empty")
+        return f"certifi {certifi.__version__}, {n} CA roots"
+
     print("sqreader selftest")
     check("compression", _zstd)
     check("sealed envelope", _aead)
     check("release signatures", _sig)
+    check("outbound TLS trust", _tls)
     check("bundled metadata", _data)
     print("PASS" if ok else "FAIL")
     return 0 if ok else 1

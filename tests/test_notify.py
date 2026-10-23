@@ -195,14 +195,13 @@ def test_the_webhook_url_never_reaches_a_log(caplog):
     import urllib.error
     def fail(*_a, **_k):
         raise urllib.error.HTTPError(secret, 403, "Forbidden", {}, None)
-    import urllib.request
-    orig = urllib.request.urlopen
-    urllib.request.urlopen = fail
+    orig = notify.open_url
+    notify.open_url = fail
     try:
         with caplog.at_level("WARNING"):
             n._post([_alert()])
     finally:
-        urllib.request.urlopen = orig
+        notify.open_url = orig
     assert "SUPERSECRETTOKEN" not in caplog.text
     assert "403" in caplog.text, "the failure itself must still be reported"
 
@@ -225,7 +224,7 @@ def test_a_batch_is_one_message_not_ten(monkeypatch):
     def capture(req, timeout=None):
         sent.append(json.loads(req.data.decode("utf-8")))
         return FakeResp()
-    monkeypatch.setattr("urllib.request.urlopen", capture)
+    monkeypatch.setattr(notify, "open_url", capture)
 
     n._post([_alert(), _alert(alert_type="magic_bullet")])
     assert len(sent) == 1
