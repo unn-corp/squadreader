@@ -23,4 +23,33 @@ relevant areas are:
 
 ## Supported versions
 
+Outbound enrollment, push, update and notification requests use the application's
+certifi CA bundle (2026.10.19 or newer), without adding host or environment CA
+stores. Custom host roots must not re-enable distrusted issuers. Redirects stay
+on the same scheme, hostname and port; cross-origin redirects, including HTTPS
+to HTTP downgrades, are refused before forwarding authentication headers. Point
+the configured central/webhook URL directly at its final origin. Explicit local
+HTTP development endpoints remain supported.
+
+The shell installer refuses all download redirects, including same-origin ones;
+configure its central URL with the final endpoint. Its bootstrap downloads use
+host curl and system CA trust, so a vendor-patched curl/TLS runtime and CA store
+are prerequisites. The agent's certifi bundle does not patch the installer or
+the initial command used to download it.
+
+Rebuild the committed frontend after dependency changes. Compiled agents must
+include certifi's data bundle; `sqreader selftest` checks it without networking.
+The native builder uses a digest-pinned AlmaLinux 8 base (glibc 2.28) and
+checksum-verified CPython 3.11.17 portable archives from Astral's 20261021
+release. This retains glibc 2.31 fleet compatibility without the retired
+Bullseye interpreter/TLS stack. Native Python dependencies are pinned in the
+builder and downloaded with explicit hashes, then installed without network
+access; update and review these pins with runtime security releases. The build
+retains Nuitka's compilation report alongside the binary for library attribution.
+Selftest round-trip checks remain active when compiled without assertions, and
+compiled releases also check the bundled numpy accelerator.
+Updating this source does not patch already distributed binaries, host Python /
+OpenSSL, reverse-proxy NGINX or a game-server container. Verify those artifacts
+and their vendor security updates separately before deployment.
+
 Only the latest release receives security fixes.

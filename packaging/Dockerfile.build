@@ -1,39 +1,69 @@
-# Build image for the compiled agent.
-#
-# Base choice is the single most consequential line here. A binary linked
-# against glibc N runs on glibc >= N and NOWHERE ELSE — build on Ubuntu 24.04
-# and the artifact dies on every Debian 11 / Ubuntu 20.04 game box with an
-# unhelpful "GLIBC_2.38 not found". Bullseye (glibc 2.31) is old enough to
-# cover the fleet and still gets security updates.
-#
-# Building in Docker also makes the build reproducible from a Windows or macOS
-# workstation: Nuitka does not cross-compile, so the host cannot produce a
-# Linux artifact directly.
-#
-# python:3.11-bullseye, not plain bullseye: Debian 11 ships Python 3.9 and
-# sqreader requires >=3.10, so a stock bullseye image cannot build this at all.
-# This image keeps the Debian 11 userland (glibc 2.31 — the floor we want)
-# while providing a modern interpreter.
-FROM python:3.11-bullseye
+# Native builds must run on the fleet's glibc 2.31 machines. AlmaLinux 8
+# provides a maintained glibc 2.28 toolchain (security support through 2029).
+# Keep CPython on 3.11, using Astral's portable runtime with current bundled
+# OpenSSL/zlib/Expat instead of the retired python:3.11-bullseye image.
+# Upstream release asset digests: astral-sh/python-build-standalone/20261021.
+ARG TARGETARCH
+FROM scratch AS python-amd64
+ADD --checksum=sha256:7cc8d9dce9ea23c31267e7f244005c8979da04794b7737a3a30e62b03abeb120 https://github.com/astral-sh/python-build-standalone/releases/download/20261021/cpython-3.11.17%2B20261021-x86_64-unknown-linux-gnu-install_only.tar.gz /python.tar.gz
 
-ENV DEBIAN_FRONTEND=noninteractive \
-    PIP_DISABLE_PIP_VERSION_CHECK=1 \
-    PYTHONDONTWRITEBYTECODE=1
+FROM scratch AS python-arm64
+ADD --checksum=sha256:c9af9f30e2cd74dbb9dfcc29cde4e966489692522c82a22d4a2bce79dce0e349 https://github.com/astral-sh/python-build-standalone/releases/download/20261021/cpython-3.11.17%2B20261021-aarch64-unknown-linux-gnu-install_only.tar.gz /python.tar.gz
 
-# patchelf: Nuitka standalone rewrites RPATHs with it.
-# ccache: makes the second build minutes instead of tens of minutes.
-RUN apt-get update && apt-get install -y --no-install-recommends \
-        build-essential patchelf ccache \
-    && rm -rf /var/lib/apt/lists/*
+FROM python-${TARGETARCH} AS python-runtime
 
-# cryptography ships manylinux wheels with the Rust extension prebuilt — let
-# pip fetch those rather than dragging a Rust toolchain into the image.
-RUN python3 -m pip install --no-cache-dir \
-        "nuitka>=2.4" \
-        "zstandard>=0.22,<1.0" \
-        "cryptography>=42" \
-        "numpy>=1.24" \
-        "ordered-set" "wheel"
+FROM scratch AS packages-common
+ADD --checksum=sha256:fd7f4dfa8190e014013b9f08f3e973f4e4c26ffd179a204895533a7254813a70 https://files.pythonhosted.org/packages/3f/06/3e4420302363fbb71be3c7f35ce042f54bfca330e3e66b3a2e3c4cca579f/pip-26.2.2-py3-none-any.whl /wheels/pip-26.2.2-py3-none-any.whl
+ADD --checksum=sha256:ca140b45d5325a9478f880e351484f62fef15f336462e449ca0c03c873d589c2 https://files.pythonhosted.org/packages/ef/55/6dc6d6bb953bdfc52519a0059592c52b6e3b8ad51cf8256dffceb55b0610/setuptools-84.2.1-py3-none-any.whl /wheels/setuptools-84.2.1-py3-none-any.whl
+ADD --checksum=sha256:3217dcc807155e45db462d7ef2431f5ddda0d7273b700d05a67b271ceb1287ab https://files.pythonhosted.org/packages/2e/29/69cfbb602cd91690c55d38ba9fe53e6a7e76a6fa647bf38f19c138d25449/wheel-0.48.0-py3-none-any.whl /wheels/wheel-0.48.0-py3-none-any.whl
+ADD --checksum=sha256:d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl /wheels/packaging-26.3-py3-none-any.whl
+ADD --checksum=sha256:b9c87a694acc424cfffa06abf149fddbdfa85f6daac998df67411b5f4269df0f https://files.pythonhosted.org/packages/da/0f/db5cfdebf906a6de141bfdadcd72a7417ba710ba9c9d307be185a69a7c8d/nuitka-4.3.1.tar.gz /wheels/nuitka-4.3.1.tar.gz
+ADD --checksum=sha256:046e1132c71fcf3330438a539928932caf51ddbc582496833e23de611de14562 https://files.pythonhosted.org/packages/33/55/af02708f230eb77084a299d7b08175cff006dea4f2721074b92cdb0296c0/ordered_set-4.1.0-py3-none-any.whl /wheels/ordered_set-4.1.0-py3-none-any.whl
+ADD --checksum=sha256:a076f3f489b39b43ed13563a1dafe42447445bec2e294154ec5c57fcdda4c85e https://files.pythonhosted.org/packages/b6/ae/315bbeee126a769cbde43cf4908acb4b40408d8bf8bbf334dd7368d8dadf/pycparser-3.12-py3-none-any.whl /wheels/pycparser-3.12-py3-none-any.whl
+ADD --checksum=sha256:e9b54de76e530bb6cf0ccd036787103acb58fd42ba930ea8bf948ddbaa2f61d1 https://files.pythonhosted.org/packages/32/d1/a3652fe2c19134d0d15922177821d863cbd7e842d53a21bbe7e8e3a1b5ac/certifi-2026.10.23-py3-none-any.whl /wheels/certifi-2026.10.23-py3-none-any.whl
+
+FROM packages-common AS packages-amd64
+ADD --checksum=sha256:a8f6331ccf40c345507279f755f4a38c2cb00b9efda746fd43c17713cce0aba4 https://files.pythonhosted.org/packages/e7/03/afd9bdd2ba5f96997196109f25dadbe5141bc6e70dffd85f3f84cc85d69c/patchelf-0.19.1.0-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.musllinux_1_1_x86_64.whl /wheels/patchelf-0.19.1.0-py3-none-manylinux1_x86_64.manylinux_2_5_x86_64.musllinux_1_1_x86_64.whl
+ADD --checksum=sha256:9300d02ea7c6506f00e627e287e0492a5eb0371ec1670ae852fefffa6164b072 https://files.pythonhosted.org/packages/bb/1f/e9cfd801a3f9190bf3e759c422bbfd2247db9d7f3d54a56ecde70137791a/zstandard-0.25.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl /wheels/zstandard-0.25.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+ADD --checksum=sha256:4061c0079120205fb760c58acab6443e217307dcf05e3702cf970e0689972856 https://files.pythonhosted.org/packages/1a/f1/b474e930c4d910328780e3940da76f5aa5cbc48ce1fc14e44d239d9ea9db/cryptography-50.0.2-cp311-abi3-manylinux_2_28_x86_64.whl /wheels/cryptography-50.0.2-cp311-abi3-manylinux_2_28_x86_64.whl
+ADD --checksum=sha256:34e261f78cb6ceaaa36f42f2613f4380d94d9c759a9c73c769ee6e0247364632 https://files.pythonhosted.org/packages/f7/a4/4399daaf8f7dfee9d7c3327fdb0426ee041cc63edc358b93911ceb2bfc7a/cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl /wheels/cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+ADD --checksum=sha256:89cd468399cfd2504718f0ba50e410dca55a170b61a02ad92bb18c8a65186e93 https://files.pythonhosted.org/packages/02/03/74fe2a4cb3817d94d86402f2506554130a2f01414e299b5a843e5a8a957f/numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl /wheels/numpy-2.4.6-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+
+FROM packages-common AS packages-arm64
+ADD --checksum=sha256:b5c3dec03b89db2bb0df301d316360847eeaf72c6fb6ddde0227326655edabb4 https://files.pythonhosted.org/packages/cc/e6/1c78ad10adfc4b00a642ab518c246dd88dc826d641eb31faca5eaddc8b97/patchelf-0.19.1.0-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.musllinux_1_1_aarch64.whl /wheels/patchelf-0.19.1.0-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.musllinux_1_1_aarch64.whl
+ADD --checksum=sha256:01582723b3ccd6939ab7b3a78622c573799d5d8737b534b86d0e06ac18dbde4a https://files.pythonhosted.org/packages/3b/13/2b7ed68bd85e69a2069bcc72141d378f22cae5a0f3b353a2c8f50ef30c1b/zstandard-0.25.0-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl /wheels/zstandard-0.25.0-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl
+ADD --checksum=sha256:f9f6143a8c75945eb960d9eb98905a441394abfa24afaae239d514ffb2586480 https://files.pythonhosted.org/packages/38/6b/61a3f8d8c5e1e49a6cddccafc4015cc1c0021360ab0acb4080e7a423644a/cryptography-50.0.2-cp311-abi3-manylinux_2_28_aarch64.whl /wheels/cryptography-50.0.2-cp311-abi3-manylinux_2_28_aarch64.whl
+ADD --checksum=sha256:3311ed60d36f83378794e1009ac6258bafbf81f7888b4caa7b35a521e3f95813 https://files.pythonhosted.org/packages/ad/66/c19feabb28485b6e0bbaaafa90837a1ef5d302e90f2178bd33f17a49879b/cffi-2.1.1-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl /wheels/cffi-2.1.1-cp311-cp311-manylinux2014_aarch64.manylinux_2_17_aarch64.whl
+ADD --checksum=sha256:0ab0a9c4ffb1a6d95ef519fe4247dba8eb6b18ad93999f76b7f657039acabd47 https://files.pythonhosted.org/packages/33/a8/6fa8c1a345a8c85dbb21932c447bee07c30a2c2a3f31e369c0a84b300147/numpy-2.4.6-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl /wheels/numpy-2.4.6-cp311-cp311-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl
+
+FROM packages-${TARGETARCH} AS packages
+
+FROM almalinux:8.10@sha256:8b469a3a78515e8a18ea8fc727e6a3679e1d0c5ba6f58d5b30be3d0d9b86cffe
+ENV PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PATH="/opt/python/bin:${PATH}"
+
+# Only native compilation tools; no image/media stack or extra interpreters.
+# RPM signatures remain required by the distribution's package manager.
+RUN dnf -y upgrade \
+    && dnf -y install gcc gcc-c++ libatomic-static make tar gzip \
+    && dnf clean all
+COPY --from=python-runtime /python.tar.gz /tmp/python.tar.gz
+RUN tar -xzf /tmp/python.tar.gz -C /opt && rm /tmp/python.tar.gz
+
+# All Python inputs are hash-verified above. Install without network or index
+# access: pip's vendored HTTP clients never parse index/download responses.
+COPY --from=packages /wheels /wheels
+RUN --network=none python3 -m pip install --no-index --no-deps /wheels/pip-26.2.2-py3-none-any.whl \
+    && python3 -m pip install --no-index --no-deps --find-links=/wheels \
+        "setuptools==84.2.1" "wheel==0.48.0" "packaging==26.3" \
+    && python3 -m pip install --no-index --no-deps --find-links=/wheels \
+        --no-build-isolation --report=/opt/sqreader-build-install.json \
+        "nuitka==4.3.1" "ordered-set==4.1.0" "patchelf==0.19.1.0" \
+        "zstandard==0.25.0" "cryptography==50.0.2" "cffi==2.1.1" \
+        "pycparser==3.12" "numpy==2.4.6" "certifi==2026.10.23" \
+    && python3 -m pip check \
+    && rm -rf /wheels
 
 WORKDIR /src
 ENTRYPOINT ["/bin/bash"]

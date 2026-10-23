@@ -158,6 +158,8 @@ trap 'rm -rf "$TMP"' EXIT
 # agent-signed X-Sqr-Auth (upgrade re-run on an already-enrolled box). On an
 # ungated central both are simply ignored. Header, never query string, so the
 # credential is not written to access logs or cached URLs.
+# Refuse redirects: curl forwards custom X-Sqr-Auth headers across origins.
+# Configure CENTRAL with the final endpoint; --max-redirs 0 makes 3xx fail.
 dl() {
     local file="$1" args=()
     if [ -n "$TOKEN" ]; then
@@ -165,14 +167,14 @@ dl() {
         # An operator upgrading months later re-runs this with the token still
         # sitting in their Discord DM — by then it is expired, and without this
         # retry the agent credentials that WOULD have worked are never tried.
-        if ! curl -fsSL ${args[@]+"${args[@]}"} \
+        if ! curl -fsSL --max-redirs 0 ${args[@]+"${args[@]}"} \
                 "$CENTRAL/agent/download?file=$file" \
                 -o "$TMP/$file" 2>/dev/null; then
             if [ -x "$HOME_DIR/sqreader" ] && [ -f "$HOME_DIR/.env.agent" ]; then
                 local hdr2
                 if hdr2="$(cd "$HOME_DIR" && ./sqreader download-auth "$file" 2>/dev/null)" \
                         && [ -n "$hdr2" ]; then
-                    curl -fsSL -H "X-Sqr-Auth: $hdr2" \
+                    curl -fsSL --max-redirs 0 -H "X-Sqr-Auth: $hdr2" \
                          "$CENTRAL/agent/download?file=$file" -o "$TMP/$file"
                     return
                 fi
@@ -196,7 +198,7 @@ dl() {
     # ${args[@]+...} guard: on bash < 4.4 an empty array expands to an unbound
     # variable under `set -u` and aborts the install. That is the no-credential
     # path, i.e. exactly the case we want to reach the server and fail cleanly.
-    curl -fsSL ${args[@]+"${args[@]}"} "$CENTRAL/agent/download?file=$file" \
+    curl -fsSL --max-redirs 0 ${args[@]+"${args[@]}"} "$CENTRAL/agent/download?file=$file" \
          -o "$TMP/$file"
 }
 

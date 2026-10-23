@@ -2356,7 +2356,7 @@ def cmd_selftest(args: argparse.Namespace) -> int:
     """Prove this build actually works on this machine.
 
     A binary that starts is not a binary that works: the fragile parts of the
-    bundle are cryptography's Rust extension against the system OpenSSL, the
+    bundle are cryptography's Rust extension and its bundled OpenSSL, the
     zstandard C extension, and whether the embedded ``data/static`` tables were
     really included. All three fail *late* and quietly otherwise — enrolment
     dies mid-onboarding, replays fail to seal, or maps render blank with
@@ -2380,15 +2380,19 @@ def cmd_selftest(args: argparse.Namespace) -> int:
     def _zstd() -> str:
         import zstandard
         blob = zstandard.ZstdCompressor().compress(b"sqreader" * 64)
-        assert zstandard.ZstdDecompressor().decompress(blob) == b"sqreader" * 64
-        return f"{len(blob)} B round-trip"
+        if zstandard.ZstdDecompressor().decompress(blob) != b"sqreader" * 64:
+            raise ValueError("compression round-trip mismatch")
+        return f"zstandard {zstandard.__version__}, libzstd {zstandard.ZSTD_VERSION}, " \
+               f"{len(blob)} B round-trip"
 
     def _aead() -> str:
+        from cryptography.hazmat.backends.openssl.backend import backend
         from cryptography.hazmat.primitives.ciphers.aead import AESGCM
         key, nonce = os.urandom(32), os.urandom(12)
         ct = AESGCM(key).encrypt(nonce, b"payload", b"aad")
-        assert AESGCM(key).decrypt(nonce, ct, b"aad") == b"payload"
-        return "AES-256-GCM"
+        if AESGCM(key).decrypt(nonce, ct, b"aad") != b"payload":
+            raise ValueError("sealed envelope round-trip mismatch")
+        return f"AES-256-GCM, {backend.openssl_version_text()}"
 
     def _sig() -> str:
         from cryptography.hazmat.primitives.asymmetric import ed25519
@@ -2405,11 +2409,35 @@ def cmd_selftest(args: argparse.Namespace) -> int:
             raise FileNotFoundError(f"no metadata tables under {d}")
         return f"{n} tables at {d}"
 
+    def _tls() -> str:
+        import ssl
+
+        import certifi
+
+        from .http_client import tls_context
+        n = len(tls_context().get_ca_certs())
+        if not n:
+            raise ValueError("application CA bundle is empty")
+        return f"{ssl.OPENSSL_VERSION}, certifi {certifi.__version__}, {n} CA roots"
+
+    def _fast() -> str:
+        import numpy as np
+
+        # Compiled releases promise the optional accelerator. Do not silently
+        # accept a bundle which dropped its extension or one of its libraries.
+        values = np.frombuffer(b"\x01\x00\x00\x00\x02\x00\x00\x00", dtype="<u4")
+        if values.tolist() != [1, 2]:
+            raise ValueError("numpy buffer decode mismatch")
+        return f"numpy {np.__version__}"
+
     print("sqreader selftest")
     check("compression", _zstd)
     check("sealed envelope", _aead)
     check("release signatures", _sig)
+    check("outbound TLS trust", _tls)
     check("bundled metadata", _data)
+    if _is_compiled():
+        check("walk accelerator", _fast)
     print("PASS" if ok else "FAIL")
     return 0 if ok else 1
 

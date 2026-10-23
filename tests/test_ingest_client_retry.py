@@ -44,7 +44,7 @@ def _install_urlopen(monkeypatch, side_effects):
             raise v
         return v
 
-    monkeypatch.setattr(ic.urllib.request, "urlopen", _urlopen)
+    monkeypatch.setattr(ic, "open_url", _urlopen)
 
 
 def _install_no_sleep(monkeypatch) -> list[float]:

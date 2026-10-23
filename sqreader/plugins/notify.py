@@ -32,6 +32,8 @@ import threading
 import time
 import urllib.error
 import urllib.request
+
+from ..http_client import open_url
 from typing import Any, Callable, Optional
 
 log = logging.getLogger(__name__)
@@ -334,7 +336,7 @@ class DiscordNotifier:
                     self._url, data=payload, method="POST",
                     headers={"Content-Type": "application/json",
                              "User-Agent": "sqreader"})
-                with urllib.request.urlopen(req, timeout=self._timeout):
+                with open_url(req, timeout=self._timeout):
                     return
             except urllib.error.HTTPError as e:
                 if e.code == 429:

@@ -141,6 +141,41 @@ def test_selftest_passes_on_a_working_install(capsys):
     assert "PASS" in capsys.readouterr().out
 
 
+@pytest.mark.parametrize("component", ["compression", "sealed envelope"])
+def test_selftest_detects_corrupt_roundtrip_without_assertions(component):
+    """Nuitka strips assertions; installer acceptance must still check results."""
+    import subprocess
+    import sys
+
+    probe = '''
+import argparse
+import sys
+from sqreader import cli
+if sys.argv[1] == "compression":
+    import zstandard
+    class BadDecompressor:
+        def decompress(self, blob):
+            return b"corrupt"
+    zstandard.ZstdDecompressor = BadDecompressor
+else:
+    from cryptography.hazmat.primitives.ciphers import aead
+    class BadAESGCM:
+        def __init__(self, key):
+            pass
+        def encrypt(self, nonce, plaintext, aad):
+            return b"ciphertext"
+        def decrypt(self, nonce, ciphertext, aad):
+            return b"corrupt"
+    aead.AESGCM = BadAESGCM
+sys.exit(cli.cmd_selftest(argparse.Namespace()))
+'''
+    result = subprocess.run([sys.executable, "-O", "-c", probe, component],
+                            capture_output=True, text=True, timeout=30)
+    assert result.returncode == 1, result.stdout + result.stderr
+    assert f"FAIL  {component}: ValueError:" in result.stdout
+    assert result.stdout.rstrip().endswith("FAIL")
+
+
 def test_entry_point_module_exists():
     """Nuitka compiles a real __main__; the console-script shim never ships."""
     import sqreader.__main__ as m

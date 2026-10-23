@@ -21,7 +21,7 @@ COPY . /opt/sqreader
 COPY deploy/gc-test-config /opt/gc-config
 
 RUN python3 -m venv /opt/sqreader-venv \
-    && /opt/sqreader-venv/bin/pip install --no-cache-dir --upgrade pip \
+    && /opt/sqreader-venv/bin/pip install --no-cache-dir --upgrade "pip>=26.2.2" \
     && /opt/sqreader-venv/bin/pip install --no-cache-dir /opt/sqreader \
     && mkdir -p /var/lib/sqreader/recordings /var/lib/sqreader/stats \
     && chown -R steam:steam /var/lib/sqreader \

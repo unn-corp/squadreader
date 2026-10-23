@@ -70,12 +70,15 @@ python3 -m nuitka \
     --include-package=sqreader \
     --include-package=zstandard \
     --include-package=cryptography \
+    --include-package=certifi \
+    --include-package-data=certifi \
     --include-module=_cffi_backend \
     --include-data-dir=data/static=data/static \
     --python-flag=no_docstrings \
     --python-flag=no_asserts \
     --product-name=sqreader \
     --product-version="${VERSION}" \
+    --report=build/compilation-report.xml \
     --output-filename="$OUT" \
     --output-dir=build \
     sqreader/__main__.py
@@ -83,7 +86,7 @@ python3 -m nuitka \
 # ---------------------------------------------------------------- smoke test
 # A binary that starts is not a binary that works. `selftest` exercises the
 # fragile parts THROUGH THE ARTIFACT (not the build venv): cryptography's Rust
-# extension against system OpenSSL, the zstandard C extension, and whether
+# extension and bundled OpenSSL, the zstandard C extension, and whether
 # data/static actually got embedded.
 BIN="build/$OUT"
 echo "[build] smoke test ..."
@@ -101,6 +104,7 @@ fi
 cd "$ROOT"
 mkdir -p dist
 cp "$STAGE/build/$OUT" "dist/$OUT"
+cp "$STAGE/build/compilation-report.xml" "dist/$OUT.build-report.xml"
 chmod +x "dist/$OUT"
 ( cd dist && sha256sum "$OUT" > SHA256SUMS )
 echo "[build] done -> dist/$OUT"

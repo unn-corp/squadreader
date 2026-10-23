@@ -24,13 +24,14 @@ classifiers = [
 ]
 dependencies = [
     "zstandard>=0.22,<1.0",
+    "certifi>=2026.10.19",
 ]
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.11", "cryptography>=42"]
+dev = ["pytest>=9.0.3", "ruff>=0.6", "mypy>=1.11", "cryptography>=50.0.0"]
 # Optional central push (`sqreader enroll` + `serve --push`). Only needed if you
 # report finished matches to a central platform; the base install stays lean.
-push = ["cryptography>=42"]
+push = ["cryptography>=50.0.0"]
 # Optional walk accelerator: numpy vectorizes the incremental GUObjectArray
 # diff (DeltaWalk). Without it the walk transparently falls back to pure-Python
 # — identical results, a bit slower. Install `.[fast]` to enable.
