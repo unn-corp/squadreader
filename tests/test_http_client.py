@@ -4,11 +4,14 @@ from __future__ import annotations
 import datetime
 import ipaddress
 import json
+import os
 import ssl
+import subprocess
 import threading
 import urllib.request
 from contextlib import contextmanager
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
+from pathlib import Path
 
 import certifi
 import pytest
@@ -161,3 +164,53 @@ def test_trusted_tls_preserves_enrollment_and_notification(tmp_path, monkeypatch
     assert received[0][1]["token"] == "synthetic-token"
     assert received[1][0] == "/hook"
     assert len(received[1][1]["embeds"]) == 1
+
+
+@pytest.mark.parametrize("auth", ["token", "agent", "fallback"])
+@pytest.mark.parametrize("redirect", [False, True])
+def test_installer_download_keeps_credentials_at_configured_endpoint(tmp_path, auth, redirect):
+    # Load ONLY the download function: the installer itself changes systemd,
+    # enrolls and starts a real reader, so it must never run in this fixture.
+    script = (Path(__file__).parents[1] / "packaging/install.sh").read_text()
+    download = script[script.index("dl() {\n"):script.index('\nsay "fetching release manifest"')]
+    agent = tmp_path / "sqreader"
+    agent.write_text("#!/bin/sh\nprintf '%s' synthetic-agent-auth\n")
+    agent.chmod(0o700)
+    (tmp_path / ".env.agent").touch()
+    received = []
+    attempts = []
+
+    def destination(req):
+        received.append(dict(req.headers))
+        respond(req, b"foreign-artifact")
+
+    with server(destination) as foreign:
+        def central(req):
+            attempts.append((req.headers.get("Authorization"), req.headers.get("X-Sqr-Auth")))
+            if auth == "fallback" and req.headers.get("Authorization"):
+                req.send_response(401)
+                req.end_headers()
+            elif redirect:
+                req.send_response(302)
+                req.send_header("Location", foreign + "/capture")
+                req.end_headers()
+            else:
+                respond(req, b"synthetic-artifact")
+
+        with server(central) as url:
+            env = dict(os.environ, TOKEN="synthetic-token" if auth != "agent" else "",
+                       HOME_DIR=str(tmp_path), TMP=str(tmp_path), CENTRAL=url,
+                       NO_PROXY="*", no_proxy="*")
+            result = subprocess.run(["bash", "-c", "set -eu\n" + download + "\ndl artifact"],
+                                    env=env, capture_output=True, timeout=5)
+    assert received == [], "installer forwarded a credential to a redirect destination"
+    if redirect:
+        assert result.returncode != 0
+    else:
+        assert result.returncode == 0, result.stderr
+        assert (tmp_path / "artifact").read_bytes() == b"synthetic-artifact"
+        assert attempts == {
+            "token": [("Bearer synthetic-token", None)],
+            "agent": [(None, "synthetic-agent-auth")],
+            "fallback": [("Bearer synthetic-token", None), (None, "synthetic-agent-auth")],
+        }[auth]

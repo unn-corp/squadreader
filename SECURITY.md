@@ -31,6 +31,12 @@ to HTTP downgrades, are refused before forwarding authentication headers. Point
 the configured central/webhook URL directly at its final origin. Explicit local
 HTTP development endpoints remain supported.
 
+The shell installer refuses all download redirects, including same-origin ones;
+configure its central URL with the final endpoint. Its bootstrap downloads use
+host curl and system CA trust, so a vendor-patched curl/TLS runtime and CA store
+are prerequisites. The agent's certifi bundle does not patch the installer or
+the initial command used to download it.
+
 Rebuild the committed frontend after dependency changes. Compiled agents must
 include certifi's data bundle; `sqreader selftest` checks it without networking.
 Updating this source does not patch already distributed binaries, host Python /
