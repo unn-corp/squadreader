@@ -39,6 +39,15 @@ the initial command used to download it.
 
 Rebuild the committed frontend after dependency changes. Compiled agents must
 include certifi's data bundle; `sqreader selftest` checks it without networking.
+The native builder uses a digest-pinned AlmaLinux 8 base (glibc 2.28) and
+checksum-verified CPython 3.11.17 portable archives from Astral's 20261021
+release. This retains glibc 2.31 fleet compatibility without the retired
+Bullseye interpreter/TLS stack. Native Python dependencies are pinned in the
+builder and downloaded with explicit hashes, then installed without network
+access; update and review these pins with runtime security releases. The build
+retains Nuitka's compilation report alongside the binary for library attribution.
+Selftest round-trip checks remain active when compiled without assertions, and
+compiled releases also check the bundled numpy accelerator.
 Updating this source does not patch already distributed binaries, host Python /
 OpenSSL, reverse-proxy NGINX or a game-server container. Verify those artifacts
 and their vendor security updates separately before deployment.
